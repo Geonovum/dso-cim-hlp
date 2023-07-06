@@ -1,4 +1,4 @@
-s/@STANDARD@/CIM-TEMPLATE/g
-s/@MODELNAME@/Conceptueel Informatiemodel Template/g
-s/@TITLE@/Titel van document/g
-s/@REPONAME@/dso-cim-template/g
+s/@STANDARD@/CIM-HLP/g
+s/@MODELNAME@/Conceptueel Informatiemodel Help en Ondersteuning/g
+s/@TITLE@/Help en Ondersteuning/g
+s/@REPONAME@/dso-cim-hlp/g

@@ -1,4 +1,4 @@
-Dit document beschrijft het @Conceptueel Informatiemodel Help en Ondersteuning@. Dit is een conceptueel model van het
+Dit document beschrijft het 'Conceptueel Informatiemodel Help en Ondersteuning'. Dit is een conceptueel model van het
 DSO. Er is een reeks van deze modellen:
 
  - [CIM-AM](https://geonovum.github.io/dso-cim-am/): Conceptueel Informatiemodel Aanvragen en Meldingen.

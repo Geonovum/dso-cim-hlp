@@ -36,6 +36,11 @@ dfn{cursor:pointer}
   
 <link rel="shortcut icon" type="image/x-icon" href="https://tools.geostandaarden.nl/respec/style/logos/Geonovum.ico">
   
+  
+  
+<style>
+div.imageinfo.overview img {max-width: none;}
+</style>
 
 <style id="respec-mainstyle">
 @keyframes pop{
@@ -108,7 +113,7 @@ ul.index code{color:inherit}
 #index-defined-here .print-only{display:initial}
 }
 </style>
-<meta name="description" content="Dit document beschrijft het @Conceptueel Informatiemodel Help en Ondersteuning@. Dit is een conceptueel model van het
+<meta name="description" content="Dit document beschrijft het 'Conceptueel Informatiemodel Help en Ondersteuning'. Dit is een conceptueel model van het
 DSO. Er is een reeks van deze modellen:">
 <style>
 .hljs{display:block;overflow-x:auto;padding:.5em;color:#383a42;background:#fafafa}
@@ -302,12 +307,12 @@ DSO. Er is een reeks van deze modellen:">
   ],
   "authors": [
     {
-      "name": "voornaam achternaam",
+      "name": "TPOD team",
       "company": "Geonovum",
       "companyURL": "https://www.geonovum.nl"
     }
   ],
-  "github": "https://github.com/Geonovum/NL-ReSpec-GN-template",
+  "github": "https://github.com/Geonovum/dso-cim-hlp",
   "alternateFormats": [
     {
       "label": "pdf",
@@ -317,19 +322,19 @@ DSO. Er is een reeks van deze modellen:">
 }</script>
 <link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2016/base.css"></head>
 
-<body class="h-entry toc-inline"><div class="head">
+<body class="h-entry"><div class="head">
     <a class="logo" href="https://www.geonovum.nl/geo-standaarden"><img alt="Geonovum" height="67" id="Geonovum" src="https://tools.geostandaarden.nl/respec/style/logos/Geonovum.svg" width="132">
   </a> <h1 id="title" class="title">Help en Ondersteuning</h1>
     
     <h2>
       Geonovum Informatiemodel<br>
       Werkversie
-      <time class="dt-published" datetime="2023-08-15">15 augustus 2023</time>
+      <time class="dt-published" datetime="2023-10-25">25 oktober 2023</time>
     </h2>
     <dl>
       
       
-      <dt>Laatste werkversie:</dt><dd><a href="https://geonovum.github.io/NL-ReSpec-GN-template/">https://geonovum.github.io/NL-ReSpec-GN-template/</a></dd>
+      <dt>Laatste werkversie:</dt><dd><a href="https://geonovum.github.io/dso-cim-hlp/">https://geonovum.github.io/dso-cim-hlp/</a></dd>
       
       
       
@@ -341,16 +346,16 @@ DSO. Er is een reeks van deze modellen:">
   </dd>
       
       <dt>Auteur:</dt><dd class="editor p-author h-card vcard">
-    <span class="p-name fn">voornaam achternaam</span> (<a class="p-org org h-org" href="https://www.geonovum.nl">Geonovum</a>)
+    <span class="p-name fn">TPOD team</span> (<a class="p-org org h-org" href="https://www.geonovum.nl">Geonovum</a>)
   </dd>
       <dt>Doe mee:</dt><dd>
-    <a href="https://github.com/Geonovum/NL-ReSpec-GN-template/">GitHub Geonovum/NL-ReSpec-GN-template</a>
+    <a href="https://github.com/Geonovum/dso-cim-hlp/">GitHub Geonovum/dso-cim-hlp</a>
   </dd><dd>
-    <a href="https://github.com/Geonovum/NL-ReSpec-GN-template/issues/">Dien een melding in</a>
+    <a href="https://github.com/Geonovum/dso-cim-hlp/issues/">Dien een melding in</a>
   </dd><dd>
-    <a href="https://github.com/Geonovum/NL-ReSpec-GN-template/commits/">Revisiehistorie</a>
+    <a href="https://github.com/Geonovum/dso-cim-hlp/commits/">Revisiehistorie</a>
   </dd><dd>
-    <a href="https://github.com/Geonovum/NL-ReSpec-GN-template/pulls/">Pull requests</a>
+    <a href="https://github.com/Geonovum/dso-cim-hlp/pulls/">Pull requests</a>
   </dd>
     </dl>
     
@@ -365,7 +370,7 @@ DSO. Er is een reeks van deze modellen:">
         </p>
     <hr title="Separator for header">
   </div>
-  <section id="abstract" class="introductory"><h2>Samenvatting</h2><p>Dit document beschrijft het @Conceptueel Informatiemodel Help en Ondersteuning@. Dit is een conceptueel model van het
+  <section id="abstract" class="introductory"><h2>Samenvatting</h2><p>Dit document beschrijft het 'Conceptueel Informatiemodel Help en Ondersteuning'. Dit is een conceptueel model van het
 DSO. Er is een reeks van deze modellen:</p>
 <ul>
 <li><a href="https://geonovum.github.io/dso-cim-am/">CIM-AM</a>: Conceptueel Informatiemodel Aanvragen en Meldingen.</li>
@@ -381,7 +386,7 @@ DSO. Er is een reeks van deze modellen:</p>
 <li><a href="https://geonovum.github.io/dso-cim-tr/">CIM-TR</a>: Conceptueel Informatiemodel Toepasbare Regels.</li>
 </ul>
 </section>
-  <section id="sotd" class="introductory"><h2>Status van dit document</h2><p>Dit is een werkversie die op elk moment kan worden gewijzigd, verwijderd of vervangen door andere documenten. Het is geen stabiel document.</p></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status van dit document</a></li><li class="tocline"><a class="tocxref" href="#voorwoord"><bdi class="secno">1. </bdi>Voorwoord</a></li><li class="tocline"><a class="tocxref" href="#inleiding"><bdi class="secno">2. </bdi>Inleiding</a></li><li class="tocline"><a class="tocxref" href="#overzicht"><bdi class="secno">3. </bdi>Overzicht</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#normatieve-referenties"><bdi class="secno">3.1 </bdi>Normatieve referenties</a></li><li class="tocline"><a class="tocxref" href="#termen-en-definities"><bdi class="secno">3.2 </bdi>Termen en definities</a></li><li class="tocline"><a class="tocxref" href="#symbolen-en-afkortingen"><bdi class="secno">3.3 </bdi>Symbolen en afkortingen</a></li></ol></li><li class="tocline"><a class="tocxref" href="#bibliografie"><bdi class="secno">4. </bdi>Bibliografie</a></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">5. </bdi>Conformiteit</a></li><li class="tocline"><a class="tocxref" href="#index"><bdi class="secno">A. </bdi>Index</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#index-defined-here"><bdi class="secno">A.1 </bdi>Begrippen gedefinieerd door deze specificatie</a></li><li class="tocline"><a class="tocxref" href="#index-defined-elsewhere"><bdi class="secno">A.2 </bdi>Begrippen gedefinieerd door verwijzing</a></li></ol></li></ol></nav>
+  <section id="sotd" class="introductory"><h2>Status van dit document</h2><p>Dit is een werkversie die op elk moment kan worden gewijzigd, verwijderd of vervangen door andere documenten. Het is geen stabiel document.</p></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status van dit document</a></li><li class="tocline"><a class="tocxref" href="#voorwoord"><bdi class="secno">1. </bdi>Voorwoord</a></li><li class="tocline"><a class="tocxref" href="#inleiding"><bdi class="secno">2. </bdi>Inleiding</a></li><li class="tocline"><a class="tocxref" href="#toepassingsgebied"><bdi class="secno">3. </bdi>Toepassingsgebied</a></li><li class="tocline"><a class="tocxref" href="#overzicht"><bdi class="secno">4. </bdi>Overzicht</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#normatieve-referenties"><bdi class="secno">4.1 </bdi>Normatieve referenties</a></li><li class="tocline"><a class="tocxref" href="#termen-en-definities"><bdi class="secno">4.2 </bdi>Termen en definities</a></li><li class="tocline"><a class="tocxref" href="#symbolen-en-afkortingen"><bdi class="secno">4.3 </bdi>Symbolen en afkortingen</a></li></ol></li><li class="tocline"><a class="tocxref" href="#bibliografie"><bdi class="secno">5. </bdi>Bibliografie</a></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">6. </bdi>Conformiteit</a></li><li class="tocline"><a class="tocxref" href="#index"><bdi class="secno">A. </bdi>Index</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#index-defined-here"><bdi class="secno">A.1 </bdi>Begrippen gedefinieerd door deze specificatie</a></li><li class="tocline"><a class="tocxref" href="#index-defined-elsewhere"><bdi class="secno">A.2 </bdi>Begrippen gedefinieerd door verwijzing</a></li></ol></li></ol></nav>
 
   <section id="voorwoord"><div class="header-wrapper"><h2 id="x1-voorwoord"><bdi class="secno">1. </bdi>Voorwoord</h2><a class="self-link" href="#voorwoord" aria-label="Permalink for Section 1."></a></div>
 <p>Dit document is tot stand gekomen binnen het programma  DSO-Omgegevingswet. Het bevat de formele vastlegging en beschrijving van het Conceptuele Informatiemodel.</p>
@@ -390,23 +395,16 @@ DSO. Er is een reeks van deze modellen:</p>
   <section id="inleiding"><div class="header-wrapper"><h2 id="x2-inleiding"><bdi class="secno">2. </bdi>Inleiding</h2><a class="self-link" href="#inleiding" aria-label="Permalink for Section 2."></a></div>
 <p>TODO</p>
 </section>
-  <section>
-
-
-<meta charset="utf-8">
-<title>Error</title>
-
-
-<pre aria-busy="false"><code class="hljs">Cannot GET /03-Toepassingsgebied.md</code></pre>
-
+  <section id="toepassingsgebied"><div class="header-wrapper"><h2 id="x3-toepassingsgebied"><bdi class="secno">3. </bdi>Toepassingsgebied</h2><a class="self-link" href="#toepassingsgebied" aria-label="Permalink for Section 3."></a></div>
+<p>Het toepassingsdomein van deze standaard is het DSO van de omgevingswet.</p>
 </section>
-  <section id="overzicht"><div class="header-wrapper"><h2 id="x3-overzicht"><bdi class="secno">3. </bdi>Overzicht</h2><a class="self-link" href="#overzicht" aria-label="Permalink for Section 3."></a></div>
+  <section id="overzicht"><div class="header-wrapper"><h2 id="x4-overzicht"><bdi class="secno">4. </bdi>Overzicht</h2><a class="self-link" href="#overzicht" aria-label="Permalink for Section 4."></a></div>
 <p>TODO</p>
-<section id="normatieve-referenties"><div class="header-wrapper"><h3 id="x3-1-normatieve-referenties"><bdi class="secno">3.1 </bdi>Normatieve referenties</h3><a class="self-link" href="#normatieve-referenties" aria-label="Permalink for Section 3.1"></a></div>
+<section id="normatieve-referenties"><div class="header-wrapper"><h3 id="x4-1-normatieve-referenties"><bdi class="secno">4.1 </bdi>Normatieve referenties</h3><a class="self-link" href="#normatieve-referenties" aria-label="Permalink for Section 4.1"></a></div>
 <p>TODO</p>
-</section><section id="termen-en-definities"><div class="header-wrapper"><h3 id="x3-2-termen-en-definities"><bdi class="secno">3.2 </bdi>Termen en definities</h3><a class="self-link" href="#termen-en-definities" aria-label="Permalink for Section 3.2"></a></div>
+</section><section id="termen-en-definities"><div class="header-wrapper"><h3 id="x4-2-termen-en-definities"><bdi class="secno">4.2 </bdi>Termen en definities</h3><a class="self-link" href="#termen-en-definities" aria-label="Permalink for Section 4.2"></a></div>
 <p>TODO</p>
-</section><section id="symbolen-en-afkortingen"><div class="header-wrapper"><h3 id="x3-3-symbolen-en-afkortingen"><bdi class="secno">3.3 </bdi>Symbolen en afkortingen</h3><a class="self-link" href="#symbolen-en-afkortingen" aria-label="Permalink for Section 3.3"></a></div>
+</section><section id="symbolen-en-afkortingen"><div class="header-wrapper"><h3 id="x4-3-symbolen-en-afkortingen"><bdi class="secno">4.3 </bdi>Symbolen en afkortingen</h3><a class="self-link" href="#symbolen-en-afkortingen" aria-label="Permalink for Section 4.3"></a></div>
 <p>Lijst van afkortingen en acroniemen die worden gehanteerd in deze
 dataspecificatie.</p>
 <p><strong>TODO</strong> nader in te vullen</p>
@@ -425,11 +423,11 @@ dataspecificatie.</p>
 
 
 
-  <section id="bibliografie"><div class="header-wrapper"><h2 id="x4-bibliografie"><bdi class="secno">4. </bdi>Bibliografie</h2><a class="self-link" href="#bibliografie" aria-label="Permalink for Section 4."></a></div>
+  <section id="bibliografie"><div class="header-wrapper"><h2 id="x5-bibliografie"><bdi class="secno">5. </bdi>Bibliografie</h2><a class="self-link" href="#bibliografie" aria-label="Permalink for Section 5."></a></div>
 <p>TODO</p>
 </section>
 
-  <section id="conformance"><div class="header-wrapper"><h2 id="x5-conformiteit"><bdi class="secno">5. </bdi>Conformiteit</h2><a class="self-link" href="#conformance" aria-label="Permalink for Section 5."></a></div><p>Naast onderdelen die als niet normatief gemarkeerd zijn, zijn ook alle diagrammen, voorbeelden, en noten in dit document niet normatief. Verder is alles in dit document normatief.</p></section>
+  <section id="conformance"><div class="header-wrapper"><h2 id="x6-conformiteit"><bdi class="secno">6. </bdi>Conformiteit</h2><a class="self-link" href="#conformance" aria-label="Permalink for Section 6."></a></div><p>Naast onderdelen die als niet normatief gemarkeerd zijn, zijn ook alle diagrammen, voorbeelden, en noten in dit document niet normatief. Verder is alles in dit document normatief.</p></section>
   <section id="tof"></section>
   <section id="index" class="appendix"><div class="header-wrapper"><h2 id="a-index"><bdi class="secno">A. </bdi>Index</h2><a class="self-link" href="#index" aria-label="Permalink for Appendix A."></a></div><section id="index-defined-here">
     <div class="header-wrapper"><h3 id="a-1-begrippen-gedefinieerd-door-deze-specificatie"><bdi class="secno">A.1 </bdi>Begrippen gedefinieerd door deze specificatie</h3><a class="self-link" href="#index-defined-here" aria-label="Permalink for Appendix A.1"></a></div>

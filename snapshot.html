@@ -1,16 +1,16 @@
 <!DOCTYPE html><html lang="nl"><head>
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta content="text/html; charset=utf-8" http-equiv="content-type">
-<meta name="generator" content="ReSpec 34.1.4">
+<meta name="generator" content="ReSpec 35.1.1">
 <style>
 dfn{cursor:pointer}
-.dfn-panel{position:absolute;z-index:35;min-width:300px;max-width:500px;padding:.5em .75em;margin-top:.6em;font-family:"Helvetica Neue",sans-serif;font-size:small;background:#fff;color:#000;box-shadow:0 1em 3em -.4em rgba(0,0,0,.3),0 0 1px 1px rgba(0,0,0,.05);border-radius:2px}
+.dfn-panel{position:absolute;z-index:35;min-width:300px;max-width:500px;padding:.5em .75em;margin-top:.6em;font-family:"Helvetica Neue",sans-serif;font-size:small;background:#fff;background:var(--indextable-hover-bg,#fff);color:#000;color:var(--text,#000);box-shadow:0 1em 3em -.4em rgba(0,0,0,.3),0 0 1px 1px rgba(0,0,0,.05);box-shadow:0 1em 3em -.4em var(--tocsidebar-shadow,rgba(0,0,0,.3)),0 0 1px 1px var(--tocsidebar-shadow,rgba(0,0,0,.05));border-radius:2px}
 .dfn-panel:not(.docked)>.caret{position:absolute;top:-9px}
-.dfn-panel:not(.docked)>.caret::after,.dfn-panel:not(.docked)>.caret::before{content:"";position:absolute;border:10px solid transparent;border-top:0;border-bottom:10px solid #fff;top:0}
-.dfn-panel:not(.docked)>.caret::before{border-bottom:9px solid #a2a9b1}
+.dfn-panel:not(.docked)>.caret::after,.dfn-panel:not(.docked)>.caret::before{content:"";position:absolute;border:10px solid transparent;border-top:0;border-bottom:10px solid #fff;border-bottom-color:var(--indextable-hover-bg,#fff);top:0}
+.dfn-panel:not(.docked)>.caret::before{border-bottom:9px solid #a2a9b1;border-bottom-color:var(--indextable-hover-bg,#a2a9b1)}
 .dfn-panel *{margin:0}
-.dfn-panel b{display:block;color:#000;margin-top:.25em}
-.dfn-panel ul a[href]{color:#333}
+.dfn-panel b{display:block;color:#000;color:var(--text,#000);margin-top:.25em}
+.dfn-panel ul a[href]{color:#333;color:var(--text,#333)}
 .dfn-panel>div{display:flex}
 .dfn-panel a.self-link{font-weight:700;margin-right:auto}
 .dfn-panel .marker{padding:.1em;margin-left:.5em;border-radius:.2em;text-align:center;white-space:nowrap;font-size:90%;color:#040b1c}
@@ -48,8 +48,6 @@ div.imageinfo.overview img {max-width: none;}
 25%{transform:scale(1.25,1.25);opacity:.75}
 100%{transform:scale(1,1)}
 }
-:is(h1,h2,h3,h4,h5,h6,a) abbr{border:none}
-dfn{font-weight:700}
 a.internalDFN{color:inherit;border-bottom:1px solid #99c;text-decoration:none}
 a.externalDFN{color:inherit;border-bottom:1px dotted #ccc;text-decoration:none}
 a.bibref{text-decoration:none}
@@ -63,20 +61,8 @@ a.bibref{text-decoration:none}
 cite .bibref{font-style:normal}
 a[href].orcid{padding-left:4px;padding-right:4px}
 a[href].orcid>svg{margin-bottom:-2px}
-.toc a,.tof a{text-decoration:none}
-a .figno,a .secno{color:#000}
 ol.tof,ul.tof{list-style:none outside none}
 .caption{margin-top:.5em;font-style:italic}
-table.simple{border-spacing:0;border-collapse:collapse;border-bottom:3px solid #005a9c}
-.simple th{background:#005a9c;color:#fff;padding:3px 5px;text-align:left}
-.simple th a{color:#fff;padding:3px 5px;text-align:left}
-.simple th[scope=row]{background:inherit;color:inherit;border-top:1px solid #ddd}
-.simple td{padding:3px 10px;border-top:1px solid #ddd}
-.simple tr:nth-child(even){background:#f0f6ff}
-.section dd>p:first-child{margin-top:0}
-.section dd>p:last-child{margin-bottom:0}
-.section dd{margin-bottom:1em}
-.section dl.attrs dd,.section dl.eldef dd{margin-bottom:0}
 #issue-summary>ul{column-count:2}
 #issue-summary li{list-style:none;display:inline-block}
 details.respec-tests-details{margin-left:1em;display:inline-block;vertical-align:top}
@@ -195,6 +181,7 @@ DSO.">
       "cv": "Candidate recommendation",
       "vv": "Proposed recommendation",
       "def": "Recommendation",
+      "ld": "Living document",
       "basis": "Document",
       "no": "Norm",
       "st": "Standard",
@@ -211,6 +198,7 @@ DSO.">
       "cv": "Consultatieversie",
       "vv": "Versie ter vaststelling",
       "def": "Vastgestelde versie",
+      "ld": "Levend document",
       "basis": "Document",
       "no": "Norm",
       "st": "Standaard",
@@ -230,7 +218,8 @@ DSO.">
       "wv": "Dit is een werkversie die op elk moment kan worden gewijzigd, verwijderd of vervangen door andere documenten. Het is geen stabiel document.",
       "cv": "Dit is een consultatieversie. Commentaar over dit document kan gestuurd worden naar ",
       "vv": "Dit is de definitieve conceptversie van dit document. Wijzigingen naar aanleiding van consultaties zijn doorgevoerd.",
-      "basis": "Dit is een document zonder officiële status."
+      "basis": "Dit is een document zonder officiële status.",
+      "ld": "Dit is een levend document dat regelmatig gewijzigd wordt."
     },
     "en": {
       "sotd": "Status of this document",
@@ -238,7 +227,8 @@ DSO.">
       "wv": "This is a working draft that can be changed, removed or replaced by other documents at any time. It is not a stable document.",
       "cv": "This is a stable draft, published for public comment. Comments regarding this document may be sent to ",
       "vv": "This is the final draft of this document. Edits resulting from consultations have been applied.",
-      "basis": "This document has no official standing."
+      "basis": "This document has no official standing.",
+      "ld": "This is a living document, which is updated regularly."
     }
   },
   "labelColor": {
@@ -246,7 +236,8 @@ DSO.">
     "wv": "#FF0000",
     "cv": "#045D9F",
     "vv": "#045D9F",
-    "basis": "#80CC28"
+    "basis": "#80CC28",
+    "ld": "#80CC28"
   },
   "licenses": {
     "cc0": {
@@ -313,6 +304,7 @@ DSO.">
   "title": "Help en Ondersteuning",
   "specStatus": "wv",
   "specType": "IM",
+  "nl_organisationStylesURL": "https://tools.geostandaarden.nl/respec/style/",
   "pubDomain": "dso",
   "licence": "cc-by",
   "shortName": "dso-cim-hlp",
@@ -338,7 +330,7 @@ DSO.">
     }
   ]
 }</script>
-<link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2016/base.css"></head>
+<link rel="stylesheet" href="https://tools.geostandaarden.nl/respec/style/base.css"></head>
 
 <body class="h-entry toc-inline"><div class="head">
     <a class="logo" href="https://www.geonovum.nl/geo-standaarden"><img alt="Geonovum" height="67" id="Geonovum" src="https://tools.geostandaarden.nl/respec/style/logos/Geonovum.svg" width="132">
@@ -347,7 +339,7 @@ DSO.">
     <h2>
       Geonovum Informatiemodel<br>
       Werkversie
-      <time class="dt-published" datetime="2023-12-07">07 december 2023</time>
+      <time class="dt-published" datetime="2024-09-06">06 september 2024</time>
     </h2>
     <dl>
       
@@ -506,7 +498,7 @@ dataspecificatie.</p>
       <section id="global_class_CIMHLP_Artikel">
          <div class="header-wrapper"><h4 id="x5-3-1-artikel"><bdi class="secno">5.3.1 </bdi>   Artikel</h4><a class="self-link" href="#global_class_CIMHLP_Artikel" aria-label="Permalink for Section 5.3.1"></a></div>
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 30%;"></colgroup>
             <colgroup style="width: 70%;"></colgroup>
             <tbody>
@@ -537,7 +529,7 @@ dataspecificatie.</p>
          
          <div class="header-wrapper"><h5 id="overzicht-attributen">Overzicht attributen  </h5><a class="self-link" href="#global_class_CIMHLP_Artikel" aria-label="Permalink for this Section"></a></div>
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 30%;"></colgroup>
             <colgroup style="width: 50%;"></colgroup>
             <colgroup style="width: 10%;"></colgroup>
@@ -576,7 +568,7 @@ dataspecificatie.</p>
          <div class="header-wrapper"><h5 id="overzicht-relaties">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMHLP_Artikel" aria-label="Permalink for this Section"></a></div>
          
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 50%;"></colgroup>
             <colgroup style="width: 50%;"></colgroup>
             <tbody>
@@ -630,7 +622,7 @@ dataspecificatie.</p>
       <section id="global_class_CIMHLP_Onderwerp">
          <div class="header-wrapper"><h4 id="x5-3-2-onderwerp"><bdi class="secno">5.3.2 </bdi>   Onderwerp</h4><a class="self-link" href="#global_class_CIMHLP_Onderwerp" aria-label="Permalink for Section 5.3.2"></a></div>
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 30%;"></colgroup>
             <colgroup style="width: 70%;"></colgroup>
             <tbody>
@@ -661,7 +653,7 @@ dataspecificatie.</p>
          
          <div class="header-wrapper"><h5 id="overzicht-attributen-0">Overzicht attributen  </h5><a class="self-link" href="#global_class_CIMHLP_Onderwerp" aria-label="Permalink for this Section"></a></div>
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 30%;"></colgroup>
             <colgroup style="width: 50%;"></colgroup>
             <colgroup style="width: 10%;"></colgroup>
@@ -690,7 +682,7 @@ dataspecificatie.</p>
          <div class="header-wrapper"><h5 id="overzicht-relaties-0">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMHLP_Onderwerp" aria-label="Permalink for this Section"></a></div>
          
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 50%;"></colgroup>
             <colgroup style="width: 50%;"></colgroup>
             <tbody>
@@ -744,7 +736,7 @@ dataspecificatie.</p>
       <section id="global_class_CIMHLP_Alineatekst">
          <div class="header-wrapper"><h4 id="x5-3-3-alineatekst"><bdi class="secno">5.3.3 </bdi>   Alineatekst</h4><a class="self-link" href="#global_class_CIMHLP_Alineatekst" aria-label="Permalink for Section 5.3.3"></a></div>
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 30%;"></colgroup>
             <colgroup style="width: 70%;"></colgroup>
             <tbody>
@@ -776,7 +768,7 @@ dataspecificatie.</p>
          <div class="header-wrapper"><h5 id="overzicht-relaties-1">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMHLP_Alineatekst" aria-label="Permalink for this Section"></a></div>
          
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 50%;"></colgroup>
             <colgroup style="width: 50%;"></colgroup>
             <tbody>
@@ -802,7 +794,7 @@ dataspecificatie.</p>
       <section id="global_class_CIMHLP_Chatbot">
          <div class="header-wrapper"><h4 id="x5-3-4-chatbot"><bdi class="secno">5.3.4 </bdi>   Chatbot</h4><a class="self-link" href="#global_class_CIMHLP_Chatbot" aria-label="Permalink for Section 5.3.4"></a></div>
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 30%;"></colgroup>
             <colgroup style="width: 70%;"></colgroup>
             <tbody>
@@ -834,7 +826,7 @@ dataspecificatie.</p>
          <div class="header-wrapper"><h5 id="overzicht-relaties-2">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMHLP_Chatbot" aria-label="Permalink for this Section"></a></div>
          
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 50%;"></colgroup>
             <colgroup style="width: 50%;"></colgroup>
             <tbody>
@@ -860,7 +852,7 @@ dataspecificatie.</p>
       <section id="global_class_CIMHLP_Plaatje">
          <div class="header-wrapper"><h4 id="x5-3-5-plaatje"><bdi class="secno">5.3.5 </bdi>   Plaatje</h4><a class="self-link" href="#global_class_CIMHLP_Plaatje" aria-label="Permalink for Section 5.3.5"></a></div>
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 30%;"></colgroup>
             <colgroup style="width: 70%;"></colgroup>
             <tbody>
@@ -892,7 +884,7 @@ dataspecificatie.</p>
          <div class="header-wrapper"><h5 id="overzicht-relaties-3">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMHLP_Plaatje" aria-label="Permalink for this Section"></a></div>
          
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 50%;"></colgroup>
             <colgroup style="width: 50%;"></colgroup>
             <tbody>
@@ -918,7 +910,7 @@ dataspecificatie.</p>
       <section id="global_class_CIMHLP_Tekst">
          <div class="header-wrapper"><h4 id="x5-3-6-tekst"><bdi class="secno">5.3.6 </bdi>   Tekst</h4><a class="self-link" href="#global_class_CIMHLP_Tekst" aria-label="Permalink for Section 5.3.6"></a></div>
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 30%;"></colgroup>
             <colgroup style="width: 70%;"></colgroup>
             <tbody>
@@ -950,7 +942,7 @@ dataspecificatie.</p>
          <div class="header-wrapper"><h5 id="overzicht-relaties-4">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMHLP_Tekst" aria-label="Permalink for this Section"></a></div>
          
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 50%;"></colgroup>
             <colgroup style="width: 50%;"></colgroup>
             <tbody>
@@ -976,7 +968,7 @@ dataspecificatie.</p>
       <section id="global_class_CIMHLP_Document">
          <div class="header-wrapper"><h4 id="x5-3-7-document"><bdi class="secno">5.3.7 </bdi>   Document</h4><a class="self-link" href="#global_class_CIMHLP_Document" aria-label="Permalink for Section 5.3.7"></a></div>
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 30%;"></colgroup>
             <colgroup style="width: 70%;"></colgroup>
             <tbody>
@@ -1008,7 +1000,7 @@ dataspecificatie.</p>
          <div class="header-wrapper"><h5 id="overzicht-relaties-5">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMHLP_Document" aria-label="Permalink for this Section"></a></div>
          
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 50%;"></colgroup>
             <colgroup style="width: 50%;"></colgroup>
             <tbody>
@@ -1034,7 +1026,7 @@ dataspecificatie.</p>
       <section id="global_class_CIMHLP_Titeltekst">
          <div class="header-wrapper"><h4 id="x5-3-8-titeltekst"><bdi class="secno">5.3.8 </bdi>   Titeltekst</h4><a class="self-link" href="#global_class_CIMHLP_Titeltekst" aria-label="Permalink for Section 5.3.8"></a></div>
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 30%;"></colgroup>
             <colgroup style="width: 70%;"></colgroup>
             <tbody>
@@ -1066,7 +1058,7 @@ dataspecificatie.</p>
          <div class="header-wrapper"><h5 id="overzicht-relaties-6">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMHLP_Titeltekst" aria-label="Permalink for this Section"></a></div>
          
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 50%;"></colgroup>
             <colgroup style="width: 50%;"></colgroup>
             <tbody>
@@ -1092,7 +1084,7 @@ dataspecificatie.</p>
       <section id="global_class_CIMHLP_SocialEmbedding">
          <div class="header-wrapper"><h4 id="x5-3-9-social-embedding"><bdi class="secno">5.3.9 </bdi>   Social (embedding)</h4><a class="self-link" href="#global_class_CIMHLP_SocialEmbedding" aria-label="Permalink for Section 5.3.9"></a></div>
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 30%;"></colgroup>
             <colgroup style="width: 70%;"></colgroup>
             <tbody>
@@ -1124,7 +1116,7 @@ dataspecificatie.</p>
          <div class="header-wrapper"><h5 id="overzicht-relaties-7">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMHLP_SocialEmbedding" aria-label="Permalink for this Section"></a></div>
          
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 50%;"></colgroup>
             <colgroup style="width: 50%;"></colgroup>
             <tbody>
@@ -1150,7 +1142,7 @@ dataspecificatie.</p>
       <section id="global_class_CIMHLP_Artikelcomponent">
          <div class="header-wrapper"><h4 id="x5-3-10-artikelcomponent"><bdi class="secno">5.3.10 </bdi>   Artikelcomponent</h4><a class="self-link" href="#global_class_CIMHLP_Artikelcomponent" aria-label="Permalink for Section 5.3.10"></a></div>
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 30%;"></colgroup>
             <colgroup style="width: 70%;"></colgroup>
             <tbody>
@@ -1185,7 +1177,7 @@ dataspecificatie.</p>
          
          <div class="header-wrapper"><h5 id="overzicht-attributen-1">Overzicht attributen  </h5><a class="self-link" href="#global_class_CIMHLP_Artikelcomponent" aria-label="Permalink for this Section"></a></div>
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 30%;"></colgroup>
             <colgroup style="width: 50%;"></colgroup>
             <colgroup style="width: 10%;"></colgroup>
@@ -1214,7 +1206,7 @@ dataspecificatie.</p>
          <div class="header-wrapper"><h5 id="overzicht-relaties-8">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMHLP_Artikelcomponent" aria-label="Permalink for this Section"></a></div>
          
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 50%;"></colgroup>
             <colgroup style="width: 50%;"></colgroup>
             <tbody>
@@ -1258,7 +1250,7 @@ dataspecificatie.</p>
       <section id="global_class_CIMHLP_Anker">
          <div class="header-wrapper"><h4 id="x5-3-11-anker"><bdi class="secno">5.3.11 </bdi>   Anker</h4><a class="self-link" href="#global_class_CIMHLP_Anker" aria-label="Permalink for Section 5.3.11"></a></div>
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 30%;"></colgroup>
             <colgroup style="width: 70%;"></colgroup>
             <tbody>
@@ -1290,7 +1282,7 @@ dataspecificatie.</p>
          <div class="header-wrapper"><h5 id="overzicht-relaties-9">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMHLP_Anker" aria-label="Permalink for this Section"></a></div>
          
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 50%;"></colgroup>
             <colgroup style="width: 50%;"></colgroup>
             <tbody>
@@ -1330,7 +1322,7 @@ dataspecificatie.</p>
       <section id="global_class_CIMHLP_Multimedia">
          <div class="header-wrapper"><h4 id="x5-3-12-multimedia"><bdi class="secno">5.3.12 </bdi>   Multimedia</h4><a class="self-link" href="#global_class_CIMHLP_Multimedia" aria-label="Permalink for Section 5.3.12"></a></div>
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 30%;"></colgroup>
             <colgroup style="width: 70%;"></colgroup>
             <tbody>
@@ -1362,7 +1354,7 @@ dataspecificatie.</p>
          <div class="header-wrapper"><h5 id="overzicht-relaties-10">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMHLP_Multimedia" aria-label="Permalink for this Section"></a></div>
          
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 50%;"></colgroup>
             <colgroup style="width: 50%;"></colgroup>
             <tbody>
@@ -1388,7 +1380,7 @@ dataspecificatie.</p>
       <section id="global_class_CIMHLP_Helpitem">
          <div class="header-wrapper"><h4 id="x5-3-13-helpitem"><bdi class="secno">5.3.13 </bdi>   Helpitem</h4><a class="self-link" href="#global_class_CIMHLP_Helpitem" aria-label="Permalink for Section 5.3.13"></a></div>
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 30%;"></colgroup>
             <colgroup style="width: 70%;"></colgroup>
             <tbody>
@@ -1423,7 +1415,7 @@ dataspecificatie.</p>
          
          <div class="header-wrapper"><h5 id="overzicht-attributen-2">Overzicht attributen  </h5><a class="self-link" href="#global_class_CIMHLP_Helpitem" aria-label="Permalink for this Section"></a></div>
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 30%;"></colgroup>
             <colgroup style="width: 50%;"></colgroup>
             <colgroup style="width: 10%;"></colgroup>
@@ -1462,7 +1454,7 @@ dataspecificatie.</p>
          <div class="header-wrapper"><h5 id="overzicht-relaties-11">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMHLP_Helpitem" aria-label="Permalink for this Section"></a></div>
          
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 50%;"></colgroup>
             <colgroup style="width: 50%;"></colgroup>
             <tbody>
@@ -1492,7 +1484,7 @@ dataspecificatie.</p>
       <section id="global_class_CIMHLP_Verwijzing">
          <div class="header-wrapper"><h4 id="x5-3-14-verwijzing"><bdi class="secno">5.3.14 </bdi>   Verwijzing</h4><a class="self-link" href="#global_class_CIMHLP_Verwijzing" aria-label="Permalink for Section 5.3.14"></a></div>
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 30%;"></colgroup>
             <colgroup style="width: 70%;"></colgroup>
             <tbody>
@@ -1524,7 +1516,7 @@ dataspecificatie.</p>
          <div class="header-wrapper"><h5 id="overzicht-relaties-12">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMHLP_Verwijzing" aria-label="Permalink for this Section"></a></div>
          
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 50%;"></colgroup>
             <colgroup style="width: 50%;"></colgroup>
             <tbody>
@@ -1564,7 +1556,7 @@ dataspecificatie.</p>
       <section id="global_class_CIMHLP_Video">
          <div class="header-wrapper"><h4 id="x5-3-15-video"><bdi class="secno">5.3.15 </bdi>   Video</h4><a class="self-link" href="#global_class_CIMHLP_Video" aria-label="Permalink for Section 5.3.15"></a></div>
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 30%;"></colgroup>
             <colgroup style="width: 70%;"></colgroup>
             <tbody>
@@ -1596,7 +1588,7 @@ dataspecificatie.</p>
          <div class="header-wrapper"><h5 id="overzicht-relaties-13">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMHLP_Video" aria-label="Permalink for this Section"></a></div>
          
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 50%;"></colgroup>
             <colgroup style="width: 50%;"></colgroup>
             <tbody>
@@ -1622,7 +1614,7 @@ dataspecificatie.</p>
       <section id="global_class_CIMHLP_Inhoudsopgave">
          <div class="header-wrapper"><h4 id="x5-3-16-inhoudsopgave"><bdi class="secno">5.3.16 </bdi>   Inhoudsopgave</h4><a class="self-link" href="#global_class_CIMHLP_Inhoudsopgave" aria-label="Permalink for Section 5.3.16"></a></div>
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 30%;"></colgroup>
             <colgroup style="width: 70%;"></colgroup>
             <tbody>
@@ -1654,7 +1646,7 @@ dataspecificatie.</p>
          <div class="header-wrapper"><h5 id="overzicht-relaties-14">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMHLP_Inhoudsopgave" aria-label="Permalink for this Section"></a></div>
          
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 50%;"></colgroup>
             <colgroup style="width: 50%;"></colgroup>
             <tbody>
@@ -1680,7 +1672,7 @@ dataspecificatie.</p>
       <section id="global_class_CIMHLP_Doumentindex">
          <div class="header-wrapper"><h4 id="x5-3-17-doumentindex"><bdi class="secno">5.3.17 </bdi>   Doumentindex</h4><a class="self-link" href="#global_class_CIMHLP_Doumentindex" aria-label="Permalink for Section 5.3.17"></a></div>
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 30%;"></colgroup>
             <colgroup style="width: 70%;"></colgroup>
             <tbody>
@@ -1712,7 +1704,7 @@ dataspecificatie.</p>
          <div class="header-wrapper"><h5 id="overzicht-relaties-15">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMHLP_Doumentindex" aria-label="Permalink for this Section"></a></div>
          
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 50%;"></colgroup>
             <colgroup style="width: 50%;"></colgroup>
             <tbody>
@@ -1738,7 +1730,7 @@ dataspecificatie.</p>
       <section id="global_class_CIMHLP_RijkeTekst">
          <div class="header-wrapper"><h4 id="x5-3-18-rijke-tekst"><bdi class="secno">5.3.18 </bdi>   Rijke tekst</h4><a class="self-link" href="#global_class_CIMHLP_RijkeTekst" aria-label="Permalink for Section 5.3.18"></a></div>
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 30%;"></colgroup>
             <colgroup style="width: 70%;"></colgroup>
             <tbody>
@@ -1770,7 +1762,7 @@ dataspecificatie.</p>
          <div class="header-wrapper"><h5 id="overzicht-relaties-16">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMHLP_RijkeTekst" aria-label="Permalink for this Section"></a></div>
          
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 50%;"></colgroup>
             <colgroup style="width: 50%;"></colgroup>
             <tbody>
@@ -1796,7 +1788,7 @@ dataspecificatie.</p>
       <section id="global_class_CIMHLP_PlatteTekst">
          <div class="header-wrapper"><h4 id="x5-3-19-platte-tekst"><bdi class="secno">5.3.19 </bdi>   Platte tekst</h4><a class="self-link" href="#global_class_CIMHLP_PlatteTekst" aria-label="Permalink for Section 5.3.19"></a></div>
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 30%;"></colgroup>
             <colgroup style="width: 70%;"></colgroup>
             <tbody>
@@ -1828,7 +1820,7 @@ dataspecificatie.</p>
          <div class="header-wrapper"><h5 id="overzicht-relaties-17">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMHLP_PlatteTekst" aria-label="Permalink for this Section"></a></div>
          
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 50%;"></colgroup>
             <colgroup style="width: 50%;"></colgroup>
             <tbody>
@@ -1857,7 +1849,7 @@ dataspecificatie.</p>
       <section id="global_class_CIMHLP_Contexttag">
          <div class="header-wrapper"><h4 id="x5-4-1-referentielijst-contexttag"><bdi class="secno">5.4.1 </bdi>Referentielijst   Contexttag</h4><a class="self-link" href="#global_class_CIMHLP_Contexttag" aria-label="Permalink for Section 5.4.1"></a></div>
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 30%;"></colgroup>
             <colgroup style="width: 70%;"></colgroup>
             <tbody>
@@ -1881,7 +1873,7 @@ dataspecificatie.</p>
       <section id="global_class_CIMHLP_VerwijzingKeuze">
          <div class="header-wrapper"><h4 id="x5-5-1-verwijzing-keuze"><bdi class="secno">5.5.1 </bdi>   Verwijzing­Keuze</h4><a class="self-link" href="#global_class_CIMHLP_VerwijzingKeuze" aria-label="Permalink for Section 5.5.1"></a></div>
          
-         <table style="width: 100%;" class="simple">
+         <table style="width: 100%;">
             <colgroup style="width: 30%;"></colgroup>
             <colgroup style="width: 70%;"></colgroup>
             <tbody>
@@ -1896,7 +1888,7 @@ dataspecificatie.</p>
    <section id="enumeraties">
       <div class="header-wrapper"><h3 id="x5-6-enumeraties"><bdi class="secno">5.6 </bdi>Enumeraties   </h3><a class="self-link" href="#enumeraties" aria-label="Permalink for Section 5.6"></a></div>
       
-      <table style="width: 100%;" class="simple">
+      <table style="width: 100%;">
          <colgroup style="width: 30%;"></colgroup>
          <colgroup style="width: 70%;"></colgroup>
          <tbody>
@@ -1919,7 +1911,7 @@ dataspecificatie.</p>
             <section id="detail_attribute_CIMHLP_Artikel_titel">
                <div class="header-wrapper"><h6 id="x5-7-1-1-1-attribuutsoort-details-artikel-titel"><bdi class="secno">5.7.1.1.1 </bdi>Attribuutsoort details  <a href="#global_class_CIMHLP_Artikel">Artikel</a> titel</h6><a class="self-link" href="#detail_attribute_CIMHLP_Artikel_titel" aria-label="Permalink for Section 5.7.1.1.1"></a></div>
                
-               <table style="width: 100%;" class="simple">
+               <table style="width: 100%;">
                   <colgroup style="width: 30%;"></colgroup>
                   <colgroup style="width: 70%;"></colgroup>
                   <tbody>
@@ -1969,7 +1961,7 @@ dataspecificatie.</p>
             <section id="detail_attribute_CIMHLP_Artikel_type">
                <div class="header-wrapper"><h6 id="x5-7-1-1-2-attribuutsoort-details-artikel-type"><bdi class="secno">5.7.1.1.2 </bdi>Attribuutsoort details  <a href="#global_class_CIMHLP_Artikel">Artikel</a> type</h6><a class="self-link" href="#detail_attribute_CIMHLP_Artikel_type" aria-label="Permalink for Section 5.7.1.1.2"></a></div>
                
-               <table style="width: 100%;" class="simple">
+               <table style="width: 100%;">
                   <colgroup style="width: 30%;"></colgroup>
                   <colgroup style="width: 70%;"></colgroup>
                   <tbody>
@@ -2020,7 +2012,7 @@ dataspecificatie.</p>
                <div class="header-wrapper"><h6 id="x5-7-1-1-3-relatiesoort-details-artikel-bestaat-uit"><bdi class="secno">5.7.1.1.3 </bdi>Relatiesoort details  <a href="#global_class_CIMHLP_Artikel">Artikel</a> bestaat uit</h6><a class="self-link" href="#detail_association_CIMHLP_Artikel_bestaatUit" aria-label="Permalink for Section 5.7.1.1.3"></a></div>
                
                
-               <table style="width: 100%;" class="simple">
+               <table style="width: 100%;">
                   <colgroup style="width: 30%;"></colgroup>
                   <colgroup style="width: 70%;"></colgroup>
                   <tbody>
@@ -2049,7 +2041,7 @@ dataspecificatie.</p>
             <section id="detail_attribute_CIMHLP_Onderwerp_naam">
                <div class="header-wrapper"><h6 id="x5-7-1-2-1-attribuutsoort-details-onderwerp-naam"><bdi class="secno">5.7.1.2.1 </bdi>Attribuutsoort details  <a href="#global_class_CIMHLP_Onderwerp">Onderwerp</a> naam</h6><a class="self-link" href="#detail_attribute_CIMHLP_Onderwerp_naam" aria-label="Permalink for Section 5.7.1.2.1"></a></div>
                
-               <table style="width: 100%;" class="simple">
+               <table style="width: 100%;">
                   <colgroup style="width: 30%;"></colgroup>
                   <colgroup style="width: 70%;"></colgroup>
                   <tbody>
@@ -2100,7 +2092,7 @@ dataspecificatie.</p>
                <div class="header-wrapper"><h6 id="x5-7-1-2-2-relatiesoort-details-onderwerp-groepeert"><bdi class="secno">5.7.1.2.2 </bdi>Relatiesoort details  <a href="#global_class_CIMHLP_Onderwerp">Onderwerp</a> groepeert</h6><a class="self-link" href="#detail_association_CIMHLP_Onderwerp_groepeert" aria-label="Permalink for Section 5.7.1.2.2"></a></div>
                
                
-               <table style="width: 100%;" class="simple">
+               <table style="width: 100%;">
                   <colgroup style="width: 30%;"></colgroup>
                   <colgroup style="width: 70%;"></colgroup>
                   <tbody>
@@ -2126,7 +2118,7 @@ dataspecificatie.</p>
                <div class="header-wrapper"><h6 id="x5-7-1-2-3-relatiesoort-details-onderwerp-valt-onder"><bdi class="secno">5.7.1.2.3 </bdi>Relatiesoort details  <a href="#global_class_CIMHLP_Onderwerp">Onderwerp</a> valt onder</h6><a class="self-link" href="#detail_association_CIMHLP_Onderwerp_valtOnder" aria-label="Permalink for Section 5.7.1.2.3"></a></div>
                
                
-               <table style="width: 100%;" class="simple">
+               <table style="width: 100%;">
                   <colgroup style="width: 30%;"></colgroup>
                   <colgroup style="width: 70%;"></colgroup>
                   <tbody>
@@ -2162,7 +2154,7 @@ dataspecificatie.</p>
             <section id="detail_attribute_CIMHLP_Artikelcomponent_identificatie">
                <div class="header-wrapper"><h6 id="x5-7-1-3-1-attribuutsoort-details-artikelcomponent-identificatie"><bdi class="secno">5.7.1.3.1 </bdi>Attribuutsoort details  <a href="#global_class_CIMHLP_Artikelcomponent">Artikelcomponent</a> identificatie</h6><a class="self-link" href="#detail_attribute_CIMHLP_Artikelcomponent_identificatie" aria-label="Permalink for Section 5.7.1.3.1"></a></div>
                
-               <table style="width: 100%;" class="simple">
+               <table style="width: 100%;">
                   <colgroup style="width: 30%;"></colgroup>
                   <colgroup style="width: 70%;"></colgroup>
                   <tbody>
@@ -2213,7 +2205,7 @@ dataspecificatie.</p>
                <div class="header-wrapper"><h6 id="x5-7-1-3-2-relatiesoort-details-artikelcomponent-opgenomen-in"><bdi class="secno">5.7.1.3.2 </bdi>Relatiesoort details  <a href="#global_class_CIMHLP_Artikelcomponent">Artikelcomponent</a> opgenomen in</h6><a class="self-link" href="#detail_association_CIMHLP_Artikelcomponent_opgenomenIn" aria-label="Permalink for Section 5.7.1.3.2"></a></div>
                
                
-               <table style="width: 100%;" class="simple">
+               <table style="width: 100%;">
                   <colgroup style="width: 30%;"></colgroup>
                   <colgroup style="width: 70%;"></colgroup>
                   <tbody>
@@ -2244,7 +2236,7 @@ dataspecificatie.</p>
             <section id="detail_attribute_CIMHLP_Helpitem_identificatie">
                <div class="header-wrapper"><h6 id="x5-7-1-4-1-attribuutsoort-details-helpitem-identificatie"><bdi class="secno">5.7.1.4.1 </bdi>Attribuutsoort details  <a href="#global_class_CIMHLP_Helpitem">Helpitem</a> identificatie</h6><a class="self-link" href="#detail_attribute_CIMHLP_Helpitem_identificatie" aria-label="Permalink for Section 5.7.1.4.1"></a></div>
                
-               <table style="width: 100%;" class="simple">
+               <table style="width: 100%;">
                   <colgroup style="width: 30%;"></colgroup>
                   <colgroup style="width: 70%;"></colgroup>
                   <tbody>
@@ -2294,7 +2286,7 @@ dataspecificatie.</p>
             <section id="detail_attribute_CIMHLP_Helpitem_tags">
                <div class="header-wrapper"><h6 id="x5-7-1-4-2-attribuutsoort-details-helpitem-tags"><bdi class="secno">5.7.1.4.2 </bdi>Attribuutsoort details  <a href="#global_class_CIMHLP_Helpitem">Helpitem</a> tags</h6><a class="self-link" href="#detail_attribute_CIMHLP_Helpitem_tags" aria-label="Permalink for Section 5.7.1.4.2"></a></div>
                
-               <table style="width: 100%;" class="simple">
+               <table style="width: 100%;">
                   <colgroup style="width: 30%;"></colgroup>
                   <colgroup style="width: 70%;"></colgroup>
                   <tbody>
@@ -2349,7 +2341,7 @@ dataspecificatie.</p>
                <div class="header-wrapper"><h6 id="x5-7-1-5-1-relatiesoort-details-verwijzing-verwijst-naar"><bdi class="secno">5.7.1.5.1 </bdi>Relatiesoort details  <a href="#global_class_CIMHLP_Verwijzing">Verwijzing</a> verwijst naar</h6><a class="self-link" href="#detail_association_CIMHLP_Verwijzing_verwijstNaar" aria-label="Permalink for Section 5.7.1.5.1"></a></div>
                
                
-               <table style="width: 100%;" class="simple">
+               <table style="width: 100%;">
                   <colgroup style="width: 30%;"></colgroup>
                   <colgroup style="width: 70%;"></colgroup>
                   <tbody>
@@ -2393,7 +2385,7 @@ dataspecificatie.</p>
                <div class="header-wrapper"><h6 id="x5-7-2-1-1-relatiesoort-details-verwijzing-keuze-verwijst-naar"><bdi class="secno">5.7.2.1.1 </bdi>Relatiesoort details  <a href="#global_class_CIMHLP_VerwijzingKeuze">Verwijzing­Keuze</a> verwijst­Naar</h6><a class="self-link" href="#detail_association_CIMHLP_VerwijzingKeuze_verwijstNaar" aria-label="Permalink for Section 5.7.2.1.1"></a></div>
                
                
-               <table style="width: 100%;" class="simple">
+               <table style="width: 100%;">
                   <colgroup style="width: 30%;"></colgroup>
                   <colgroup style="width: 70%;"></colgroup>
                   <tbody>
@@ -2419,7 +2411,7 @@ dataspecificatie.</p>
                <div class="header-wrapper"><h6 id="x5-7-2-1-2-relatiesoort-details-verwijzing-keuze-verwisjt-naar"><bdi class="secno">5.7.2.1.2 </bdi>Relatiesoort details  <a href="#global_class_CIMHLP_VerwijzingKeuze">Verwijzing­Keuze</a> verwisjt­Naar</h6><a class="self-link" href="#detail_association_CIMHLP_VerwijzingKeuze_verwisjtNaar" aria-label="Permalink for Section 5.7.2.1.2"></a></div>
                
                
-               <table style="width: 100%;" class="simple">
+               <table style="width: 100%;">
                   <colgroup style="width: 30%;"></colgroup>
                   <colgroup style="width: 70%;"></colgroup>
                   <tbody>
@@ -2452,7 +2444,7 @@ dataspecificatie.</p>
    <section id="detail_class_CIMHLP_Contexttag">
       <div class="header-wrapper"><h3 id="x6-1-referentielijst-contexttag"><bdi class="secno">6.1 </bdi>Referentielijst  Contexttag</h3><a class="self-link" href="#detail_class_CIMHLP_Contexttag" aria-label="Permalink for Section 6.1"></a></div>
       
-      <table style="width: 100%;" class="list simple">
+      <table style="width: 100%;" class="list">
          <colgroup></colgroup>
          <tbody>
             <tr>
@@ -2467,14 +2459,14 @@ dataspecificatie.</p>
          </tbody>
       </table>
       
-      <table style="width: 100%;" class="simple">
+      <table style="width: 100%;">
          <tbody></tbody>
       </table>
       </section>
    <section id="detail_class_CIMHLP_Artikeltype">
       <div class="header-wrapper"><h3 id="x6-2-enumeratie-details-artikeltype"><bdi class="secno">6.2 </bdi>Enumeratie details  Artikeltype</h3><a class="self-link" href="#detail_class_CIMHLP_Artikeltype" aria-label="Permalink for Section 6.2"></a></div>
       
-      <table style="width: 100%;" class="list simple">
+      <table style="width: 100%;" class="list">
          <colgroup></colgroup>
          <tbody>
             <tr>
@@ -2483,7 +2475,7 @@ dataspecificatie.</p>
          </tbody>
       </table>
       
-      <table style="width: 100%;" class="list simple">
+      <table style="width: 100%;" class="list">
          <colgroup style="width: 40%;"></colgroup>
          <colgroup style="width: 60%;"></colgroup>
          <tbody>

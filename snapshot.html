@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="nl"><head>
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta content="text/html; charset=utf-8" http-equiv="content-type">
-<meta name="generator" content="ReSpec 35.1.1">
+<meta name="generator" content="ReSpec 35.3.0">
 <style>
 dfn{cursor:pointer}
 .dfn-panel{position:absolute;z-index:35;min-width:300px;max-width:500px;padding:.5em .75em;margin-top:.6em;font-family:"Helvetica Neue",sans-serif;font-size:small;background:#fff;background:var(--indextable-hover-bg,#fff);color:#000;color:var(--text,#000);box-shadow:0 1em 3em -.4em rgba(0,0,0,.3),0 0 1px 1px rgba(0,0,0,.05);box-shadow:0 1em 3em -.4em var(--tocsidebar-shadow,rgba(0,0,0,.3)),0 0 1px 1px var(--tocsidebar-shadow,rgba(0,0,0,.05));border-radius:2px}
@@ -58,7 +58,7 @@ a.bibref{text-decoration:none}
 .respec-offending-element{background:url(data:image/gif;base64,R0lGODdhBAADAPEAANv///8AAP///wAAACwAAAAABAADAEACBZQjmIAFADs=) bottom repeat-x}
 }
 #references :target{background:#eaf3ff;animation:pop .4s ease-in-out 0s 1}
-cite .bibref{font-style:normal}
+cite .bibref{font-style:italic}
 a[href].orcid{padding-left:4px;padding-right:4px}
 a[href].orcid>svg{margin-bottom:-2px}
 ol.tof,ul.tof{list-style:none outside none}
@@ -86,8 +86,9 @@ dd{margin-left:0}
 }
 </style>
 <style id="respec-nlgov">
-img.license{float:left;padding-right:5px}
+img.license{float:left;padding-right:5px;background:0 0}
 </style>
+<meta name="color-scheme" content="light">
 <style>
 ul.index{columns:30ch;column-gap:1.5em}
 ul.index li{list-style:inherit}
@@ -126,6 +127,7 @@ DSO.">
 </style>
 <script id="initialUserConfig" type="application/json">{
   "nl_organisationName": "Geonovum",
+  "nl_organisationStylesURL": "https://tools.geostandaarden.nl/respec/style/",
   "nl_organisationPublishURL": "https://docs.geostandaarden.nl/",
   "logos": [
     {
@@ -216,7 +218,7 @@ DSO.">
       "sotd": "Status van dit document",
       "def": "Dit is de definitieve versie van dit document. Wijzigingen naar aanleiding van consultaties zijn doorgevoerd.",
       "wv": "Dit is een werkversie die op elk moment kan worden gewijzigd, verwijderd of vervangen door andere documenten. Het is geen stabiel document.",
-      "cv": "Dit is een consultatieversie. Commentaar over dit document kan gestuurd worden naar ",
+      "cv": "Dit is een consultatieversie.",
       "vv": "Dit is de definitieve conceptversie van dit document. Wijzigingen naar aanleiding van consultaties zijn doorgevoerd.",
       "basis": "Dit is een document zonder officiële status.",
       "ld": "Dit is een levend document dat regelmatig gewijzigd wordt."
@@ -225,7 +227,7 @@ DSO.">
       "sotd": "Status of this document",
       "def": "This is the definitive version of this document. Edits resulting from consultations have been applied.",
       "wv": "This is a working draft that can be changed, removed or replaced by other documents at any time. It is not a stable document.",
-      "cv": "This is a stable draft, published for public comment. Comments regarding this document may be sent to ",
+      "cv": "This is a stable draft, published for public comment.",
       "vv": "This is the final draft of this document. Edits resulting from consultations have been applied.",
       "basis": "This document has no official standing.",
       "ld": "This is a living document, which is updated regularly."
@@ -304,7 +306,6 @@ DSO.">
   "title": "Help en Ondersteuning",
   "specStatus": "wv",
   "specType": "IM",
-  "nl_organisationStylesURL": "https://tools.geostandaarden.nl/respec/style/",
   "pubDomain": "dso",
   "licence": "cc-by",
   "shortName": "dso-cim-hlp",
@@ -339,7 +340,7 @@ DSO.">
     <h2>
       Geonovum Informatiemodel<br>
       Werkversie
-      <time class="dt-published" datetime="2024-09-06">06 september 2024</time>
+      <time class="dt-published" datetime="2025-08-08">08 augustus 2025</time>
     </h2>
     <dl>
       
@@ -375,15 +376,15 @@ DSO.">
           <a rel="alternate" href="dso-cim-hlp.pdf">pdf</a>
         </p>
     <p class="copyright">
-          Dit document valt onder de volgende licentie: 
-          <a rel="license" href="https://creativecommons.org/licenses/by/4.0/legalcode" class="subfoot"><img class="license" src="https://tools.geostandaarden.nl/respec/style/logos/cc-by.svg" alt="Logo Creative Commons Attribution 4.0 International Public License"><br> Creative Commons Attribution 4.0 International Public License</a>
-        </p>
+            Dit document valt onder de volgende licentie: 
+            <a rel="license" href="https://creativecommons.org/licenses/by/4.0/legalcode" class="subfoot"><img class="license" src="https://tools.geostandaarden.nl/respec/style/logos/cc-by.svg" alt="Logo Creative Commons Attribution 4.0 International Public License"><br> Creative Commons Attribution 4.0 International Public License</a>
+          </p>
     <hr title="Separator for header">
   </div>
   <section id="abstract" class="introductory"><h2>Samenvatting</h2><p>Dit document beschrijft het 'Conceptueel Informatiemodel Help en Ondersteuning'. Dit is een conceptueel model van het
 DSO.</p>
 </section>
-  <section id="sotd" class="introductory"><h2>Status van dit document</h2><p>Dit is een werkversie die op elk moment kan worden gewijzigd, verwijderd of vervangen door andere documenten. Het is geen stabiel document.</p></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status van dit document</a></li><li class="tocline"><a class="tocxref" href="#voorwoord"><bdi class="secno">1. </bdi>Voorwoord</a></li><li class="tocline"><a class="tocxref" href="#inleiding"><bdi class="secno">2. </bdi>Inleiding</a></li><li class="tocline"><a class="tocxref" href="#toepassingsgebied"><bdi class="secno">3. </bdi>Toepassingsgebied</a></li><li class="tocline"><a class="tocxref" href="#overzicht"><bdi class="secno">4. </bdi>Overzicht</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#normatieve-referenties"><bdi class="secno">4.1 </bdi>Normatieve referenties</a></li><li class="tocline"><a class="tocxref" href="#termen-en-definities"><bdi class="secno">4.2 </bdi>Termen en definities</a></li><li class="tocline"><a class="tocxref" href="#symbolen-en-afkortingen"><bdi class="secno">4.3 </bdi>Symbolen en afkortingen</a></li></ol></li><li class="tocline"><a class="tocxref" href="#cat"><bdi class="secno">5. </bdi>Gegevensdefinitie</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#EAID_22B1E04F_E2A5_4ad0_80EF_DFEA34985908"><bdi class="secno">5.1 </bdi>   CIM-HLP - overzicht</a></li><li class="tocline"><a class="tocxref" href="#EAID_FAC4FED4_D02C_4fba_AC6D_E9F6FA4102CC"><bdi class="secno">5.2 </bdi>   CIM-HLP Artikelcomponent specialisaties - overzicht</a></li><li class="tocline"><a class="tocxref" href="#objecttypen"><bdi class="secno">5.3 </bdi>Objecttypen   </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#global_class_CIMHLP_Artikel"><bdi class="secno">5.3.1 </bdi>   Artikel</a></li><li class="tocline"><a class="tocxref" href="#global_class_CIMHLP_Onderwerp"><bdi class="secno">5.3.2 </bdi>   Onderwerp</a></li><li class="tocline"><a class="tocxref" href="#global_class_CIMHLP_Alineatekst"><bdi class="secno">5.3.3 </bdi>   Alineatekst</a></li><li class="tocline"><a class="tocxref" href="#global_class_CIMHLP_Chatbot"><bdi class="secno">5.3.4 </bdi>   Chatbot</a></li><li class="tocline"><a class="tocxref" href="#global_class_CIMHLP_Plaatje"><bdi class="secno">5.3.5 </bdi>   Plaatje</a></li><li class="tocline"><a class="tocxref" href="#global_class_CIMHLP_Tekst"><bdi class="secno">5.3.6 </bdi>   Tekst</a></li><li class="tocline"><a class="tocxref" href="#global_class_CIMHLP_Document"><bdi class="secno">5.3.7 </bdi>   Document</a></li><li class="tocline"><a class="tocxref" href="#global_class_CIMHLP_Titeltekst"><bdi class="secno">5.3.8 </bdi>   Titeltekst</a></li><li class="tocline"><a class="tocxref" href="#global_class_CIMHLP_SocialEmbedding"><bdi class="secno">5.3.9 </bdi>   Social (embedding)</a></li><li class="tocline"><a class="tocxref" href="#global_class_CIMHLP_Artikelcomponent"><bdi class="secno">5.3.10 </bdi>   Artikelcomponent</a></li><li class="tocline"><a class="tocxref" href="#global_class_CIMHLP_Anker"><bdi class="secno">5.3.11 </bdi>   Anker</a></li><li class="tocline"><a class="tocxref" href="#global_class_CIMHLP_Multimedia"><bdi class="secno">5.3.12 </bdi>   Multimedia</a></li><li class="tocline"><a class="tocxref" href="#global_class_CIMHLP_Helpitem"><bdi class="secno">5.3.13 </bdi>   Helpitem</a></li><li class="tocline"><a class="tocxref" href="#global_class_CIMHLP_Verwijzing"><bdi class="secno">5.3.14 </bdi>   Verwijzing</a></li><li class="tocline"><a class="tocxref" href="#global_class_CIMHLP_Video"><bdi class="secno">5.3.15 </bdi>   Video</a></li><li class="tocline"><a class="tocxref" href="#global_class_CIMHLP_Inhoudsopgave"><bdi class="secno">5.3.16 </bdi>   Inhoudsopgave</a></li><li class="tocline"><a class="tocxref" href="#global_class_CIMHLP_Doumentindex"><bdi class="secno">5.3.17 </bdi>   Doumentindex</a></li><li class="tocline"><a class="tocxref" href="#global_class_CIMHLP_RijkeTekst"><bdi class="secno">5.3.18 </bdi>   Rijke tekst</a></li><li class="tocline"><a class="tocxref" href="#global_class_CIMHLP_PlatteTekst"><bdi class="secno">5.3.19 </bdi>   Platte tekst</a></li></ol></li><li class="tocline"><a class="tocxref" href="#referentielijsten"><bdi class="secno">5.4 </bdi>Referentielijsten   </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#global_class_CIMHLP_Contexttag"><bdi class="secno">5.4.1 </bdi>Referentielijst   Contexttag</a></li></ol></li><li class="tocline"><a class="tocxref" href="#keuzen"><bdi class="secno">5.5 </bdi>Keuzen   </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#global_class_CIMHLP_VerwijzingKeuze"><bdi class="secno">5.5.1 </bdi>   Verwijzing­Keuze</a></li></ol></li><li class="tocline"><a class="tocxref" href="#enumeraties"><bdi class="secno">5.6 </bdi>Enumeraties   </a></li><li class="tocline"><a class="tocxref" href="#attribuut-en-relatiesoort-details"><bdi class="secno">5.7 </bdi>Attribuut- en relatiesoort details  </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#objecttype-details"><bdi class="secno">5.7.1 </bdi>Objecttype details  </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#detail_class_CIMHLP_Artikel"><bdi class="secno">5.7.1.1 </bdi>   Artikel</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#detail_attribute_CIMHLP_Artikel_titel"><bdi class="secno">5.7.1.1.1 </bdi>Attribuutsoort details  <span class="formerLink">Artikel</span> titel</a></li><li class="tocline"><a class="tocxref" href="#detail_attribute_CIMHLP_Artikel_type"><bdi class="secno">5.7.1.1.2 </bdi>Attribuutsoort details  <span class="formerLink">Artikel</span> type</a></li><li class="tocline"><a class="tocxref" href="#detail_association_CIMHLP_Artikel_bestaatUit"><bdi class="secno">5.7.1.1.3 </bdi>Relatiesoort details  <span class="formerLink">Artikel</span> bestaat uit</a></li></ol></li><li class="tocline"><a class="tocxref" href="#detail_class_CIMHLP_Onderwerp"><bdi class="secno">5.7.1.2 </bdi>   Onderwerp</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#detail_attribute_CIMHLP_Onderwerp_naam"><bdi class="secno">5.7.1.2.1 </bdi>Attribuutsoort details  <span class="formerLink">Onderwerp</span> naam</a></li><li class="tocline"><a class="tocxref" href="#detail_association_CIMHLP_Onderwerp_groepeert"><bdi class="secno">5.7.1.2.2 </bdi>Relatiesoort details  <span class="formerLink">Onderwerp</span> groepeert</a></li><li class="tocline"><a class="tocxref" href="#detail_association_CIMHLP_Onderwerp_valtOnder"><bdi class="secno">5.7.1.2.3 </bdi>Relatiesoort details  <span class="formerLink">Onderwerp</span> valt onder</a></li></ol></li><li class="tocline"><a class="tocxref" href="#detail_class_CIMHLP_Artikelcomponent"><bdi class="secno">5.7.1.3 </bdi>   Artikelcomponent</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#detail_attribute_CIMHLP_Artikelcomponent_identificatie"><bdi class="secno">5.7.1.3.1 </bdi>Attribuutsoort details  <span class="formerLink">Artikelcomponent</span> identificatie</a></li><li class="tocline"><a class="tocxref" href="#detail_association_CIMHLP_Artikelcomponent_opgenomenIn"><bdi class="secno">5.7.1.3.2 </bdi>Relatiesoort details  <span class="formerLink">Artikelcomponent</span> opgenomen in</a></li></ol></li><li class="tocline"><a class="tocxref" href="#detail_class_CIMHLP_Helpitem"><bdi class="secno">5.7.1.4 </bdi>   Helpitem</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#detail_attribute_CIMHLP_Helpitem_identificatie"><bdi class="secno">5.7.1.4.1 </bdi>Attribuutsoort details  <span class="formerLink">Helpitem</span> identificatie</a></li><li class="tocline"><a class="tocxref" href="#detail_attribute_CIMHLP_Helpitem_tags"><bdi class="secno">5.7.1.4.2 </bdi>Attribuutsoort details  <span class="formerLink">Helpitem</span> tags</a></li></ol></li><li class="tocline"><a class="tocxref" href="#detail_class_CIMHLP_Verwijzing"><bdi class="secno">5.7.1.5 </bdi>   Verwijzing</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#detail_association_CIMHLP_Verwijzing_verwijstNaar"><bdi class="secno">5.7.1.5.1 </bdi>Relatiesoort details  <span class="formerLink">Verwijzing</span> verwijst naar</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#keuze"><bdi class="secno">5.7.2 </bdi>Keuze  </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#detail_class_CIMHLP_VerwijzingKeuze"><bdi class="secno">5.7.2.1 </bdi>Keuze   Verwijzing­Keuze</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#detail_association_CIMHLP_VerwijzingKeuze_verwijstNaar"><bdi class="secno">5.7.2.1.1 </bdi>Relatiesoort details  <span class="formerLink">Verwijzing­Keuze</span> verwijst­Naar</a></li><li class="tocline"><a class="tocxref" href="#detail_association_CIMHLP_VerwijzingKeuze_verwisjtNaar"><bdi class="secno">5.7.2.1.2 </bdi>Relatiesoort details  <span class="formerLink">Verwijzing­Keuze</span> verwisjt­Naar</a></li></ol></li></ol></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#lis"><bdi class="secno">6. </bdi>Inhoud van waardenlijsten</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#detail_class_CIMHLP_Contexttag"><bdi class="secno">6.1 </bdi>Referentielijst  Contexttag</a></li><li class="tocline"><a class="tocxref" href="#detail_class_CIMHLP_Artikeltype"><bdi class="secno">6.2 </bdi>Enumeratie details  Artikeltype</a></li></ol></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">7. </bdi>Conformiteit</a></li><li class="tocline"><a class="tocxref" href="#tof"><bdi class="secno">8. </bdi>Lijst met figuren</a></li><li class="tocline"><a class="tocxref" href="#index"><bdi class="secno">A. </bdi>Index</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#index-defined-here"><bdi class="secno">A.1 </bdi>Begrippen gedefinieerd door deze specificatie</a></li><li class="tocline"><a class="tocxref" href="#index-defined-elsewhere"><bdi class="secno">A.2 </bdi>Begrippen gedefinieerd door verwijzing</a></li></ol></li></ol></nav>
+  <section id="sotd" class="introductory"><h2>Status van dit document</h2><p>Dit is een werkversie die op elk moment kan worden gewijzigd, verwijderd of vervangen door andere documenten. Het is geen stabiel document.</p></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status van dit document</a></li><li class="tocline"><a class="tocxref" href="#voorwoord"><bdi class="secno">1. </bdi>Voorwoord</a></li><li class="tocline"><a class="tocxref" href="#inleiding"><bdi class="secno">2. </bdi>Inleiding</a></li><li class="tocline"><a class="tocxref" href="#toepassingsgebied"><bdi class="secno">3. </bdi>Toepassingsgebied</a></li><li class="tocline"><a class="tocxref" href="#overzicht"><bdi class="secno">4. </bdi>Overzicht</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#normatieve-referenties"><bdi class="secno">4.1 </bdi>Normatieve referenties</a></li><li class="tocline"><a class="tocxref" href="#termen-en-definities"><bdi class="secno">4.2 </bdi>Termen en definities</a></li><li class="tocline"><a class="tocxref" href="#symbolen-en-afkortingen"><bdi class="secno">4.3 </bdi>Symbolen en afkortingen</a></li></ol></li><li class="tocline"><a class="tocxref" href="#cat"><bdi class="secno">5. </bdi>Gegevensdefinitie</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#EAID_22B1E04F_E2A5_4ad0_80EF_DFEA34985908"><bdi class="secno">5.1 </bdi>   CIM-HLP - overzicht</a></li><li class="tocline"><a class="tocxref" href="#EAID_FAC4FED4_D02C_4fba_AC6D_E9F6FA4102CC"><bdi class="secno">5.2 </bdi>   CIM-HLP Artikelcomponent specialisaties - overzicht</a></li><li class="tocline"><a class="tocxref" href="#objecttypen"><bdi class="secno">5.3 </bdi>Objecttypen   </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#global_class_CIMHLP_Artikel"><bdi class="secno">5.3.1 </bdi>   Artikel</a></li><li class="tocline"><a class="tocxref" href="#global_class_CIMHLP_Onderwerp"><bdi class="secno">5.3.2 </bdi>   Onderwerp</a></li><li class="tocline"><a class="tocxref" href="#global_class_CIMHLP_Alineatekst"><bdi class="secno">5.3.3 </bdi>   Alineatekst</a></li><li class="tocline"><a class="tocxref" href="#global_class_CIMHLP_Chatbot"><bdi class="secno">5.3.4 </bdi>   Chatbot</a></li><li class="tocline"><a class="tocxref" href="#global_class_CIMHLP_Plaatje"><bdi class="secno">5.3.5 </bdi>   Plaatje</a></li><li class="tocline"><a class="tocxref" href="#global_class_CIMHLP_Tekst"><bdi class="secno">5.3.6 </bdi>   Tekst</a></li><li class="tocline"><a class="tocxref" href="#global_class_CIMHLP_Document"><bdi class="secno">5.3.7 </bdi>   Document</a></li><li class="tocline"><a class="tocxref" href="#global_class_CIMHLP_Titeltekst"><bdi class="secno">5.3.8 </bdi>   Titeltekst</a></li><li class="tocline"><a class="tocxref" href="#global_class_CIMHLP_Socialembedding"><bdi class="secno">5.3.9 </bdi>   Social (embedding)</a></li><li class="tocline"><a class="tocxref" href="#global_class_CIMHLP_Artikelcomponent"><bdi class="secno">5.3.10 </bdi>   Artikelcomponent</a></li><li class="tocline"><a class="tocxref" href="#global_class_CIMHLP_Anker"><bdi class="secno">5.3.11 </bdi>   Anker</a></li><li class="tocline"><a class="tocxref" href="#global_class_CIMHLP_Multimedia"><bdi class="secno">5.3.12 </bdi>   Multimedia</a></li><li class="tocline"><a class="tocxref" href="#global_class_CIMHLP_Helpitem"><bdi class="secno">5.3.13 </bdi>   Helpitem</a></li><li class="tocline"><a class="tocxref" href="#global_class_CIMHLP_Verwijzing"><bdi class="secno">5.3.14 </bdi>   Verwijzing</a></li><li class="tocline"><a class="tocxref" href="#global_class_CIMHLP_Video"><bdi class="secno">5.3.15 </bdi>   Video</a></li><li class="tocline"><a class="tocxref" href="#global_class_CIMHLP_Inhoudsopgave"><bdi class="secno">5.3.16 </bdi>   Inhoudsopgave</a></li><li class="tocline"><a class="tocxref" href="#global_class_CIMHLP_Doumentindex"><bdi class="secno">5.3.17 </bdi>   Doumentindex</a></li><li class="tocline"><a class="tocxref" href="#global_class_CIMHLP_Rijketekst"><bdi class="secno">5.3.18 </bdi>   Rijke tekst</a></li><li class="tocline"><a class="tocxref" href="#global_class_CIMHLP_Plattetekst"><bdi class="secno">5.3.19 </bdi>   Platte tekst</a></li></ol></li><li class="tocline"><a class="tocxref" href="#referentielijsten"><bdi class="secno">5.4 </bdi>Referentielijsten   </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#global_class_CIMHLP_Contexttag"><bdi class="secno">5.4.1 </bdi>Referentielijst   Contexttag</a></li></ol></li><li class="tocline"><a class="tocxref" href="#keuzen"><bdi class="secno">5.5 </bdi>Keuzen   </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#global_class_CIMHLP_VerwijzingKeuze"><bdi class="secno">5.5.1 </bdi>   Verwijzing­Keuze</a></li></ol></li><li class="tocline"><a class="tocxref" href="#attribuut-en-relatiesoort-details"><bdi class="secno">5.6 </bdi>Attribuut- en relatiesoort details  </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#objecttype-details"><bdi class="secno">5.6.1 </bdi>Objecttype details  </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#detail_class_CIMHLP_Artikel"><bdi class="secno">5.6.1.1 </bdi>   Artikel</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#detail_attribute_CIMHLP_Artikel_titel"><bdi class="secno">5.6.1.1.1 </bdi>Attribuutsoort details  <span class="formerLink">Artikel</span> titel</a></li><li class="tocline"><a class="tocxref" href="#detail_attribute_CIMHLP_Artikel_type"><bdi class="secno">5.6.1.1.2 </bdi>Attribuutsoort details  <span class="formerLink">Artikel</span> type</a></li><li class="tocline"><a class="tocxref" href="#detail_association_CIMHLP_Artikel_bestaatuit"><bdi class="secno">5.6.1.1.3 </bdi>Relatiesoort details  <span class="formerLink">Artikel</span> bestaat uit</a></li></ol></li><li class="tocline"><a class="tocxref" href="#detail_class_CIMHLP_Onderwerp"><bdi class="secno">5.6.1.2 </bdi>   Onderwerp</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#detail_attribute_CIMHLP_Onderwerp_naam"><bdi class="secno">5.6.1.2.1 </bdi>Attribuutsoort details  <span class="formerLink">Onderwerp</span> naam</a></li><li class="tocline"><a class="tocxref" href="#detail_association_CIMHLP_Onderwerp_groepeert"><bdi class="secno">5.6.1.2.2 </bdi>Relatiesoort details  <span class="formerLink">Onderwerp</span> groepeert</a></li><li class="tocline"><a class="tocxref" href="#detail_association_CIMHLP_Onderwerp_valtonder"><bdi class="secno">5.6.1.2.3 </bdi>Relatiesoort details  <span class="formerLink">Onderwerp</span> valt onder</a></li></ol></li><li class="tocline"><a class="tocxref" href="#detail_class_CIMHLP_Artikelcomponent"><bdi class="secno">5.6.1.3 </bdi>   Artikelcomponent</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#detail_attribute_CIMHLP_Artikelcomponent_identificatie"><bdi class="secno">5.6.1.3.1 </bdi>Attribuutsoort details  <span class="formerLink">Artikelcomponent</span> identificatie</a></li><li class="tocline"><a class="tocxref" href="#detail_association_CIMHLP_Artikelcomponent_opgenomenin"><bdi class="secno">5.6.1.3.2 </bdi>Relatiesoort details  <span class="formerLink">Artikelcomponent</span> opgenomen in</a></li></ol></li><li class="tocline"><a class="tocxref" href="#detail_class_CIMHLP_Helpitem"><bdi class="secno">5.6.1.4 </bdi>   Helpitem</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#detail_attribute_CIMHLP_Helpitem_identificatie"><bdi class="secno">5.6.1.4.1 </bdi>Attribuutsoort details  <span class="formerLink">Helpitem</span> identificatie</a></li><li class="tocline"><a class="tocxref" href="#detail_attribute_CIMHLP_Helpitem_tags"><bdi class="secno">5.6.1.4.2 </bdi>Attribuutsoort details  <span class="formerLink">Helpitem</span> tags</a></li></ol></li><li class="tocline"><a class="tocxref" href="#detail_class_CIMHLP_Verwijzing"><bdi class="secno">5.6.1.5 </bdi>   Verwijzing</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#detail_association_CIMHLP_Verwijzing_verwijstnaar"><bdi class="secno">5.6.1.5.1 </bdi>Relatiesoort details  <span class="formerLink">Verwijzing</span> verwijst naar</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#keuze"><bdi class="secno">5.6.2 </bdi>Keuze  </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#detail_class_CIMHLP_VerwijzingKeuze"><bdi class="secno">5.6.2.1 </bdi>Keuze   Verwijzing­Keuze</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#detail_association_CIMHLP_VerwijzingKeuze_verwijstNaar"><bdi class="secno">5.6.2.1.1 </bdi>Relatiesoort details  <span class="formerLink">Verwijzing­Keuze</span> verwijst­Naar</a></li><li class="tocline"><a class="tocxref" href="#detail_association_CIMHLP_VerwijzingKeuze_verwisjtNaar"><bdi class="secno">5.6.2.1.2 </bdi>Relatiesoort details  <span class="formerLink">Verwijzing­Keuze</span> verwisjt­Naar</a></li></ol></li></ol></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#lis"><bdi class="secno">6. </bdi>Inhoud van waardelijsten</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#detail_class_CIMHLP_Contexttag"><bdi class="secno">6.1 </bdi>Referentielijst  Contexttag</a></li><li class="tocline"><a class="tocxref" href="#detail_class_CIMHLP_Artikeltype"><bdi class="secno">6.2 </bdi>Enumeratie details  Artikeltype</a></li></ol></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">7. </bdi>Conformiteit</a></li><li class="tocline"><a class="tocxref" href="#tof"><bdi class="secno">8. </bdi>Lijst met figuren</a></li><li class="tocline"><a class="tocxref" href="#index"><bdi class="secno">A. </bdi>Index</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#index-defined-here"><bdi class="secno">A.1 </bdi>Begrippen gedefinieerd door deze specificatie</a></li><li class="tocline"><a class="tocxref" href="#index-defined-elsewhere"><bdi class="secno">A.2 </bdi>Begrippen gedefinieerd door verwijzing</a></li></ol></li></ol></nav>
 
   <section id="voorwoord"><div class="header-wrapper"><h2 id="x1-voorwoord"><bdi class="secno">1. </bdi>Voorwoord</h2><a class="self-link" href="#voorwoord" aria-label="Permalink for Section 1."></a></div>
 <p>Dit document is tot stand gekomen binnen het programma  DSO-Omgegevingswet. Het bevat de formele vastlegging en beschrijving van het Conceptuele Informatiemodel.</p>
@@ -472,2088 +473,577 @@ dataspecificatie.</p>
 </section></section>
 
   
-  
-<section id="cat" class="normative">
-   <div class="header-wrapper"><h2 id="x5-gegevensdefinitie"><bdi class="secno">5. </bdi>Gegevensdefinitie</h2><a class="self-link" href="#cat" aria-label="Permalink for Section 5."></a></div>
-   
-   <section id="EAID_22B1E04F_E2A5_4ad0_80EF_DFEA34985908">
-      <div class="header-wrapper"><h3 id="x5-1-cim-hlp-overzicht"><bdi class="secno">5.1 </bdi>   CIM-HLP - overzicht</h3><a class="self-link" href="#EAID_22B1E04F_E2A5_4ad0_80EF_DFEA34985908" aria-label="Permalink for Section 5.1"></a></div>
-      <div class="imageinfo overview">
-         <figure id="fig-cim-hlp"><img src="data/Images/EAID_22B1E04F_E2A5_4ad0_80EF_DFEA34985908.png" usemap="#imagemap-EAID_22B1E04F_E2A5_4ad0_80EF_DFEA34985908" alt="Diagram 
-                        
-                     "><figcaption><a class="self-link" href="#fig-cim-hlp">Figuur <bdi class="figno">2</bdi></a> <span class="fig-title">CIM-HLP</span></figcaption>
-         </figure><map name="imagemap-EAID_22B1E04F_E2A5_4ad0_80EF_DFEA34985908"><area shape="rect" alt="Inhoudsopgave" coords="530,642,640,711" href="#global_class_CIMHLP_Inhoudsopgave"><area shape="rect" alt="Multimedia" coords="407,642,517,711" href="#global_class_CIMHLP_Multimedia"><area shape="rect" alt="Tekst" coords="284,642,394,711" href="#global_class_CIMHLP_Tekst"><area shape="rect" alt="Artikelcomponent" coords="38,465,653,569" href="#global_class_CIMHLP_Artikelcomponent"><area shape="rect" alt="VerwijzingKeuze" coords="161,806,343,875" href="#global_class_CIMHLP_VerwijzingKeuze"><area shape="rect" alt="" coords="872,601,1063,830" href="#global_class_CIMHLP_Artikeltype"><area shape="rect" alt="Anker" coords="38,642,148,711" href="#global_class_CIMHLP_Anker"><area shape="rect" alt="Contexttag" coords="871,525,1065,585" href="#global_class_CIMHLP_Contexttag"><area shape="rect" alt="Helpitem" coords="189,14,421,137" href="#global_class_CIMHLP_Helpitem"><area shape="rect" alt="Artikel" coords="79,246,251,368" href="#global_class_CIMHLP_Artikel"><area shape="rect" alt="Onderwerp" coords="380,246,562,355" href="#global_class_CIMHLP_Onderwerp"><area shape="rect" alt="Verwijzing" coords="161,642,271,711" href="#global_class_CIMHLP_Verwijzing"></map></div>
-   </section>
-   <section id="EAID_FAC4FED4_D02C_4fba_AC6D_E9F6FA4102CC">
-      <div class="header-wrapper"><h3 id="x5-2-cim-hlp-artikelcomponent-specialisaties-overzicht"><bdi class="secno">5.2 </bdi>   CIM-HLP Artikelcomponent specialisaties - overzicht</h3><a class="self-link" href="#EAID_FAC4FED4_D02C_4fba_AC6D_E9F6FA4102CC" aria-label="Permalink for Section 5.2"></a></div>
-      <div class="imageinfo overview">
-         <figure id="fig-cim-hlp-artikelcomponent-specialisaties"><img src="data/Images/EAID_FAC4FED4_D02C_4fba_AC6D_E9F6FA4102CC.png" usemap="#imagemap-EAID_FAC4FED4_D02C_4fba_AC6D_E9F6FA4102CC" alt="Diagram 
-                        
-                     "><figcaption><a class="self-link" href="#fig-cim-hlp-artikelcomponent-specialisaties">Figuur <bdi class="figno">3</bdi></a> <span class="fig-title">CIM-HLP Artikelcomponent specialisaties</span></figcaption>
-         </figure><map name="imagemap-EAID_FAC4FED4_D02C_4fba_AC6D_E9F6FA4102CC"><area shape="rect" alt="Chatbot" coords="834,574,970,683" href="#global_class_CIMHLP_Chatbot"><area shape="rect" alt="Doumentindex" coords="670,574,806,683" href="#global_class_CIMHLP_Doumentindex"><area shape="rect" alt="Platte tekst" coords="314,191,451,301" href="#global_class_CIMHLP_PlatteTekst"><area shape="rect" alt="Rijke tekst" coords="465,191,601,301" href="#global_class_CIMHLP_RijkeTekst"><area shape="rect" alt="Alineatekst" coords="164,191,301,301" href="#global_class_CIMHLP_Alineatekst"><area shape="rect" alt="Titeltekst" coords="14,191,150,301" href="#global_class_CIMHLP_Titeltekst"><area shape="rect" alt="Social (embedding)" coords="506,574,642,683" href="#global_class_CIMHLP_SocialEmbedding"><area shape="rect" alt="Document" coords="342,574,478,683" href="#global_class_CIMHLP_Document"><area shape="rect" alt="Plaatje" coords="14,574,150,683" href="#global_class_CIMHLP_Plaatje"><area shape="rect" alt="Video" coords="178,574,314,683" href="#global_class_CIMHLP_Video"><area shape="rect" alt="Multimedia" coords="14,369,970,437" href="#global_class_CIMHLP_Multimedia"><area shape="rect" alt="Tekst" coords="14,14,601,82" href="#global_class_CIMHLP_Tekst"></map></div>
-   </section>
-   <section id="objecttypen">
-      <div class="header-wrapper"><h3 id="x5-3-objecttypen"><bdi class="secno">5.3 </bdi>Objecttypen   </h3><a class="self-link" href="#objecttypen" aria-label="Permalink for Section 5.3"></a></div>
-      
-      <section id="global_class_CIMHLP_Artikel">
-         <div class="header-wrapper"><h4 id="x5-3-1-artikel"><bdi class="secno">5.3.1 </bdi>   Artikel</h4><a class="self-link" href="#global_class_CIMHLP_Artikel" aria-label="Permalink for Section 5.3.1"></a></div>
-         
-         <table style="width: 100%;">
-            <colgroup style="width: 30%;"></colgroup>
-            <colgroup style="width: 70%;"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Naam</th>
-                  <td>Artikel</td>
-               </tr>
-               <tr>
-                  <th>Populatie</th>
-                  <td>
-                     Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving
-                     van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie
-                     voorhanden zijn.
-                     </td>
-               </tr>
-               <tr>
-                  <th>Toelichting</th>
-                  <td>
-                     Een inhoudelijke toelichting op de toepassing van het informatie-element.
-                     </td>
-               </tr>
-               <tr>
-                  <th>Indicatie abstract object</th>
-                  <td>Nee</td>
-               </tr>
-            </tbody>
-         </table>
-         
-         <div class="header-wrapper"><h5 id="overzicht-attributen">Overzicht attributen  </h5><a class="self-link" href="#global_class_CIMHLP_Artikel" aria-label="Permalink for this Section"></a></div>
-         
-         <table style="width: 100%;">
-            <colgroup style="width: 30%;"></colgroup>
-            <colgroup style="width: 50%;"></colgroup>
-            <colgroup style="width: 10%;"></colgroup>
-            <colgroup style="width: 10%;"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Attribuutnaam</th>
-                  <th>Definitie</th>
-                  <th>Formaat</th>
-                  <th>Card</th>
-               </tr>
-               <tr>
-                  <td>
-                     <a class="link" href="#detail_attribute_CIMHLP_Artikel_titel">titel</a>
-                     </td>
-                  <td></td>
-                  <td>
-                     <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
-                     </td>
-                  <td>1</td>
-               </tr>
-               <tr>
-                  <td>
-                     <a class="link" href="#detail_attribute_CIMHLP_Artikel_type">type</a>
-                     </td>
-                  <td></td>
-                  <td>
-                     <a class="link" href="#global_class_CIMHLP_Artikeltype">Artikeltype</a>
-                     </td>
-                  <td>1</td>
-               </tr>
-            </tbody>
-         </table>
-         
-         
-         <div class="header-wrapper"><h5 id="overzicht-relaties">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMHLP_Artikel" aria-label="Permalink for this Section"></a></div>
-         
-         
-         <table style="width: 100%;">
-            <colgroup style="width: 50%;"></colgroup>
-            <colgroup style="width: 50%;"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Rol naam met kardinaliteiten</th>
-                  <th>Definitie</th>
-               </tr>
-               <tr>
-                  <td>
-                     Artikel
-                     [ 1 ]
-                     
-                     <a class="link" href="#detail_association_CIMHLP_Artikel_bestaatUit">bestaat uit</a>
-                     
-                     
-                     <a class="link" href="#global_class_CIMHLP_Artikelcomponent">Artikelcomponent</a>
-                     
-                     [ 1 .. * ]
-                     </td>
-                  <td></td>
-               </tr>
-               <tr>
-                  <td>
-                     
-                     <a class="link" href="#global_class_CIMHLP_Onderwerp">Onderwerp</a>
-                     
-                     [ 0 .. * ]
-                     
-                     <a class="link" href="#detail_association_CIMHLP_Onderwerp_groepeert">groepeert</a>
-                     
-                     Artikel
-                     [ 1 .. * ]
-                     </td>
-                  <td></td>
-               </tr>
-               <tr>
-                  <td>
-                     Artikel
-                     is specialisatie van
-                     
-                     <a class="link" href="#global_class_CIMHLP_Helpitem">Helpitem</a>
-                     
-                     </td>
-                  <td></td>
-               </tr>
-            </tbody>
-         </table>
-         
-         </section>
-      
-      <section id="global_class_CIMHLP_Onderwerp">
-         <div class="header-wrapper"><h4 id="x5-3-2-onderwerp"><bdi class="secno">5.3.2 </bdi>   Onderwerp</h4><a class="self-link" href="#global_class_CIMHLP_Onderwerp" aria-label="Permalink for Section 5.3.2"></a></div>
-         
-         <table style="width: 100%;">
-            <colgroup style="width: 30%;"></colgroup>
-            <colgroup style="width: 70%;"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Naam</th>
-                  <td>Onderwerp</td>
-               </tr>
-               <tr>
-                  <th>Populatie</th>
-                  <td>
-                     Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving
-                     van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie
-                     voorhanden zijn.
-                     </td>
-               </tr>
-               <tr>
-                  <th>Toelichting</th>
-                  <td>
-                     Een inhoudelijke toelichting op de toepassing van het informatie-element.
-                     </td>
-               </tr>
-               <tr>
-                  <th>Indicatie abstract object</th>
-                  <td>Nee</td>
-               </tr>
-            </tbody>
-         </table>
-         
-         <div class="header-wrapper"><h5 id="overzicht-attributen-0">Overzicht attributen  </h5><a class="self-link" href="#global_class_CIMHLP_Onderwerp" aria-label="Permalink for this Section"></a></div>
-         
-         <table style="width: 100%;">
-            <colgroup style="width: 30%;"></colgroup>
-            <colgroup style="width: 50%;"></colgroup>
-            <colgroup style="width: 10%;"></colgroup>
-            <colgroup style="width: 10%;"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Attribuutnaam</th>
-                  <th>Definitie</th>
-                  <th>Formaat</th>
-                  <th>Card</th>
-               </tr>
-               <tr>
-                  <td>
-                     <a class="link" href="#detail_attribute_CIMHLP_Onderwerp_naam">naam</a>
-                     </td>
-                  <td></td>
-                  <td>
-                     <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
-                     </td>
-                  <td>1</td>
-               </tr>
-            </tbody>
-         </table>
-         
-         
-         <div class="header-wrapper"><h5 id="overzicht-relaties-0">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMHLP_Onderwerp" aria-label="Permalink for this Section"></a></div>
-         
-         
-         <table style="width: 100%;">
-            <colgroup style="width: 50%;"></colgroup>
-            <colgroup style="width: 50%;"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Rol naam met kardinaliteiten</th>
-                  <th>Definitie</th>
-               </tr>
-               <tr>
-                  <td>
-                     Onderwerp
-                     [ 0 .. * ]
-                     
-                     <a class="link" href="#detail_association_CIMHLP_Onderwerp_groepeert">groepeert</a>
-                     
-                     
-                     <a class="link" href="#global_class_CIMHLP_Artikel">Artikel</a>
-                     
-                     [ 1 .. * ]
-                     </td>
-                  <td></td>
-               </tr>
-               <tr>
-                  <td>
-                     Onderwerp
-                     [ 0 .. * ]
-                     
-                     <a class="link" href="#detail_association_CIMHLP_Onderwerp_valtOnder">valt onder</a>
-                     
-                     
-                     <a class="link" href="#global_class_CIMHLP_Onderwerp">Onderwerp</a>
-                     
-                     [ 0 .. 1 ]
-                     </td>
-                  <td></td>
-               </tr>
-               <tr>
-                  <td>
-                     Onderwerp
-                     is specialisatie van
-                     
-                     <a class="link" href="#global_class_CIMHLP_Helpitem">Helpitem</a>
-                     
-                     </td>
-                  <td></td>
-               </tr>
-            </tbody>
-         </table>
-         
-         </section>
-      
-      <section id="global_class_CIMHLP_Alineatekst">
-         <div class="header-wrapper"><h4 id="x5-3-3-alineatekst"><bdi class="secno">5.3.3 </bdi>   Alineatekst</h4><a class="self-link" href="#global_class_CIMHLP_Alineatekst" aria-label="Permalink for Section 5.3.3"></a></div>
-         
-         <table style="width: 100%;">
-            <colgroup style="width: 30%;"></colgroup>
-            <colgroup style="width: 70%;"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Naam</th>
-                  <td>Alineatekst</td>
-               </tr>
-               <tr>
-                  <th>Populatie</th>
-                  <td>
-                     Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving
-                     van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie
-                     voorhanden zijn.
-                     </td>
-               </tr>
-               <tr>
-                  <th>Toelichting</th>
-                  <td>
-                     Een inhoudelijke toelichting op de toepassing van het informatie-element.
-                     </td>
-               </tr>
-               <tr>
-                  <th>Indicatie abstract object</th>
-                  <td>Nee</td>
-               </tr>
-            </tbody>
-         </table>
-         
-         <div class="header-wrapper"><h5 id="overzicht-relaties-1">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMHLP_Alineatekst" aria-label="Permalink for this Section"></a></div>
-         
-         
-         <table style="width: 100%;">
-            <colgroup style="width: 50%;"></colgroup>
-            <colgroup style="width: 50%;"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Rol naam met kardinaliteiten</th>
-                  <th>Definitie</th>
-               </tr>
-               <tr>
-                  <td>
-                     Alineatekst
-                     is specialisatie van
-                     
-                     <a class="link" href="#global_class_CIMHLP_Tekst">Tekst</a>
-                     
-                     </td>
-                  <td></td>
-               </tr>
-            </tbody>
-         </table>
-         
-         </section>
-      
-      <section id="global_class_CIMHLP_Chatbot">
-         <div class="header-wrapper"><h4 id="x5-3-4-chatbot"><bdi class="secno">5.3.4 </bdi>   Chatbot</h4><a class="self-link" href="#global_class_CIMHLP_Chatbot" aria-label="Permalink for Section 5.3.4"></a></div>
-         
-         <table style="width: 100%;">
-            <colgroup style="width: 30%;"></colgroup>
-            <colgroup style="width: 70%;"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Naam</th>
-                  <td>Chatbot</td>
-               </tr>
-               <tr>
-                  <th>Populatie</th>
-                  <td>
-                     Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving
-                     van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie
-                     voorhanden zijn.
-                     </td>
-               </tr>
-               <tr>
-                  <th>Toelichting</th>
-                  <td>
-                     Een inhoudelijke toelichting op de toepassing van het informatie-element.
-                     </td>
-               </tr>
-               <tr>
-                  <th>Indicatie abstract object</th>
-                  <td>Nee</td>
-               </tr>
-            </tbody>
-         </table>
-         
-         <div class="header-wrapper"><h5 id="overzicht-relaties-2">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMHLP_Chatbot" aria-label="Permalink for this Section"></a></div>
-         
-         
-         <table style="width: 100%;">
-            <colgroup style="width: 50%;"></colgroup>
-            <colgroup style="width: 50%;"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Rol naam met kardinaliteiten</th>
-                  <th>Definitie</th>
-               </tr>
-               <tr>
-                  <td>
-                     Chatbot
-                     is specialisatie van
-                     
-                     <a class="link" href="#global_class_CIMHLP_Multimedia">Multimedia</a>
-                     
-                     </td>
-                  <td></td>
-               </tr>
-            </tbody>
-         </table>
-         
-         </section>
-      
-      <section id="global_class_CIMHLP_Plaatje">
-         <div class="header-wrapper"><h4 id="x5-3-5-plaatje"><bdi class="secno">5.3.5 </bdi>   Plaatje</h4><a class="self-link" href="#global_class_CIMHLP_Plaatje" aria-label="Permalink for Section 5.3.5"></a></div>
-         
-         <table style="width: 100%;">
-            <colgroup style="width: 30%;"></colgroup>
-            <colgroup style="width: 70%;"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Naam</th>
-                  <td>Plaatje</td>
-               </tr>
-               <tr>
-                  <th>Populatie</th>
-                  <td>
-                     Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving
-                     van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie
-                     voorhanden zijn.
-                     </td>
-               </tr>
-               <tr>
-                  <th>Toelichting</th>
-                  <td>
-                     Een inhoudelijke toelichting op de toepassing van het informatie-element.
-                     </td>
-               </tr>
-               <tr>
-                  <th>Indicatie abstract object</th>
-                  <td>Nee</td>
-               </tr>
-            </tbody>
-         </table>
-         
-         <div class="header-wrapper"><h5 id="overzicht-relaties-3">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMHLP_Plaatje" aria-label="Permalink for this Section"></a></div>
-         
-         
-         <table style="width: 100%;">
-            <colgroup style="width: 50%;"></colgroup>
-            <colgroup style="width: 50%;"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Rol naam met kardinaliteiten</th>
-                  <th>Definitie</th>
-               </tr>
-               <tr>
-                  <td>
-                     Plaatje
-                     is specialisatie van
-                     
-                     <a class="link" href="#global_class_CIMHLP_Multimedia">Multimedia</a>
-                     
-                     </td>
-                  <td></td>
-               </tr>
-            </tbody>
-         </table>
-         
-         </section>
-      
-      <section id="global_class_CIMHLP_Tekst">
-         <div class="header-wrapper"><h4 id="x5-3-6-tekst"><bdi class="secno">5.3.6 </bdi>   Tekst</h4><a class="self-link" href="#global_class_CIMHLP_Tekst" aria-label="Permalink for Section 5.3.6"></a></div>
-         
-         <table style="width: 100%;">
-            <colgroup style="width: 30%;"></colgroup>
-            <colgroup style="width: 70%;"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Naam</th>
-                  <td>Tekst</td>
-               </tr>
-               <tr>
-                  <th>Populatie</th>
-                  <td>
-                     Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving
-                     van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie
-                     voorhanden zijn.
-                     </td>
-               </tr>
-               <tr>
-                  <th>Toelichting</th>
-                  <td>
-                     Een inhoudelijke toelichting op de toepassing van het informatie-element.
-                     </td>
-               </tr>
-               <tr>
-                  <th>Indicatie abstract object</th>
-                  <td>Ja</td>
-               </tr>
-            </tbody>
-         </table>
-         
-         <div class="header-wrapper"><h5 id="overzicht-relaties-4">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMHLP_Tekst" aria-label="Permalink for this Section"></a></div>
-         
-         
-         <table style="width: 100%;">
-            <colgroup style="width: 50%;"></colgroup>
-            <colgroup style="width: 50%;"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Rol naam met kardinaliteiten</th>
-                  <th>Definitie</th>
-               </tr>
-               <tr>
-                  <td>
-                     Tekst
-                     is specialisatie van
-                     
-                     <a class="link" href="#global_class_CIMHLP_Artikelcomponent">Artikelcomponent</a>
-                     
-                     </td>
-                  <td></td>
-               </tr>
-            </tbody>
-         </table>
-         
-         </section>
-      
-      <section id="global_class_CIMHLP_Document">
-         <div class="header-wrapper"><h4 id="x5-3-7-document"><bdi class="secno">5.3.7 </bdi>   Document</h4><a class="self-link" href="#global_class_CIMHLP_Document" aria-label="Permalink for Section 5.3.7"></a></div>
-         
-         <table style="width: 100%;">
-            <colgroup style="width: 30%;"></colgroup>
-            <colgroup style="width: 70%;"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Naam</th>
-                  <td>Document</td>
-               </tr>
-               <tr>
-                  <th>Populatie</th>
-                  <td>
-                     Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving
-                     van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie
-                     voorhanden zijn.
-                     </td>
-               </tr>
-               <tr>
-                  <th>Toelichting</th>
-                  <td>
-                     Een inhoudelijke toelichting op de toepassing van het informatie-element.
-                     </td>
-               </tr>
-               <tr>
-                  <th>Indicatie abstract object</th>
-                  <td>Nee</td>
-               </tr>
-            </tbody>
-         </table>
-         
-         <div class="header-wrapper"><h5 id="overzicht-relaties-5">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMHLP_Document" aria-label="Permalink for this Section"></a></div>
-         
-         
-         <table style="width: 100%;">
-            <colgroup style="width: 50%;"></colgroup>
-            <colgroup style="width: 50%;"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Rol naam met kardinaliteiten</th>
-                  <th>Definitie</th>
-               </tr>
-               <tr>
-                  <td>
-                     Document
-                     is specialisatie van
-                     
-                     <a class="link" href="#global_class_CIMHLP_Multimedia">Multimedia</a>
-                     
-                     </td>
-                  <td></td>
-               </tr>
-            </tbody>
-         </table>
-         
-         </section>
-      
-      <section id="global_class_CIMHLP_Titeltekst">
-         <div class="header-wrapper"><h4 id="x5-3-8-titeltekst"><bdi class="secno">5.3.8 </bdi>   Titeltekst</h4><a class="self-link" href="#global_class_CIMHLP_Titeltekst" aria-label="Permalink for Section 5.3.8"></a></div>
-         
-         <table style="width: 100%;">
-            <colgroup style="width: 30%;"></colgroup>
-            <colgroup style="width: 70%;"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Naam</th>
-                  <td>Titeltekst</td>
-               </tr>
-               <tr>
-                  <th>Populatie</th>
-                  <td>
-                     Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving
-                     van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie
-                     voorhanden zijn.
-                     </td>
-               </tr>
-               <tr>
-                  <th>Toelichting</th>
-                  <td>
-                     Een inhoudelijke toelichting op de toepassing van het informatie-element.
-                     </td>
-               </tr>
-               <tr>
-                  <th>Indicatie abstract object</th>
-                  <td>Nee</td>
-               </tr>
-            </tbody>
-         </table>
-         
-         <div class="header-wrapper"><h5 id="overzicht-relaties-6">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMHLP_Titeltekst" aria-label="Permalink for this Section"></a></div>
-         
-         
-         <table style="width: 100%;">
-            <colgroup style="width: 50%;"></colgroup>
-            <colgroup style="width: 50%;"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Rol naam met kardinaliteiten</th>
-                  <th>Definitie</th>
-               </tr>
-               <tr>
-                  <td>
-                     Titeltekst
-                     is specialisatie van
-                     
-                     <a class="link" href="#global_class_CIMHLP_Tekst">Tekst</a>
-                     
-                     </td>
-                  <td></td>
-               </tr>
-            </tbody>
-         </table>
-         
-         </section>
-      
-      <section id="global_class_CIMHLP_SocialEmbedding">
-         <div class="header-wrapper"><h4 id="x5-3-9-social-embedding"><bdi class="secno">5.3.9 </bdi>   Social (embedding)</h4><a class="self-link" href="#global_class_CIMHLP_SocialEmbedding" aria-label="Permalink for Section 5.3.9"></a></div>
-         
-         <table style="width: 100%;">
-            <colgroup style="width: 30%;"></colgroup>
-            <colgroup style="width: 70%;"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Naam</th>
-                  <td>Social (embedding)</td>
-               </tr>
-               <tr>
-                  <th>Populatie</th>
-                  <td>
-                     Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving
-                     van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie
-                     voorhanden zijn.
-                     </td>
-               </tr>
-               <tr>
-                  <th>Toelichting</th>
-                  <td>
-                     Een inhoudelijke toelichting op de toepassing van het informatie-element.
-                     </td>
-               </tr>
-               <tr>
-                  <th>Indicatie abstract object</th>
-                  <td>Nee</td>
-               </tr>
-            </tbody>
-         </table>
-         
-         <div class="header-wrapper"><h5 id="overzicht-relaties-7">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMHLP_SocialEmbedding" aria-label="Permalink for this Section"></a></div>
-         
-         
-         <table style="width: 100%;">
-            <colgroup style="width: 50%;"></colgroup>
-            <colgroup style="width: 50%;"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Rol naam met kardinaliteiten</th>
-                  <th>Definitie</th>
-               </tr>
-               <tr>
-                  <td>
-                     Social (embedding)
-                     is specialisatie van
-                     
-                     <a class="link" href="#global_class_CIMHLP_Multimedia">Multimedia</a>
-                     
-                     </td>
-                  <td></td>
-               </tr>
-            </tbody>
-         </table>
-         
-         </section>
-      
-      <section id="global_class_CIMHLP_Artikelcomponent">
-         <div class="header-wrapper"><h4 id="x5-3-10-artikelcomponent"><bdi class="secno">5.3.10 </bdi>   Artikelcomponent</h4><a class="self-link" href="#global_class_CIMHLP_Artikelcomponent" aria-label="Permalink for Section 5.3.10"></a></div>
-         
-         <table style="width: 100%;">
-            <colgroup style="width: 30%;"></colgroup>
-            <colgroup style="width: 70%;"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Naam</th>
-                  <td>Artikelcomponent</td>
-               </tr>
-               <tr>
-                  <th>Unieke aanduiding</th>
-                  <td>identificatie</td>
-               </tr>
-               <tr>
-                  <th>Populatie</th>
-                  <td>
-                     Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving
-                     van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie
-                     voorhanden zijn.
-                     </td>
-               </tr>
-               <tr>
-                  <th>Toelichting</th>
-                  <td>
-                     Een inhoudelijke toelichting op de toepassing van het informatie-element.
-                     </td>
-               </tr>
-               <tr>
-                  <th>Indicatie abstract object</th>
-                  <td>Nee</td>
-               </tr>
-            </tbody>
-         </table>
-         
-         <div class="header-wrapper"><h5 id="overzicht-attributen-1">Overzicht attributen  </h5><a class="self-link" href="#global_class_CIMHLP_Artikelcomponent" aria-label="Permalink for this Section"></a></div>
-         
-         <table style="width: 100%;">
-            <colgroup style="width: 30%;"></colgroup>
-            <colgroup style="width: 50%;"></colgroup>
-            <colgroup style="width: 10%;"></colgroup>
-            <colgroup style="width: 10%;"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Attribuutnaam</th>
-                  <th>Definitie</th>
-                  <th>Formaat</th>
-                  <th>Card</th>
-               </tr>
-               <tr>
-                  <td>
-                     <a class="link" href="#detail_attribute_CIMHLP_Artikelcomponent_identificatie">identificatie</a>
-                     </td>
-                  <td></td>
-                  <td>
-                     <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">URI</a>
-                     </td>
-                  <td>1</td>
-               </tr>
-            </tbody>
-         </table>
-         
-         
-         <div class="header-wrapper"><h5 id="overzicht-relaties-8">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMHLP_Artikelcomponent" aria-label="Permalink for this Section"></a></div>
-         
-         
-         <table style="width: 100%;">
-            <colgroup style="width: 50%;"></colgroup>
-            <colgroup style="width: 50%;"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Rol naam met kardinaliteiten</th>
-                  <th>Definitie</th>
-               </tr>
-               <tr>
-                  <td>
-                     Artikelcomponent
-                     [ 0 .. * ]
-                     
-                     <a class="link" href="#detail_association_CIMHLP_Artikelcomponent_opgenomenIn">opgenomen in</a>
-                     
-                     
-                     <a class="link" href="#global_class_CIMHLP_Artikelcomponent">Artikelcomponent</a>
-                     
-                     [ 1 ]
-                     </td>
-                  <td></td>
-               </tr>
-               <tr>
-                  <td>
-                     
-                     <a class="link" href="#global_class_CIMHLP_Artikel">Artikel</a>
-                     
-                     [ 1 ]
-                     
-                     <a class="link" href="#detail_association_CIMHLP_Artikel_bestaatUit">bestaat uit</a>
-                     
-                     Artikelcomponent
-                     [ 1 .. * ]
-                     </td>
-                  <td></td>
-               </tr>
-            </tbody>
-         </table>
-         
-         </section>
-      
-      <section id="global_class_CIMHLP_Anker">
-         <div class="header-wrapper"><h4 id="x5-3-11-anker"><bdi class="secno">5.3.11 </bdi>   Anker</h4><a class="self-link" href="#global_class_CIMHLP_Anker" aria-label="Permalink for Section 5.3.11"></a></div>
-         
-         <table style="width: 100%;">
-            <colgroup style="width: 30%;"></colgroup>
-            <colgroup style="width: 70%;"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Naam</th>
-                  <td>Anker</td>
-               </tr>
-               <tr>
-                  <th>Populatie</th>
-                  <td>
-                     Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving
-                     van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie
-                     voorhanden zijn.
-                     </td>
-               </tr>
-               <tr>
-                  <th>Toelichting</th>
-                  <td>
-                     Een inhoudelijke toelichting op de toepassing van het informatie-element.
-                     </td>
-               </tr>
-               <tr>
-                  <th>Indicatie abstract object</th>
-                  <td>Nee</td>
-               </tr>
-            </tbody>
-         </table>
-         
-         <div class="header-wrapper"><h5 id="overzicht-relaties-9">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMHLP_Anker" aria-label="Permalink for this Section"></a></div>
-         
-         
-         <table style="width: 100%;">
-            <colgroup style="width: 50%;"></colgroup>
-            <colgroup style="width: 50%;"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Rol naam met kardinaliteiten</th>
-                  <th>Definitie</th>
-               </tr>
-               <tr>
-                  <td>
-                     
-                     <a class="link" href="#global_class_CIMHLP_VerwijzingKeuze">Verwijzing­Keuze</a>
-                     
-                     [ 1 ]
-                     
-                     <a class="link" href="#detail_association_CIMHLP_VerwijzingKeuze_verwijstNaar">verwijst­Naar: verwijst­Naar</a>
-                     
-                     Anker
-                     [ 1 ]
-                     </td>
-                  <td></td>
-               </tr>
-               <tr>
-                  <td>
-                     Anker
-                     is specialisatie van
-                     
-                     <a class="link" href="#global_class_CIMHLP_Artikelcomponent">Artikelcomponent</a>
-                     
-                     </td>
-                  <td></td>
-               </tr>
-            </tbody>
-         </table>
-         
-         </section>
-      
-      <section id="global_class_CIMHLP_Multimedia">
-         <div class="header-wrapper"><h4 id="x5-3-12-multimedia"><bdi class="secno">5.3.12 </bdi>   Multimedia</h4><a class="self-link" href="#global_class_CIMHLP_Multimedia" aria-label="Permalink for Section 5.3.12"></a></div>
-         
-         <table style="width: 100%;">
-            <colgroup style="width: 30%;"></colgroup>
-            <colgroup style="width: 70%;"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Naam</th>
-                  <td>Multimedia</td>
-               </tr>
-               <tr>
-                  <th>Populatie</th>
-                  <td>
-                     Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving
-                     van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie
-                     voorhanden zijn.
-                     </td>
-               </tr>
-               <tr>
-                  <th>Toelichting</th>
-                  <td>
-                     Een inhoudelijke toelichting op de toepassing van het informatie-element.
-                     </td>
-               </tr>
-               <tr>
-                  <th>Indicatie abstract object</th>
-                  <td>Nee</td>
-               </tr>
-            </tbody>
-         </table>
-         
-         <div class="header-wrapper"><h5 id="overzicht-relaties-10">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMHLP_Multimedia" aria-label="Permalink for this Section"></a></div>
-         
-         
-         <table style="width: 100%;">
-            <colgroup style="width: 50%;"></colgroup>
-            <colgroup style="width: 50%;"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Rol naam met kardinaliteiten</th>
-                  <th>Definitie</th>
-               </tr>
-               <tr>
-                  <td>
-                     Multimedia
-                     is specialisatie van
-                     
-                     <a class="link" href="#global_class_CIMHLP_Artikelcomponent">Artikelcomponent</a>
-                     
-                     </td>
-                  <td></td>
-               </tr>
-            </tbody>
-         </table>
-         
-         </section>
-      
-      <section id="global_class_CIMHLP_Helpitem">
-         <div class="header-wrapper"><h4 id="x5-3-13-helpitem"><bdi class="secno">5.3.13 </bdi>   Helpitem</h4><a class="self-link" href="#global_class_CIMHLP_Helpitem" aria-label="Permalink for Section 5.3.13"></a></div>
-         
-         <table style="width: 100%;">
-            <colgroup style="width: 30%;"></colgroup>
-            <colgroup style="width: 70%;"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Naam</th>
-                  <td>Helpitem</td>
-               </tr>
-               <tr>
-                  <th>Unieke aanduiding</th>
-                  <td>identificatie</td>
-               </tr>
-               <tr>
-                  <th>Populatie</th>
-                  <td>
-                     Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving
-                     van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie
-                     voorhanden zijn.
-                     </td>
-               </tr>
-               <tr>
-                  <th>Toelichting</th>
-                  <td>
-                     Een inhoudelijke toelichting op de toepassing van het informatie-element.
-                     </td>
-               </tr>
-               <tr>
-                  <th>Indicatie abstract object</th>
-                  <td>Nee</td>
-               </tr>
-            </tbody>
-         </table>
-         
-         <div class="header-wrapper"><h5 id="overzicht-attributen-2">Overzicht attributen  </h5><a class="self-link" href="#global_class_CIMHLP_Helpitem" aria-label="Permalink for this Section"></a></div>
-         
-         <table style="width: 100%;">
-            <colgroup style="width: 30%;"></colgroup>
-            <colgroup style="width: 50%;"></colgroup>
-            <colgroup style="width: 10%;"></colgroup>
-            <colgroup style="width: 10%;"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Attribuutnaam</th>
-                  <th>Definitie</th>
-                  <th>Formaat</th>
-                  <th>Card</th>
-               </tr>
-               <tr>
-                  <td>
-                     <a class="link" href="#detail_attribute_CIMHLP_Helpitem_identificatie">identificatie</a>
-                     </td>
-                  <td></td>
-                  <td>
-                     <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">URI</a>
-                     </td>
-                  <td>1</td>
-               </tr>
-               <tr>
-                  <td>
-                     <a class="link" href="#detail_attribute_CIMHLP_Helpitem_tags">tags</a>
-                     </td>
-                  <td></td>
-                  <td>
-                     <a class="link" href="#global_class_CIMHLP_Contexttag">Contexttag</a>
-                     </td>
-                  <td>0 .. *</td>
-               </tr>
-            </tbody>
-         </table>
-         
-         
-         <div class="header-wrapper"><h5 id="overzicht-relaties-11">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMHLP_Helpitem" aria-label="Permalink for this Section"></a></div>
-         
-         
-         <table style="width: 100%;">
-            <colgroup style="width: 50%;"></colgroup>
-            <colgroup style="width: 50%;"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Rol naam met kardinaliteiten</th>
-                  <th>Definitie</th>
-               </tr>
-               <tr>
-                  <td>
-                     
-                     <a class="link" href="#global_class_CIMHLP_VerwijzingKeuze">Verwijzing­Keuze</a>
-                     
-                     [ 1 ]
-                     
-                     <a class="link" href="#detail_association_CIMHLP_VerwijzingKeuze_verwisjtNaar">verwisjt­Naar: verwisjt­Naar</a>
-                     
-                     Helpitem
-                     [ 1 ]
-                     </td>
-                  <td></td>
-               </tr>
-            </tbody>
-         </table>
-         
-         </section>
-      
-      <section id="global_class_CIMHLP_Verwijzing">
-         <div class="header-wrapper"><h4 id="x5-3-14-verwijzing"><bdi class="secno">5.3.14 </bdi>   Verwijzing</h4><a class="self-link" href="#global_class_CIMHLP_Verwijzing" aria-label="Permalink for Section 5.3.14"></a></div>
-         
-         <table style="width: 100%;">
-            <colgroup style="width: 30%;"></colgroup>
-            <colgroup style="width: 70%;"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Naam</th>
-                  <td>Verwijzing</td>
-               </tr>
-               <tr>
-                  <th>Populatie</th>
-                  <td>
-                     Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving
-                     van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie
-                     voorhanden zijn.
-                     </td>
-               </tr>
-               <tr>
-                  <th>Toelichting</th>
-                  <td>
-                     Een inhoudelijke toelichting op de toepassing van het informatie-element.
-                     </td>
-               </tr>
-               <tr>
-                  <th>Indicatie abstract object</th>
-                  <td>Nee</td>
-               </tr>
-            </tbody>
-         </table>
-         
-         <div class="header-wrapper"><h5 id="overzicht-relaties-12">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMHLP_Verwijzing" aria-label="Permalink for this Section"></a></div>
-         
-         
-         <table style="width: 100%;">
-            <colgroup style="width: 50%;"></colgroup>
-            <colgroup style="width: 50%;"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Rol naam met kardinaliteiten</th>
-                  <th>Definitie</th>
-               </tr>
-               <tr>
-                  <td>
-                     Verwijzing
-                     [ 0 .. * ]
-                     
-                     <a class="link" href="#detail_association_CIMHLP_Verwijzing_verwijstNaar">verwijst naar</a>
-                     
-                     
-                     <a class="link" href="#global_class_CIMHLP_VerwijzingKeuze">Verwijzing­Keuze</a>
-                     
-                     [ 1 ]
-                     </td>
-                  <td></td>
-               </tr>
-               <tr>
-                  <td>
-                     Verwijzing
-                     is specialisatie van
-                     
-                     <a class="link" href="#global_class_CIMHLP_Artikelcomponent">Artikelcomponent</a>
-                     
-                     </td>
-                  <td></td>
-               </tr>
-            </tbody>
-         </table>
-         
-         </section>
-      
-      <section id="global_class_CIMHLP_Video">
-         <div class="header-wrapper"><h4 id="x5-3-15-video"><bdi class="secno">5.3.15 </bdi>   Video</h4><a class="self-link" href="#global_class_CIMHLP_Video" aria-label="Permalink for Section 5.3.15"></a></div>
-         
-         <table style="width: 100%;">
-            <colgroup style="width: 30%;"></colgroup>
-            <colgroup style="width: 70%;"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Naam</th>
-                  <td>Video</td>
-               </tr>
-               <tr>
-                  <th>Populatie</th>
-                  <td>
-                     Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving
-                     van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie
-                     voorhanden zijn.
-                     </td>
-               </tr>
-               <tr>
-                  <th>Toelichting</th>
-                  <td>
-                     Een inhoudelijke toelichting op de toepassing van het informatie-element.
-                     </td>
-               </tr>
-               <tr>
-                  <th>Indicatie abstract object</th>
-                  <td>Nee</td>
-               </tr>
-            </tbody>
-         </table>
-         
-         <div class="header-wrapper"><h5 id="overzicht-relaties-13">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMHLP_Video" aria-label="Permalink for this Section"></a></div>
-         
-         
-         <table style="width: 100%;">
-            <colgroup style="width: 50%;"></colgroup>
-            <colgroup style="width: 50%;"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Rol naam met kardinaliteiten</th>
-                  <th>Definitie</th>
-               </tr>
-               <tr>
-                  <td>
-                     Video
-                     is specialisatie van
-                     
-                     <a class="link" href="#global_class_CIMHLP_Multimedia">Multimedia</a>
-                     
-                     </td>
-                  <td></td>
-               </tr>
-            </tbody>
-         </table>
-         
-         </section>
-      
-      <section id="global_class_CIMHLP_Inhoudsopgave">
-         <div class="header-wrapper"><h4 id="x5-3-16-inhoudsopgave"><bdi class="secno">5.3.16 </bdi>   Inhoudsopgave</h4><a class="self-link" href="#global_class_CIMHLP_Inhoudsopgave" aria-label="Permalink for Section 5.3.16"></a></div>
-         
-         <table style="width: 100%;">
-            <colgroup style="width: 30%;"></colgroup>
-            <colgroup style="width: 70%;"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Naam</th>
-                  <td>Inhoudsopgave</td>
-               </tr>
-               <tr>
-                  <th>Populatie</th>
-                  <td>
-                     Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving
-                     van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie
-                     voorhanden zijn.
-                     </td>
-               </tr>
-               <tr>
-                  <th>Toelichting</th>
-                  <td>
-                     Een inhoudelijke toelichting op de toepassing van het informatie-element.
-                     </td>
-               </tr>
-               <tr>
-                  <th>Indicatie abstract object</th>
-                  <td>Nee</td>
-               </tr>
-            </tbody>
-         </table>
-         
-         <div class="header-wrapper"><h5 id="overzicht-relaties-14">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMHLP_Inhoudsopgave" aria-label="Permalink for this Section"></a></div>
-         
-         
-         <table style="width: 100%;">
-            <colgroup style="width: 50%;"></colgroup>
-            <colgroup style="width: 50%;"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Rol naam met kardinaliteiten</th>
-                  <th>Definitie</th>
-               </tr>
-               <tr>
-                  <td>
-                     Inhoudsopgave
-                     is specialisatie van
-                     
-                     <a class="link" href="#global_class_CIMHLP_Artikelcomponent">Artikelcomponent</a>
-                     
-                     </td>
-                  <td></td>
-               </tr>
-            </tbody>
-         </table>
-         
-         </section>
-      
-      <section id="global_class_CIMHLP_Doumentindex">
-         <div class="header-wrapper"><h4 id="x5-3-17-doumentindex"><bdi class="secno">5.3.17 </bdi>   Doumentindex</h4><a class="self-link" href="#global_class_CIMHLP_Doumentindex" aria-label="Permalink for Section 5.3.17"></a></div>
-         
-         <table style="width: 100%;">
-            <colgroup style="width: 30%;"></colgroup>
-            <colgroup style="width: 70%;"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Naam</th>
-                  <td>Doumentindex</td>
-               </tr>
-               <tr>
-                  <th>Populatie</th>
-                  <td>
-                     Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving
-                     van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie
-                     voorhanden zijn.
-                     </td>
-               </tr>
-               <tr>
-                  <th>Toelichting</th>
-                  <td>
-                     Een inhoudelijke toelichting op de toepassing van het informatie-element.
-                     </td>
-               </tr>
-               <tr>
-                  <th>Indicatie abstract object</th>
-                  <td>Nee</td>
-               </tr>
-            </tbody>
-         </table>
-         
-         <div class="header-wrapper"><h5 id="overzicht-relaties-15">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMHLP_Doumentindex" aria-label="Permalink for this Section"></a></div>
-         
-         
-         <table style="width: 100%;">
-            <colgroup style="width: 50%;"></colgroup>
-            <colgroup style="width: 50%;"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Rol naam met kardinaliteiten</th>
-                  <th>Definitie</th>
-               </tr>
-               <tr>
-                  <td>
-                     Doumentindex
-                     is specialisatie van
-                     
-                     <a class="link" href="#global_class_CIMHLP_Multimedia">Multimedia</a>
-                     
-                     </td>
-                  <td></td>
-               </tr>
-            </tbody>
-         </table>
-         
-         </section>
-      
-      <section id="global_class_CIMHLP_RijkeTekst">
-         <div class="header-wrapper"><h4 id="x5-3-18-rijke-tekst"><bdi class="secno">5.3.18 </bdi>   Rijke tekst</h4><a class="self-link" href="#global_class_CIMHLP_RijkeTekst" aria-label="Permalink for Section 5.3.18"></a></div>
-         
-         <table style="width: 100%;">
-            <colgroup style="width: 30%;"></colgroup>
-            <colgroup style="width: 70%;"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Naam</th>
-                  <td>Rijke tekst</td>
-               </tr>
-               <tr>
-                  <th>Populatie</th>
-                  <td>
-                     Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving
-                     van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie
-                     voorhanden zijn.
-                     </td>
-               </tr>
-               <tr>
-                  <th>Toelichting</th>
-                  <td>
-                     Een inhoudelijke toelichting op de toepassing van het informatie-element.
-                     </td>
-               </tr>
-               <tr>
-                  <th>Indicatie abstract object</th>
-                  <td>Nee</td>
-               </tr>
-            </tbody>
-         </table>
-         
-         <div class="header-wrapper"><h5 id="overzicht-relaties-16">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMHLP_RijkeTekst" aria-label="Permalink for this Section"></a></div>
-         
-         
-         <table style="width: 100%;">
-            <colgroup style="width: 50%;"></colgroup>
-            <colgroup style="width: 50%;"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Rol naam met kardinaliteiten</th>
-                  <th>Definitie</th>
-               </tr>
-               <tr>
-                  <td>
-                     Rijke tekst
-                     is specialisatie van
-                     
-                     <a class="link" href="#global_class_CIMHLP_Tekst">Tekst</a>
-                     
-                     </td>
-                  <td></td>
-               </tr>
-            </tbody>
-         </table>
-         
-         </section>
-      
-      <section id="global_class_CIMHLP_PlatteTekst">
-         <div class="header-wrapper"><h4 id="x5-3-19-platte-tekst"><bdi class="secno">5.3.19 </bdi>   Platte tekst</h4><a class="self-link" href="#global_class_CIMHLP_PlatteTekst" aria-label="Permalink for Section 5.3.19"></a></div>
-         
-         <table style="width: 100%;">
-            <colgroup style="width: 30%;"></colgroup>
-            <colgroup style="width: 70%;"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Naam</th>
-                  <td>Platte tekst</td>
-               </tr>
-               <tr>
-                  <th>Populatie</th>
-                  <td>
-                     Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving
-                     van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie
-                     voorhanden zijn.
-                     </td>
-               </tr>
-               <tr>
-                  <th>Toelichting</th>
-                  <td>
-                     Een inhoudelijke toelichting op de toepassing van het informatie-element.
-                     </td>
-               </tr>
-               <tr>
-                  <th>Indicatie abstract object</th>
-                  <td>Nee</td>
-               </tr>
-            </tbody>
-         </table>
-         
-         <div class="header-wrapper"><h5 id="overzicht-relaties-17">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMHLP_PlatteTekst" aria-label="Permalink for this Section"></a></div>
-         
-         
-         <table style="width: 100%;">
-            <colgroup style="width: 50%;"></colgroup>
-            <colgroup style="width: 50%;"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Rol naam met kardinaliteiten</th>
-                  <th>Definitie</th>
-               </tr>
-               <tr>
-                  <td>
-                     Platte tekst
-                     is specialisatie van
-                     
-                     <a class="link" href="#global_class_CIMHLP_Tekst">Tekst</a>
-                     
-                     </td>
-                  <td></td>
-               </tr>
-            </tbody>
-         </table>
-         
-         </section>
-      </section>
-   <section id="referentielijsten">
-      <div class="header-wrapper"><h3 id="x5-4-referentielijsten"><bdi class="secno">5.4 </bdi>Referentielijsten   </h3><a class="self-link" href="#referentielijsten" aria-label="Permalink for Section 5.4"></a></div>
-      
-      <section id="global_class_CIMHLP_Contexttag">
-         <div class="header-wrapper"><h4 id="x5-4-1-referentielijst-contexttag"><bdi class="secno">5.4.1 </bdi>Referentielijst   Contexttag</h4><a class="self-link" href="#global_class_CIMHLP_Contexttag" aria-label="Permalink for Section 5.4.1"></a></div>
-         
-         <table style="width: 100%;">
-            <colgroup style="width: 30%;"></colgroup>
-            <colgroup style="width: 70%;"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Naam</th>
-                  <td>Contexttag</td>
-               </tr>
-               <tr>
-                  <th>Toelichting</th>
-                  <td>
-                     Een inhoudelijke toelichting op de toepassing van het informatie-element.
-                     </td>
-               </tr>
-            </tbody>
-         </table>
-         </section>
-      </section>
-   <section id="keuzen">
-      <div class="header-wrapper"><h3 id="x5-5-keuzen"><bdi class="secno">5.5 </bdi>Keuzen   </h3><a class="self-link" href="#keuzen" aria-label="Permalink for Section 5.5"></a></div>
-      
-      <section id="global_class_CIMHLP_VerwijzingKeuze">
-         <div class="header-wrapper"><h4 id="x5-5-1-verwijzing-keuze"><bdi class="secno">5.5.1 </bdi>   Verwijzing­Keuze</h4><a class="self-link" href="#global_class_CIMHLP_VerwijzingKeuze" aria-label="Permalink for Section 5.5.1"></a></div>
-         
-         <table style="width: 100%;">
-            <colgroup style="width: 30%;"></colgroup>
-            <colgroup style="width: 70%;"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Naam</th>
-                  <td>Verwijzing­Keuze</td>
-               </tr>
-            </tbody>
-         </table>
-         </section>
-      </section>
-   <section id="enumeraties">
-      <div class="header-wrapper"><h3 id="x5-6-enumeraties"><bdi class="secno">5.6 </bdi>Enumeraties   </h3><a class="self-link" href="#enumeraties" aria-label="Permalink for Section 5.6"></a></div>
-      
-      <table style="width: 100%;">
-         <colgroup style="width: 30%;"></colgroup>
-         <colgroup style="width: 70%;"></colgroup>
-         <tbody>
-            <tr>
-               <th><a class="link" href="#detail_class_CIMHLP_Artikeltype">Artikeltype</a></th>
-               <td></td>
-            </tr>
-         </tbody>
-      </table>
-      </section>
-   <section id="attribuut-en-relatiesoort-details">
-      <div class="header-wrapper"><h3 id="x5-7-attribuut-en-relatiesoort-details"><bdi class="secno">5.7 </bdi>Attribuut- en relatiesoort details  </h3><a class="self-link" href="#attribuut-en-relatiesoort-details" aria-label="Permalink for Section 5.7"></a></div>
-      
-      <section id="objecttype-details">
-         <div class="header-wrapper"><h4 id="x5-7-1-objecttype-details"><bdi class="secno">5.7.1 </bdi>Objecttype details  </h4><a class="self-link" href="#objecttype-details" aria-label="Permalink for Section 5.7.1"></a></div>
-         
-         <section id="detail_class_CIMHLP_Artikel">
-            <div class="header-wrapper"><h5 id="x5-7-1-1-artikel"><bdi class="secno">5.7.1.1 </bdi>   Artikel</h5><a class="self-link" href="#detail_class_CIMHLP_Artikel" aria-label="Permalink for Section 5.7.1.1"></a></div>
-            
-            <section id="detail_attribute_CIMHLP_Artikel_titel">
-               <div class="header-wrapper"><h6 id="x5-7-1-1-1-attribuutsoort-details-artikel-titel"><bdi class="secno">5.7.1.1.1 </bdi>Attribuutsoort details  <a href="#global_class_CIMHLP_Artikel">Artikel</a> titel</h6><a class="self-link" href="#detail_attribute_CIMHLP_Artikel_titel" aria-label="Permalink for Section 5.7.1.1.1"></a></div>
+  <section id="cat" class="normative"><div class="header-wrapper"><h2 id="x5-gegevensdefinitie"><bdi class="secno">5. </bdi>Gegevensdefinitie</h2><a class="self-link" href="#cat" aria-label="Permalink for Section 5."></a></div><section id="EAID_22B1E04F_E2A5_4ad0_80EF_DFEA34985908"><div class="header-wrapper"><h3 id="x5-1-cim-hlp-overzicht"><bdi class="secno">5.1 </bdi>   CIM-HLP - overzicht</h3><a class="self-link" href="#EAID_22B1E04F_E2A5_4ad0_80EF_DFEA34985908" aria-label="Permalink for Section 5.1"></a></div><div class="imageinfo overview"><figure class="uml-diagram" id="fig-diagram-cim-hlp"><img id="EAID_22B1E04F_E2A5_4ad0_80EF_DFEA34985908" src="data/Images/EAID_22B1E04F_E2A5_4ad0_80EF_DFEA34985908.png" usemap="#imagemap-EAID_22B1E04F_E2A5_4ad0_80EF_DFEA34985908" alt="Diagram: CIM-HLP - overzicht"><figcaption><a class="self-link" href="#fig-diagram-cim-hlp">Figuur <bdi class="figno">2</bdi></a> <span class="fig-title"> ‒ Diagram: CIM-HLP</span></figcaption></figure><map name="imagemap-EAID_22B1E04F_E2A5_4ad0_80EF_DFEA34985908"><area shape="rect" alt="Inhoudsopgave" coords="534,643,643,711" href="#global_class_CIMHLP_Inhoudsopgave"><area shape="rect" alt="Multimedia" coords="410,643,520,711" href="#global_class_CIMHLP_Multimedia"><area shape="rect" alt="Tekst" coords="287,643,397,711" href="#global_class_CIMHLP_Tekst"><area shape="rect" alt="Artikelcomponent" coords="41,465,657,569" href="#global_class_CIMHLP_Artikelcomponent"><area shape="rect" alt="VerwijzingKeuze" coords="164,807,346,876" href="#global_class_CIMHLP_VerwijzingKeuze"><area shape="rect" alt="Artikeltype" coords="876,602,1067,830" href="#detail_class_CIMHLP_Artikeltype"><area shape="rect" alt="Anker" coords="41,643,150,711" href="#global_class_CIMHLP_Anker"><area shape="rect" alt="Contexttag" coords="874,525,1068,586" href="#global_class_CIMHLP_Contexttag"><area shape="rect" alt="Helpitem" coords="192,14,424,137" href="#global_class_CIMHLP_Helpitem"><area shape="rect" alt="Artikel" coords="82,246,254,368" href="#global_class_CIMHLP_Artikel"><area shape="rect" alt="Onderwerp" coords="383,246,565,356" href="#global_class_CIMHLP_Onderwerp"><area shape="rect" alt="Verwijzing" coords="164,643,274,711" href="#global_class_CIMHLP_Verwijzing"></map><p>
+                        </p><p></p>
+                     <p></p></div></section><section id="EAID_FAC4FED4_D02C_4fba_AC6D_E9F6FA4102CC"><div class="header-wrapper"><h3 id="x5-2-cim-hlp-artikelcomponent-specialisaties-overzicht"><bdi class="secno">5.2 </bdi>   CIM-HLP Artikelcomponent specialisaties - overzicht</h3><a class="self-link" href="#EAID_FAC4FED4_D02C_4fba_AC6D_E9F6FA4102CC" aria-label="Permalink for Section 5.2"></a></div><div class="imageinfo overview"><figure class="uml-diagram" id="fig-diagram-cim-hlp-artikelcomponent-specialisaties"><img id="EAID_FAC4FED4_D02C_4fba_AC6D_E9F6FA4102CC" src="data/Images/EAID_FAC4FED4_D02C_4fba_AC6D_E9F6FA4102CC.png" usemap="#imagemap-EAID_FAC4FED4_D02C_4fba_AC6D_E9F6FA4102CC" alt="Diagram: CIM-HLP Artikelcomponent specialisaties - overzicht"><figcaption><a class="self-link" href="#fig-diagram-cim-hlp-artikelcomponent-specialisaties">Figuur <bdi class="figno">3</bdi></a> <span class="fig-title"> ‒ Diagram: CIM-HLP Artikelcomponent specialisaties</span></figcaption></figure><map name="imagemap-EAID_FAC4FED4_D02C_4fba_AC6D_E9F6FA4102CC"><area shape="rect" alt="Chatbot" coords="835,575,971,684" href="#global_class_CIMHLP_Chatbot"><area shape="rect" alt="Doumentindex" coords="670,575,807,684" href="#global_class_CIMHLP_Doumentindex"><area shape="rect" alt="Platte tekst" coords="315,192,451,301" href="#global_class_CIMHLP_Plattetekst"><area shape="rect" alt="Rijke tekst" coords="465,192,602,301" href="#global_class_CIMHLP_Rijketekst"><area shape="rect" alt="Alineatekst" coords="164,192,301,301" href="#global_class_CIMHLP_Alineatekst"><area shape="rect" alt="Titeltekst" coords="14,192,150,301" href="#global_class_CIMHLP_Titeltekst"><area shape="rect" alt="Social (embedding)" coords="506,575,643,684" href="#global_class_CIMHLP_Socialembedding"><area shape="rect" alt="Document" coords="342,575,479,684" href="#global_class_CIMHLP_Document"><area shape="rect" alt="Plaatje" coords="14,575,150,684" href="#global_class_CIMHLP_Plaatje"><area shape="rect" alt="Video" coords="178,575,315,684" href="#global_class_CIMHLP_Video"><area shape="rect" alt="Multimedia" coords="14,369,971,438" href="#global_class_CIMHLP_Multimedia"><area shape="rect" alt="Tekst" coords="14,14,602,82" href="#global_class_CIMHLP_Tekst"></map><p>
+                        </p><p></p>
+                     <p></p></div></section><section id="objecttypen"><div class="header-wrapper"><h3 id="x5-3-objecttypen"><bdi class="secno">5.3 </bdi>Objecttypen   </h3><a class="self-link" href="#objecttypen" aria-label="Permalink for Section 5.3"></a></div>
+            <section id="global_class_CIMHLP_Artikel"><div class="header-wrapper"><h4 id="x5-3-1-artikel"><bdi class="secno">5.3.1 </bdi>   Artikel</h4><a class="self-link" href="#global_class_CIMHLP_Artikel" aria-label="Permalink for Section 5.3.1"></a></div>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th>Naam</th><td>Artikel</td></tr><tr><th>Populatie</th><td>
+                        Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.
+                     </td></tr><tr><th>Toelichting</th><td>
+                        Een inhoudelijke toelichting op de toepassing van het informatie-element.
+                     </td></tr><tr><th>Indicatie abstract object</th><td>Nee</td></tr></tbody></table>
+               <div class="header-wrapper"><h5 id="overzicht-attributen">Overzicht attributen  </h5><a class="self-link" href="#global_class_CIMHLP_Artikel" aria-label="Permalink for this Section"></a></div>
+                  <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 50%;"></colgroup><colgroup style="width: 10%;"></colgroup><colgroup style="width: 10%;"></colgroup><tbody><tr><th>Attribuutnaam</th><th>Definitie</th><th>Formaat</th><th>Card</th></tr><tr><td>
+                           <a class="link" href="#detail_attribute_CIMHLP_Artikel_titel">titel</a>
+                        </td><td></td><td>
+                           CHARACTERSTRING
+                        </td><td>1</td></tr><tr><td>
+                           <a class="link" href="#detail_attribute_CIMHLP_Artikel_type">type</a>
+                        </td><td></td><td>
+                           Artikeltype
+                        </td><td>1</td></tr></tbody></table>
                
-               <table style="width: 100%;">
-                  <colgroup style="width: 30%;"></colgroup>
-                  <colgroup style="width: 70%;"></colgroup>
-                  <tbody>
-                     <tr>
-                        <th>Naam</th>
-                        <td>titel</td>
-                     </tr>
-                     <tr>
-                        <th>Formaat</th>
-                        <td>
-                           <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
-                           </td>
-                     </tr>
-                     <tr>
-                        <th>Patroon</th>
-                        <td>
-                           De verzameling van waarden die gegevens van dit attribuutsoort kunnen hebben, dat
-                           wil zeggen het waardenbereik, uitgedrukt in een specifieke structuur.
-                           </td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie kardinaliteit</th>
-                        <td>1</td>
-                     </tr>
-                     <tr>
-                        <th>Toelichting</th>
-                        <td>
-                           Een inhoudelijke toelichting op de toepassing van het informatie-element.
-                           </td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie classificerend</th>
-                        <td>Nee</td>
-                     </tr>
-                     <tr>
-                        <th>Mogelijk geen waarde</th>
-                        <td>Nee</td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie identificerend</th>
-                        <td>Nee</td>
-                     </tr>
-                  </tbody>
-               </table>
-               </section>
-            
-            <section id="detail_attribute_CIMHLP_Artikel_type">
-               <div class="header-wrapper"><h6 id="x5-7-1-1-2-attribuutsoort-details-artikel-type"><bdi class="secno">5.7.1.1.2 </bdi>Attribuutsoort details  <a href="#global_class_CIMHLP_Artikel">Artikel</a> type</h6><a class="self-link" href="#detail_attribute_CIMHLP_Artikel_type" aria-label="Permalink for Section 5.7.1.1.2"></a></div>
-               
-               <table style="width: 100%;">
-                  <colgroup style="width: 30%;"></colgroup>
-                  <colgroup style="width: 70%;"></colgroup>
-                  <tbody>
-                     <tr>
-                        <th>Naam</th>
-                        <td>type</td>
-                     </tr>
-                     <tr>
-                        <th>Formaat</th>
-                        <td>
-                           <a class="link" href="#detail_class_CIMHLP_Artikeltype">Artikeltype</a>
-                           </td>
-                     </tr>
-                     <tr>
-                        <th>Patroon</th>
-                        <td>
-                           De verzameling van waarden die gegevens van dit attribuutsoort kunnen hebben, dat
-                           wil zeggen het waardenbereik, uitgedrukt in een specifieke structuur.
-                           </td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie kardinaliteit</th>
-                        <td>1</td>
-                     </tr>
-                     <tr>
-                        <th>Toelichting</th>
-                        <td>
-                           Een inhoudelijke toelichting op de toepassing van het informatie-element.
-                           </td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie classificerend</th>
-                        <td>Nee</td>
-                     </tr>
-                     <tr>
-                        <th>Mogelijk geen waarde</th>
-                        <td>Nee</td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie identificerend</th>
-                        <td>Nee</td>
-                     </tr>
-                  </tbody>
-               </table>
-               </section>
-            
-            <section id="detail_association_CIMHLP_Artikel_bestaatUit">
-               <div class="header-wrapper"><h6 id="x5-7-1-1-3-relatiesoort-details-artikel-bestaat-uit"><bdi class="secno">5.7.1.1.3 </bdi>Relatiesoort details  <a href="#global_class_CIMHLP_Artikel">Artikel</a> bestaat uit</h6><a class="self-link" href="#detail_association_CIMHLP_Artikel_bestaatUit" aria-label="Permalink for Section 5.7.1.1.3"></a></div>
-               
-               
-               <table style="width: 100%;">
-                  <colgroup style="width: 30%;"></colgroup>
-                  <colgroup style="width: 70%;"></colgroup>
-                  <tbody>
-                     <tr>
-                        <th>Naam</th>
-                        <td>bestaat uit</td>
-                     </tr>
-                     <tr>
-                        <th>Gerelateerd objecttype</th>
-                        <td>
-                           <a class="link" href="#global_class_CIMHLP_Artikelcomponent">Artikelcomponent</a>
-                           </td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie kardinaliteit</th>
-                        <td>1 .. *</td>
-                     </tr>
-                  </tbody>
-               </table>
-               </section>
-            </section>
-         
-         <section id="detail_class_CIMHLP_Onderwerp">
-            <div class="header-wrapper"><h5 id="x5-7-1-2-onderwerp"><bdi class="secno">5.7.1.2 </bdi>   Onderwerp</h5><a class="self-link" href="#detail_class_CIMHLP_Onderwerp" aria-label="Permalink for Section 5.7.1.2"></a></div>
-            
-            <section id="detail_attribute_CIMHLP_Onderwerp_naam">
-               <div class="header-wrapper"><h6 id="x5-7-1-2-1-attribuutsoort-details-onderwerp-naam"><bdi class="secno">5.7.1.2.1 </bdi>Attribuutsoort details  <a href="#global_class_CIMHLP_Onderwerp">Onderwerp</a> naam</h6><a class="self-link" href="#detail_attribute_CIMHLP_Onderwerp_naam" aria-label="Permalink for Section 5.7.1.2.1"></a></div>
-               
-               <table style="width: 100%;">
-                  <colgroup style="width: 30%;"></colgroup>
-                  <colgroup style="width: 70%;"></colgroup>
-                  <tbody>
-                     <tr>
-                        <th>Naam</th>
-                        <td>naam</td>
-                     </tr>
-                     <tr>
-                        <th>Formaat</th>
-                        <td>
-                           <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">Character­String</a>
-                           </td>
-                     </tr>
-                     <tr>
-                        <th>Patroon</th>
-                        <td>
-                           De verzameling van waarden die gegevens van dit attribuutsoort kunnen hebben, dat
-                           wil zeggen het waardenbereik, uitgedrukt in een specifieke structuur.
-                           </td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie kardinaliteit</th>
-                        <td>1</td>
-                     </tr>
-                     <tr>
-                        <th>Toelichting</th>
-                        <td>
-                           Een inhoudelijke toelichting op de toepassing van het informatie-element.
-                           </td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie classificerend</th>
-                        <td>Nee</td>
-                     </tr>
-                     <tr>
-                        <th>Mogelijk geen waarde</th>
-                        <td>Nee</td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie identificerend</th>
-                        <td>Nee</td>
-                     </tr>
-                  </tbody>
-               </table>
-               </section>
-            
-            <section id="detail_association_CIMHLP_Onderwerp_groepeert">
-               <div class="header-wrapper"><h6 id="x5-7-1-2-2-relatiesoort-details-onderwerp-groepeert"><bdi class="secno">5.7.1.2.2 </bdi>Relatiesoort details  <a href="#global_class_CIMHLP_Onderwerp">Onderwerp</a> groepeert</h6><a class="self-link" href="#detail_association_CIMHLP_Onderwerp_groepeert" aria-label="Permalink for Section 5.7.1.2.2"></a></div>
-               
-               
-               <table style="width: 100%;">
-                  <colgroup style="width: 30%;"></colgroup>
-                  <colgroup style="width: 70%;"></colgroup>
-                  <tbody>
-                     <tr>
-                        <th>Naam</th>
-                        <td>groepeert</td>
-                     </tr>
-                     <tr>
-                        <th>Gerelateerd objecttype</th>
-                        <td>
-                           <a class="link" href="#global_class_CIMHLP_Artikel">Artikel</a>
-                           </td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie kardinaliteit</th>
-                        <td>1 .. *</td>
-                     </tr>
-                  </tbody>
-               </table>
-               </section>
-            
-            <section id="detail_association_CIMHLP_Onderwerp_valtOnder">
-               <div class="header-wrapper"><h6 id="x5-7-1-2-3-relatiesoort-details-onderwerp-valt-onder"><bdi class="secno">5.7.1.2.3 </bdi>Relatiesoort details  <a href="#global_class_CIMHLP_Onderwerp">Onderwerp</a> valt onder</h6><a class="self-link" href="#detail_association_CIMHLP_Onderwerp_valtOnder" aria-label="Permalink for Section 5.7.1.2.3"></a></div>
-               
-               
-               <table style="width: 100%;">
-                  <colgroup style="width: 30%;"></colgroup>
-                  <colgroup style="width: 70%;"></colgroup>
-                  <tbody>
-                     <tr>
-                        <th>Naam</th>
-                        <td>valt onder</td>
-                     </tr>
-                     <tr>
-                        <th>Gerelateerd objecttype</th>
-                        <td>
-                           <a class="link" href="#global_class_CIMHLP_Onderwerp">Onderwerp</a>
-                           </td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie kardinaliteit</th>
-                        <td>0 .. 1</td>
-                     </tr>
-                  </tbody>
-               </table>
-               </section>
-            </section>
-         
-         
-         
-         
-         
-         
-         
-         
-         <section id="detail_class_CIMHLP_Artikelcomponent">
-            <div class="header-wrapper"><h5 id="x5-7-1-3-artikelcomponent"><bdi class="secno">5.7.1.3 </bdi>   Artikelcomponent</h5><a class="self-link" href="#detail_class_CIMHLP_Artikelcomponent" aria-label="Permalink for Section 5.7.1.3"></a></div>
-            
-            <section id="detail_attribute_CIMHLP_Artikelcomponent_identificatie">
-               <div class="header-wrapper"><h6 id="x5-7-1-3-1-attribuutsoort-details-artikelcomponent-identificatie"><bdi class="secno">5.7.1.3.1 </bdi>Attribuutsoort details  <a href="#global_class_CIMHLP_Artikelcomponent">Artikelcomponent</a> identificatie</h6><a class="self-link" href="#detail_attribute_CIMHLP_Artikelcomponent_identificatie" aria-label="Permalink for Section 5.7.1.3.1"></a></div>
-               
-               <table style="width: 100%;">
-                  <colgroup style="width: 30%;"></colgroup>
-                  <colgroup style="width: 70%;"></colgroup>
-                  <tbody>
-                     <tr>
-                        <th>Naam</th>
-                        <td>identificatie</td>
-                     </tr>
-                     <tr>
-                        <th>Formaat</th>
-                        <td>
-                           <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">URI</a>
-                           </td>
-                     </tr>
-                     <tr>
-                        <th>Patroon</th>
-                        <td>
-                           De verzameling van waarden die gegevens van dit attribuutsoort kunnen hebben, dat
-                           wil zeggen het waardenbereik, uitgedrukt in een specifieke structuur.
-                           </td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie kardinaliteit</th>
-                        <td>1</td>
-                     </tr>
-                     <tr>
-                        <th>Toelichting</th>
-                        <td>
-                           Een inhoudelijke toelichting op de toepassing van het informatie-element.
-                           </td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie classificerend</th>
-                        <td>Nee</td>
-                     </tr>
-                     <tr>
-                        <th>Mogelijk geen waarde</th>
-                        <td>Nee</td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie identificerend</th>
-                        <td>Ja</td>
-                     </tr>
-                  </tbody>
-               </table>
-               </section>
-            
-            <section id="detail_association_CIMHLP_Artikelcomponent_opgenomenIn">
-               <div class="header-wrapper"><h6 id="x5-7-1-3-2-relatiesoort-details-artikelcomponent-opgenomen-in"><bdi class="secno">5.7.1.3.2 </bdi>Relatiesoort details  <a href="#global_class_CIMHLP_Artikelcomponent">Artikelcomponent</a> opgenomen in</h6><a class="self-link" href="#detail_association_CIMHLP_Artikelcomponent_opgenomenIn" aria-label="Permalink for Section 5.7.1.3.2"></a></div>
-               
-               
-               <table style="width: 100%;">
-                  <colgroup style="width: 30%;"></colgroup>
-                  <colgroup style="width: 70%;"></colgroup>
-                  <tbody>
-                     <tr>
-                        <th>Naam</th>
-                        <td>opgenomen in</td>
-                     </tr>
-                     <tr>
-                        <th>Gerelateerd objecttype</th>
-                        <td>
-                           <a class="link" href="#global_class_CIMHLP_Artikelcomponent">Artikelcomponent</a>
-                           </td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie kardinaliteit</th>
-                        <td>1</td>
-                     </tr>
-                  </tbody>
-               </table>
-               </section>
-            </section>
-         
-         
-         
-         <section id="detail_class_CIMHLP_Helpitem">
-            <div class="header-wrapper"><h5 id="x5-7-1-4-helpitem"><bdi class="secno">5.7.1.4 </bdi>   Helpitem</h5><a class="self-link" href="#detail_class_CIMHLP_Helpitem" aria-label="Permalink for Section 5.7.1.4"></a></div>
-            
-            <section id="detail_attribute_CIMHLP_Helpitem_identificatie">
-               <div class="header-wrapper"><h6 id="x5-7-1-4-1-attribuutsoort-details-helpitem-identificatie"><bdi class="secno">5.7.1.4.1 </bdi>Attribuutsoort details  <a href="#global_class_CIMHLP_Helpitem">Helpitem</a> identificatie</h6><a class="self-link" href="#detail_attribute_CIMHLP_Helpitem_identificatie" aria-label="Permalink for Section 5.7.1.4.1"></a></div>
-               
-               <table style="width: 100%;">
-                  <colgroup style="width: 30%;"></colgroup>
-                  <colgroup style="width: 70%;"></colgroup>
-                  <tbody>
-                     <tr>
-                        <th>Naam</th>
-                        <td>identificatie</td>
-                     </tr>
-                     <tr>
-                        <th>Formaat</th>
-                        <td>
-                           <a class="external-link" href="https://docs.geostandaarden.nl/mim/vv-st-mim-20200225/#primitive-datatypes">URI</a>
-                           </td>
-                     </tr>
-                     <tr>
-                        <th>Patroon</th>
-                        <td>
-                           De verzameling van waarden die gegevens van dit attribuutsoort kunnen hebben, dat
-                           wil zeggen het waardenbereik, uitgedrukt in een specifieke structuur.
-                           </td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie kardinaliteit</th>
-                        <td>1</td>
-                     </tr>
-                     <tr>
-                        <th>Toelichting</th>
-                        <td>
-                           Een inhoudelijke toelichting op de toepassing van het informatie-element.
-                           </td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie classificerend</th>
-                        <td>Nee</td>
-                     </tr>
-                     <tr>
-                        <th>Mogelijk geen waarde</th>
-                        <td>Nee</td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie identificerend</th>
-                        <td>Ja</td>
-                     </tr>
-                  </tbody>
-               </table>
-               </section>
-            
-            <section id="detail_attribute_CIMHLP_Helpitem_tags">
-               <div class="header-wrapper"><h6 id="x5-7-1-4-2-attribuutsoort-details-helpitem-tags"><bdi class="secno">5.7.1.4.2 </bdi>Attribuutsoort details  <a href="#global_class_CIMHLP_Helpitem">Helpitem</a> tags</h6><a class="self-link" href="#detail_attribute_CIMHLP_Helpitem_tags" aria-label="Permalink for Section 5.7.1.4.2"></a></div>
-               
-               <table style="width: 100%;">
-                  <colgroup style="width: 30%;"></colgroup>
-                  <colgroup style="width: 70%;"></colgroup>
-                  <tbody>
-                     <tr>
-                        <th>Naam</th>
-                        <td>tags</td>
-                     </tr>
-                     <tr>
-                        <th>Formaat</th>
-                        <td>
-                           <a class="link" href="#detail_class_CIMHLP_Contexttag">Contexttag</a>
-                           </td>
-                     </tr>
-                     <tr>
-                        <th>Patroon</th>
-                        <td>
-                           De verzameling van waarden die gegevens van dit attribuutsoort kunnen hebben, dat
-                           wil zeggen het waardenbereik, uitgedrukt in een specifieke structuur.
-                           </td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie kardinaliteit</th>
-                        <td>0 .. *</td>
-                     </tr>
-                     <tr>
-                        <th>Toelichting</th>
-                        <td>
-                           Een inhoudelijke toelichting op de toepassing van het informatie-element.
-                           </td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie classificerend</th>
-                        <td>Nee</td>
-                     </tr>
-                     <tr>
-                        <th>Mogelijk geen waarde</th>
-                        <td>Nee</td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie identificerend</th>
-                        <td>Nee</td>
-                     </tr>
-                  </tbody>
-               </table>
-               </section>
-            </section>
-         
-         <section id="detail_class_CIMHLP_Verwijzing">
-            <div class="header-wrapper"><h5 id="x5-7-1-5-verwijzing"><bdi class="secno">5.7.1.5 </bdi>   Verwijzing</h5><a class="self-link" href="#detail_class_CIMHLP_Verwijzing" aria-label="Permalink for Section 5.7.1.5"></a></div>
-            
-            <section id="detail_association_CIMHLP_Verwijzing_verwijstNaar">
-               <div class="header-wrapper"><h6 id="x5-7-1-5-1-relatiesoort-details-verwijzing-verwijst-naar"><bdi class="secno">5.7.1.5.1 </bdi>Relatiesoort details  <a href="#global_class_CIMHLP_Verwijzing">Verwijzing</a> verwijst naar</h6><a class="self-link" href="#detail_association_CIMHLP_Verwijzing_verwijstNaar" aria-label="Permalink for Section 5.7.1.5.1"></a></div>
-               
-               
-               <table style="width: 100%;">
-                  <colgroup style="width: 30%;"></colgroup>
-                  <colgroup style="width: 70%;"></colgroup>
-                  <tbody>
-                     <tr>
-                        <th>Naam</th>
-                        <td>verwijst naar</td>
-                     </tr>
-                     <tr>
-                        <th>Gerelateerd objecttype</th>
-                        <td>
+               <div class="header-wrapper"><h5 id="overzicht-relaties">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMHLP_Artikel" aria-label="Permalink for this Section"></a></div>
+                  
+                  <table style="width: 100%;"><colgroup style="width: 50%;"></colgroup><colgroup style="width: 50%;"></colgroup><tbody><tr><th>Rol naam met kardinaliteiten</th><th>Definitie</th></tr><tr><td>
+                           Artikel
+                           [ 1 ]
                            
-                           Keuze uit
-                           <a class="link" href="#global_class_CIMHLP_Anker">Anker</a>, <a class="link" href="#global_class_CIMHLP_Helpitem">Helpitem</a>
+                              <a class="link" href="#detail_association_CIMHLP_Artikel_bestaatuit">bestaat uit</a>
                            
-                           </td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie kardinaliteit</th>
-                        <td>1</td>
-                     </tr>
-                  </tbody>
-               </table>
+                           
+                              <a class="link" href="#global_class_CIMHLP_Artikelcomponent">Artikelcomponent</a>
+                           
+                           [ 1 .. * ]
+                        </td><td></td></tr><tr><td>
+                           Artikel
+                           is specialisatie van
+                           
+                              <a class="link" href="#global_class_CIMHLP_Helpitem">Helpitem</a>
+                           
+                        </td><td></td></tr></tbody></table>
+               
+            </section>
+            <section id="global_class_CIMHLP_Onderwerp"><div class="header-wrapper"><h4 id="x5-3-2-onderwerp"><bdi class="secno">5.3.2 </bdi>   Onderwerp</h4><a class="self-link" href="#global_class_CIMHLP_Onderwerp" aria-label="Permalink for Section 5.3.2"></a></div>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th>Naam</th><td>Onderwerp</td></tr><tr><th>Populatie</th><td>
+                        Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.
+                     </td></tr><tr><th>Toelichting</th><td>
+                        Een inhoudelijke toelichting op de toepassing van het informatie-element.
+                     </td></tr><tr><th>Indicatie abstract object</th><td>Nee</td></tr></tbody></table>
+               <div class="header-wrapper"><h5 id="overzicht-attributen-0">Overzicht attributen  </h5><a class="self-link" href="#global_class_CIMHLP_Onderwerp" aria-label="Permalink for this Section"></a></div>
+                  <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 50%;"></colgroup><colgroup style="width: 10%;"></colgroup><colgroup style="width: 10%;"></colgroup><tbody><tr><th>Attribuutnaam</th><th>Definitie</th><th>Formaat</th><th>Card</th></tr><tr><td>
+                           <a class="link" href="#detail_attribute_CIMHLP_Onderwerp_naam">naam</a>
+                        </td><td></td><td>
+                           CHARACTERSTRING
+                        </td><td>1</td></tr></tbody></table>
+               
+               <div class="header-wrapper"><h5 id="overzicht-relaties-0">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMHLP_Onderwerp" aria-label="Permalink for this Section"></a></div>
+                  
+                  <table style="width: 100%;"><colgroup style="width: 50%;"></colgroup><colgroup style="width: 50%;"></colgroup><tbody><tr><th>Rol naam met kardinaliteiten</th><th>Definitie</th></tr><tr><td>
+                           Onderwerp
+                           [ 0 .. * ]
+                           
+                              <a class="link" href="#detail_association_CIMHLP_Onderwerp_groepeert">groepeert</a>
+                           
+                           
+                              <a class="link" href="#global_class_CIMHLP_Artikel">Artikel</a>
+                           
+                           [ 1 .. * ]
+                        </td><td></td></tr><tr><td>
+                           Onderwerp
+                           [ 0 .. * ]
+                           
+                              <a class="link" href="#detail_association_CIMHLP_Onderwerp_valtonder">valt onder</a>
+                           
+                           
+                              <a class="link" href="#global_class_CIMHLP_Onderwerp">Onderwerp</a>
+                           
+                           [ 0 .. 1 ]
+                        </td><td></td></tr><tr><td>
+                           Onderwerp
+                           is specialisatie van
+                           
+                              <a class="link" href="#global_class_CIMHLP_Helpitem">Helpitem</a>
+                           
+                        </td><td></td></tr></tbody></table>
+               
+            </section>
+            <section id="global_class_CIMHLP_Alineatekst"><div class="header-wrapper"><h4 id="x5-3-3-alineatekst"><bdi class="secno">5.3.3 </bdi>   Alineatekst</h4><a class="self-link" href="#global_class_CIMHLP_Alineatekst" aria-label="Permalink for Section 5.3.3"></a></div>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th>Naam</th><td>Alineatekst</td></tr><tr><th>Populatie</th><td>
+                        Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.
+                     </td></tr><tr><th>Toelichting</th><td>
+                        Een inhoudelijke toelichting op de toepassing van het informatie-element.
+                     </td></tr><tr><th>Indicatie abstract object</th><td>Nee</td></tr></tbody></table>
+               <div class="header-wrapper"><h5 id="overzicht-relaties-1">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMHLP_Alineatekst" aria-label="Permalink for this Section"></a></div>
+                  
+                  <table style="width: 100%;"><colgroup style="width: 50%;"></colgroup><colgroup style="width: 50%;"></colgroup><tbody><tr><th>Rol naam met kardinaliteiten</th><th>Definitie</th></tr><tr><td>
+                           Alineatekst
+                           is specialisatie van
+                           
+                              <a class="link" href="#global_class_CIMHLP_Tekst">Tekst</a>
+                           
+                        </td><td></td></tr></tbody></table>
+               
+            </section>
+            <section id="global_class_CIMHLP_Chatbot"><div class="header-wrapper"><h4 id="x5-3-4-chatbot"><bdi class="secno">5.3.4 </bdi>   Chatbot</h4><a class="self-link" href="#global_class_CIMHLP_Chatbot" aria-label="Permalink for Section 5.3.4"></a></div>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th>Naam</th><td>Chatbot</td></tr><tr><th>Populatie</th><td>
+                        Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.
+                     </td></tr><tr><th>Toelichting</th><td>
+                        Een inhoudelijke toelichting op de toepassing van het informatie-element.
+                     </td></tr><tr><th>Indicatie abstract object</th><td>Nee</td></tr></tbody></table>
+               <div class="header-wrapper"><h5 id="overzicht-relaties-2">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMHLP_Chatbot" aria-label="Permalink for this Section"></a></div>
+                  
+                  <table style="width: 100%;"><colgroup style="width: 50%;"></colgroup><colgroup style="width: 50%;"></colgroup><tbody><tr><th>Rol naam met kardinaliteiten</th><th>Definitie</th></tr><tr><td>
+                           Chatbot
+                           is specialisatie van
+                           
+                              <a class="link" href="#global_class_CIMHLP_Multimedia">Multimedia</a>
+                           
+                        </td><td></td></tr></tbody></table>
+               
+            </section>
+            <section id="global_class_CIMHLP_Plaatje"><div class="header-wrapper"><h4 id="x5-3-5-plaatje"><bdi class="secno">5.3.5 </bdi>   Plaatje</h4><a class="self-link" href="#global_class_CIMHLP_Plaatje" aria-label="Permalink for Section 5.3.5"></a></div>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th>Naam</th><td>Plaatje</td></tr><tr><th>Populatie</th><td>
+                        Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.
+                     </td></tr><tr><th>Toelichting</th><td>
+                        Een inhoudelijke toelichting op de toepassing van het informatie-element.
+                     </td></tr><tr><th>Indicatie abstract object</th><td>Nee</td></tr></tbody></table>
+               <div class="header-wrapper"><h5 id="overzicht-relaties-3">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMHLP_Plaatje" aria-label="Permalink for this Section"></a></div>
+                  
+                  <table style="width: 100%;"><colgroup style="width: 50%;"></colgroup><colgroup style="width: 50%;"></colgroup><tbody><tr><th>Rol naam met kardinaliteiten</th><th>Definitie</th></tr><tr><td>
+                           Plaatje
+                           is specialisatie van
+                           
+                              <a class="link" href="#global_class_CIMHLP_Multimedia">Multimedia</a>
+                           
+                        </td><td></td></tr></tbody></table>
+               
+            </section>
+            <section id="global_class_CIMHLP_Tekst"><div class="header-wrapper"><h4 id="x5-3-6-tekst"><bdi class="secno">5.3.6 </bdi>   Tekst</h4><a class="self-link" href="#global_class_CIMHLP_Tekst" aria-label="Permalink for Section 5.3.6"></a></div>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th>Naam</th><td>Tekst</td></tr><tr><th>Populatie</th><td>
+                        Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.
+                     </td></tr><tr><th>Toelichting</th><td>
+                        Een inhoudelijke toelichting op de toepassing van het informatie-element.
+                     </td></tr><tr><th>Indicatie abstract object</th><td>Ja</td></tr></tbody></table>
+               <div class="header-wrapper"><h5 id="overzicht-relaties-4">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMHLP_Tekst" aria-label="Permalink for this Section"></a></div>
+                  
+                  <table style="width: 100%;"><colgroup style="width: 50%;"></colgroup><colgroup style="width: 50%;"></colgroup><tbody><tr><th>Rol naam met kardinaliteiten</th><th>Definitie</th></tr><tr><td>
+                           Tekst
+                           is specialisatie van
+                           
+                              <a class="link" href="#global_class_CIMHLP_Artikelcomponent">Artikelcomponent</a>
+                           
+                        </td><td></td></tr></tbody></table>
+               
+            </section>
+            <section id="global_class_CIMHLP_Document"><div class="header-wrapper"><h4 id="x5-3-7-document"><bdi class="secno">5.3.7 </bdi>   Document</h4><a class="self-link" href="#global_class_CIMHLP_Document" aria-label="Permalink for Section 5.3.7"></a></div>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th>Naam</th><td>Document</td></tr><tr><th>Populatie</th><td>
+                        Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.
+                     </td></tr><tr><th>Toelichting</th><td>
+                        Een inhoudelijke toelichting op de toepassing van het informatie-element.
+                     </td></tr><tr><th>Indicatie abstract object</th><td>Nee</td></tr></tbody></table>
+               <div class="header-wrapper"><h5 id="overzicht-relaties-5">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMHLP_Document" aria-label="Permalink for this Section"></a></div>
+                  
+                  <table style="width: 100%;"><colgroup style="width: 50%;"></colgroup><colgroup style="width: 50%;"></colgroup><tbody><tr><th>Rol naam met kardinaliteiten</th><th>Definitie</th></tr><tr><td>
+                           Document
+                           is specialisatie van
+                           
+                              <a class="link" href="#global_class_CIMHLP_Multimedia">Multimedia</a>
+                           
+                        </td><td></td></tr></tbody></table>
+               
+            </section>
+            <section id="global_class_CIMHLP_Titeltekst"><div class="header-wrapper"><h4 id="x5-3-8-titeltekst"><bdi class="secno">5.3.8 </bdi>   Titeltekst</h4><a class="self-link" href="#global_class_CIMHLP_Titeltekst" aria-label="Permalink for Section 5.3.8"></a></div>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th>Naam</th><td>Titeltekst</td></tr><tr><th>Populatie</th><td>
+                        Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.
+                     </td></tr><tr><th>Toelichting</th><td>
+                        Een inhoudelijke toelichting op de toepassing van het informatie-element.
+                     </td></tr><tr><th>Indicatie abstract object</th><td>Nee</td></tr></tbody></table>
+               <div class="header-wrapper"><h5 id="overzicht-relaties-6">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMHLP_Titeltekst" aria-label="Permalink for this Section"></a></div>
+                  
+                  <table style="width: 100%;"><colgroup style="width: 50%;"></colgroup><colgroup style="width: 50%;"></colgroup><tbody><tr><th>Rol naam met kardinaliteiten</th><th>Definitie</th></tr><tr><td>
+                           Titeltekst
+                           is specialisatie van
+                           
+                              <a class="link" href="#global_class_CIMHLP_Tekst">Tekst</a>
+                           
+                        </td><td></td></tr></tbody></table>
+               
+            </section>
+            <section id="global_class_CIMHLP_Socialembedding"><div class="header-wrapper"><h4 id="x5-3-9-social-embedding"><bdi class="secno">5.3.9 </bdi>   Social (embedding)</h4><a class="self-link" href="#global_class_CIMHLP_Socialembedding" aria-label="Permalink for Section 5.3.9"></a></div>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th>Naam</th><td>Social (embedding)</td></tr><tr><th>Populatie</th><td>
+                        Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.
+                     </td></tr><tr><th>Toelichting</th><td>
+                        Een inhoudelijke toelichting op de toepassing van het informatie-element.
+                     </td></tr><tr><th>Indicatie abstract object</th><td>Nee</td></tr></tbody></table>
+               <div class="header-wrapper"><h5 id="overzicht-relaties-7">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMHLP_Socialembedding" aria-label="Permalink for this Section"></a></div>
+                  
+                  <table style="width: 100%;"><colgroup style="width: 50%;"></colgroup><colgroup style="width: 50%;"></colgroup><tbody><tr><th>Rol naam met kardinaliteiten</th><th>Definitie</th></tr><tr><td>
+                           Social (embedding)
+                           is specialisatie van
+                           
+                              <a class="link" href="#global_class_CIMHLP_Multimedia">Multimedia</a>
+                           
+                        </td><td></td></tr></tbody></table>
+               
+            </section>
+            <section id="global_class_CIMHLP_Artikelcomponent"><div class="header-wrapper"><h4 id="x5-3-10-artikelcomponent"><bdi class="secno">5.3.10 </bdi>   Artikelcomponent</h4><a class="self-link" href="#global_class_CIMHLP_Artikelcomponent" aria-label="Permalink for Section 5.3.10"></a></div>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th>Naam</th><td>Artikelcomponent</td></tr><tr><th>Unieke aanduiding</th><td>identificatie</td></tr><tr><th>Populatie</th><td>
+                        Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.
+                     </td></tr><tr><th>Toelichting</th><td>
+                        Een inhoudelijke toelichting op de toepassing van het informatie-element.
+                     </td></tr><tr><th>Indicatie abstract object</th><td>Nee</td></tr></tbody></table>
+               <div class="header-wrapper"><h5 id="overzicht-attributen-1">Overzicht attributen  </h5><a class="self-link" href="#global_class_CIMHLP_Artikelcomponent" aria-label="Permalink for this Section"></a></div>
+                  <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 50%;"></colgroup><colgroup style="width: 10%;"></colgroup><colgroup style="width: 10%;"></colgroup><tbody><tr><th>Attribuutnaam</th><th>Definitie</th><th>Formaat</th><th>Card</th></tr><tr><td>
+                           <a class="link" href="#detail_attribute_CIMHLP_Artikelcomponent_identificatie">identificatie</a>
+                        </td><td></td><td>
+                           URI
+                        </td><td>1</td></tr></tbody></table>
+               
+               <div class="header-wrapper"><h5 id="overzicht-relaties-8">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMHLP_Artikelcomponent" aria-label="Permalink for this Section"></a></div>
+                  
+                  <table style="width: 100%;"><colgroup style="width: 50%;"></colgroup><colgroup style="width: 50%;"></colgroup><tbody><tr><th>Rol naam met kardinaliteiten</th><th>Definitie</th></tr><tr><td>
+                           Artikelcomponent
+                           [ 0 .. * ]
+                           
+                              <a class="link" href="#detail_association_CIMHLP_Artikelcomponent_opgenomenin">opgenomen in</a>
+                           
+                           
+                              <a class="link" href="#global_class_CIMHLP_Artikelcomponent">Artikelcomponent</a>
+                           
+                           [ 1 ]
+                        </td><td></td></tr></tbody></table>
+               
+            </section>
+            <section id="global_class_CIMHLP_Anker"><div class="header-wrapper"><h4 id="x5-3-11-anker"><bdi class="secno">5.3.11 </bdi>   Anker</h4><a class="self-link" href="#global_class_CIMHLP_Anker" aria-label="Permalink for Section 5.3.11"></a></div>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th>Naam</th><td>Anker</td></tr><tr><th>Populatie</th><td>
+                        Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.
+                     </td></tr><tr><th>Toelichting</th><td>
+                        Een inhoudelijke toelichting op de toepassing van het informatie-element.
+                     </td></tr><tr><th>Indicatie abstract object</th><td>Nee</td></tr></tbody></table>
+               <div class="header-wrapper"><h5 id="overzicht-relaties-9">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMHLP_Anker" aria-label="Permalink for this Section"></a></div>
+                  
+                  <table style="width: 100%;"><colgroup style="width: 50%;"></colgroup><colgroup style="width: 50%;"></colgroup><tbody><tr><th>Rol naam met kardinaliteiten</th><th>Definitie</th></tr><tr><td>
+                           Anker
+                           is specialisatie van
+                           
+                              <a class="link" href="#global_class_CIMHLP_Artikelcomponent">Artikelcomponent</a>
+                           
+                        </td><td></td></tr></tbody></table>
+               
+            </section>
+            <section id="global_class_CIMHLP_Multimedia"><div class="header-wrapper"><h4 id="x5-3-12-multimedia"><bdi class="secno">5.3.12 </bdi>   Multimedia</h4><a class="self-link" href="#global_class_CIMHLP_Multimedia" aria-label="Permalink for Section 5.3.12"></a></div>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th>Naam</th><td>Multimedia</td></tr><tr><th>Populatie</th><td>
+                        Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.
+                     </td></tr><tr><th>Toelichting</th><td>
+                        Een inhoudelijke toelichting op de toepassing van het informatie-element.
+                     </td></tr><tr><th>Indicatie abstract object</th><td>Nee</td></tr></tbody></table>
+               <div class="header-wrapper"><h5 id="overzicht-relaties-10">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMHLP_Multimedia" aria-label="Permalink for this Section"></a></div>
+                  
+                  <table style="width: 100%;"><colgroup style="width: 50%;"></colgroup><colgroup style="width: 50%;"></colgroup><tbody><tr><th>Rol naam met kardinaliteiten</th><th>Definitie</th></tr><tr><td>
+                           Multimedia
+                           is specialisatie van
+                           
+                              <a class="link" href="#global_class_CIMHLP_Artikelcomponent">Artikelcomponent</a>
+                           
+                        </td><td></td></tr></tbody></table>
+               
+            </section>
+            <section id="global_class_CIMHLP_Helpitem"><div class="header-wrapper"><h4 id="x5-3-13-helpitem"><bdi class="secno">5.3.13 </bdi>   Helpitem</h4><a class="self-link" href="#global_class_CIMHLP_Helpitem" aria-label="Permalink for Section 5.3.13"></a></div>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th>Naam</th><td>Helpitem</td></tr><tr><th>Unieke aanduiding</th><td>identificatie</td></tr><tr><th>Populatie</th><td>
+                        Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.
+                     </td></tr><tr><th>Toelichting</th><td>
+                        Een inhoudelijke toelichting op de toepassing van het informatie-element.
+                     </td></tr><tr><th>Indicatie abstract object</th><td>Nee</td></tr></tbody></table>
+               <div class="header-wrapper"><h5 id="overzicht-attributen-2">Overzicht attributen  </h5><a class="self-link" href="#global_class_CIMHLP_Helpitem" aria-label="Permalink for this Section"></a></div>
+                  <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 50%;"></colgroup><colgroup style="width: 10%;"></colgroup><colgroup style="width: 10%;"></colgroup><tbody><tr><th>Attribuutnaam</th><th>Definitie</th><th>Formaat</th><th>Card</th></tr><tr><td>
+                           <a class="link" href="#detail_attribute_CIMHLP_Helpitem_identificatie">identificatie</a>
+                        </td><td></td><td>
+                           URI
+                        </td><td>1</td></tr><tr><td>
+                           <a class="link" href="#detail_attribute_CIMHLP_Helpitem_tags">tags</a>
+                        </td><td></td><td>
+                           <a class="link" href="#global_class_CIMHLP_Contexttag">Contexttag</a>
+                        </td><td>0 .. *</td></tr></tbody></table>
+               
+            </section>
+            <section id="global_class_CIMHLP_Verwijzing"><div class="header-wrapper"><h4 id="x5-3-14-verwijzing"><bdi class="secno">5.3.14 </bdi>   Verwijzing</h4><a class="self-link" href="#global_class_CIMHLP_Verwijzing" aria-label="Permalink for Section 5.3.14"></a></div>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th>Naam</th><td>Verwijzing</td></tr><tr><th>Populatie</th><td>
+                        Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.
+                     </td></tr><tr><th>Toelichting</th><td>
+                        Een inhoudelijke toelichting op de toepassing van het informatie-element.
+                     </td></tr><tr><th>Indicatie abstract object</th><td>Nee</td></tr></tbody></table>
+               <div class="header-wrapper"><h5 id="overzicht-relaties-11">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMHLP_Verwijzing" aria-label="Permalink for this Section"></a></div>
+                  
+                  <table style="width: 100%;"><colgroup style="width: 50%;"></colgroup><colgroup style="width: 50%;"></colgroup><tbody><tr><th>Rol naam met kardinaliteiten</th><th>Definitie</th></tr><tr><td>
+                           Verwijzing
+                           [ 0 .. * ]
+                           
+                              <a class="link" href="#detail_association_CIMHLP_Verwijzing_verwijstnaar">verwijst naar</a>
+                           
+                           
+                              <a class="link" href="#global_class_CIMHLP_VerwijzingKeuze">Verwijzing­Keuze</a>
+                           
+                           [ 1 ]
+                        </td><td></td></tr><tr><td>
+                           Verwijzing
+                           is specialisatie van
+                           
+                              <a class="link" href="#global_class_CIMHLP_Artikelcomponent">Artikelcomponent</a>
+                           
+                        </td><td></td></tr></tbody></table>
+               
+            </section>
+            <section id="global_class_CIMHLP_Video"><div class="header-wrapper"><h4 id="x5-3-15-video"><bdi class="secno">5.3.15 </bdi>   Video</h4><a class="self-link" href="#global_class_CIMHLP_Video" aria-label="Permalink for Section 5.3.15"></a></div>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th>Naam</th><td>Video</td></tr><tr><th>Populatie</th><td>
+                        Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.
+                     </td></tr><tr><th>Toelichting</th><td>
+                        Een inhoudelijke toelichting op de toepassing van het informatie-element.
+                     </td></tr><tr><th>Indicatie abstract object</th><td>Nee</td></tr></tbody></table>
+               <div class="header-wrapper"><h5 id="overzicht-relaties-12">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMHLP_Video" aria-label="Permalink for this Section"></a></div>
+                  
+                  <table style="width: 100%;"><colgroup style="width: 50%;"></colgroup><colgroup style="width: 50%;"></colgroup><tbody><tr><th>Rol naam met kardinaliteiten</th><th>Definitie</th></tr><tr><td>
+                           Video
+                           is specialisatie van
+                           
+                              <a class="link" href="#global_class_CIMHLP_Multimedia">Multimedia</a>
+                           
+                        </td><td></td></tr></tbody></table>
+               
+            </section>
+            <section id="global_class_CIMHLP_Inhoudsopgave"><div class="header-wrapper"><h4 id="x5-3-16-inhoudsopgave"><bdi class="secno">5.3.16 </bdi>   Inhoudsopgave</h4><a class="self-link" href="#global_class_CIMHLP_Inhoudsopgave" aria-label="Permalink for Section 5.3.16"></a></div>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th>Naam</th><td>Inhoudsopgave</td></tr><tr><th>Populatie</th><td>
+                        Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.
+                     </td></tr><tr><th>Toelichting</th><td>
+                        Een inhoudelijke toelichting op de toepassing van het informatie-element.
+                     </td></tr><tr><th>Indicatie abstract object</th><td>Nee</td></tr></tbody></table>
+               <div class="header-wrapper"><h5 id="overzicht-relaties-13">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMHLP_Inhoudsopgave" aria-label="Permalink for this Section"></a></div>
+                  
+                  <table style="width: 100%;"><colgroup style="width: 50%;"></colgroup><colgroup style="width: 50%;"></colgroup><tbody><tr><th>Rol naam met kardinaliteiten</th><th>Definitie</th></tr><tr><td>
+                           Inhoudsopgave
+                           is specialisatie van
+                           
+                              <a class="link" href="#global_class_CIMHLP_Artikelcomponent">Artikelcomponent</a>
+                           
+                        </td><td></td></tr></tbody></table>
+               
+            </section>
+            <section id="global_class_CIMHLP_Doumentindex"><div class="header-wrapper"><h4 id="x5-3-17-doumentindex"><bdi class="secno">5.3.17 </bdi>   Doumentindex</h4><a class="self-link" href="#global_class_CIMHLP_Doumentindex" aria-label="Permalink for Section 5.3.17"></a></div>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th>Naam</th><td>Doumentindex</td></tr><tr><th>Populatie</th><td>
+                        Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.
+                     </td></tr><tr><th>Toelichting</th><td>
+                        Een inhoudelijke toelichting op de toepassing van het informatie-element.
+                     </td></tr><tr><th>Indicatie abstract object</th><td>Nee</td></tr></tbody></table>
+               <div class="header-wrapper"><h5 id="overzicht-relaties-14">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMHLP_Doumentindex" aria-label="Permalink for this Section"></a></div>
+                  
+                  <table style="width: 100%;"><colgroup style="width: 50%;"></colgroup><colgroup style="width: 50%;"></colgroup><tbody><tr><th>Rol naam met kardinaliteiten</th><th>Definitie</th></tr><tr><td>
+                           Doumentindex
+                           is specialisatie van
+                           
+                              <a class="link" href="#global_class_CIMHLP_Multimedia">Multimedia</a>
+                           
+                        </td><td></td></tr></tbody></table>
+               
+            </section>
+            <section id="global_class_CIMHLP_Rijketekst"><div class="header-wrapper"><h4 id="x5-3-18-rijke-tekst"><bdi class="secno">5.3.18 </bdi>   Rijke tekst</h4><a class="self-link" href="#global_class_CIMHLP_Rijketekst" aria-label="Permalink for Section 5.3.18"></a></div>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th>Naam</th><td>Rijke tekst</td></tr><tr><th>Populatie</th><td>
+                        Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.
+                     </td></tr><tr><th>Toelichting</th><td>
+                        Een inhoudelijke toelichting op de toepassing van het informatie-element.
+                     </td></tr><tr><th>Indicatie abstract object</th><td>Nee</td></tr></tbody></table>
+               <div class="header-wrapper"><h5 id="overzicht-relaties-15">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMHLP_Rijketekst" aria-label="Permalink for this Section"></a></div>
+                  
+                  <table style="width: 100%;"><colgroup style="width: 50%;"></colgroup><colgroup style="width: 50%;"></colgroup><tbody><tr><th>Rol naam met kardinaliteiten</th><th>Definitie</th></tr><tr><td>
+                           Rijke tekst
+                           is specialisatie van
+                           
+                              <a class="link" href="#global_class_CIMHLP_Tekst">Tekst</a>
+                           
+                        </td><td></td></tr></tbody></table>
+               
+            </section>
+            <section id="global_class_CIMHLP_Plattetekst"><div class="header-wrapper"><h4 id="x5-3-19-platte-tekst"><bdi class="secno">5.3.19 </bdi>   Platte tekst</h4><a class="self-link" href="#global_class_CIMHLP_Plattetekst" aria-label="Permalink for Section 5.3.19"></a></div>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th>Naam</th><td>Platte tekst</td></tr><tr><th>Populatie</th><td>
+                        Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie voorhanden zijn.
+                     </td></tr><tr><th>Toelichting</th><td>
+                        Een inhoudelijke toelichting op de toepassing van het informatie-element.
+                     </td></tr><tr><th>Indicatie abstract object</th><td>Nee</td></tr></tbody></table>
+               <div class="header-wrapper"><h5 id="overzicht-relaties-16">Overzicht relaties  </h5><a class="self-link" href="#global_class_CIMHLP_Plattetekst" aria-label="Permalink for this Section"></a></div>
+                  
+                  <table style="width: 100%;"><colgroup style="width: 50%;"></colgroup><colgroup style="width: 50%;"></colgroup><tbody><tr><th>Rol naam met kardinaliteiten</th><th>Definitie</th></tr><tr><td>
+                           Platte tekst
+                           is specialisatie van
+                           
+                              <a class="link" href="#global_class_CIMHLP_Tekst">Tekst</a>
+                           
+                        </td><td></td></tr></tbody></table>
+               
+            </section>
+         </section><section id="referentielijsten"><div class="header-wrapper"><h3 id="x5-4-referentielijsten"><bdi class="secno">5.4 </bdi>Referentielijsten   </h3><a class="self-link" href="#referentielijsten" aria-label="Permalink for Section 5.4"></a></div>
+            <section id="global_class_CIMHLP_Contexttag"><div class="header-wrapper"><h4 id="x5-4-1-referentielijst-contexttag"><bdi class="secno">5.4.1 </bdi>Referentielijst   Contexttag</h4><a class="self-link" href="#global_class_CIMHLP_Contexttag" aria-label="Permalink for Section 5.4.1"></a></div>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th>Naam</th><td>Contexttag</td></tr><tr><th>Toelichting</th><td>
+                        Een inhoudelijke toelichting op de toepassing van het informatie-element.
+                     </td></tr></tbody></table>
+            </section>
+         </section><section id="keuzen"><div class="header-wrapper"><h3 id="x5-5-keuzen"><bdi class="secno">5.5 </bdi>Keuzen   </h3><a class="self-link" href="#keuzen" aria-label="Permalink for Section 5.5"></a></div>
+            <section id="global_class_CIMHLP_VerwijzingKeuze"><div class="header-wrapper"><h4 id="x5-5-1-verwijzing-keuze"><bdi class="secno">5.5.1 </bdi>   Verwijzing­Keuze</h4><a class="self-link" href="#global_class_CIMHLP_VerwijzingKeuze" aria-label="Permalink for Section 5.5.1"></a></div>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th>Naam</th><td>Verwijzing­Keuze</td></tr></tbody></table>
+            </section>
+         </section><section id="attribuut-en-relatiesoort-details"><div class="header-wrapper"><h3 id="x5-6-attribuut-en-relatiesoort-details"><bdi class="secno">5.6 </bdi>Attribuut- en relatiesoort details  </h3><a class="self-link" href="#attribuut-en-relatiesoort-details" aria-label="Permalink for Section 5.6"></a></div>
+            <section id="objecttype-details"><div class="header-wrapper"><h4 id="x5-6-1-objecttype-details"><bdi class="secno">5.6.1 </bdi>Objecttype details  </h4><a class="self-link" href="#objecttype-details" aria-label="Permalink for Section 5.6.1"></a></div>
+               <section id="detail_class_CIMHLP_Artikel"><div class="header-wrapper"><h5 id="x5-6-1-1-artikel"><bdi class="secno">5.6.1.1 </bdi>   Artikel</h5><a class="self-link" href="#detail_class_CIMHLP_Artikel" aria-label="Permalink for Section 5.6.1.1"></a></div>
+                  <section id="detail_attribute_CIMHLP_Artikel_titel"><div class="header-wrapper"><h6 id="x5-6-1-1-1-attribuutsoort-details-artikel-titel"><bdi class="secno">5.6.1.1.1 </bdi>Attribuutsoort details  <a href="#global_class_CIMHLP_Artikel">Artikel</a> titel</h6><a class="self-link" href="#detail_attribute_CIMHLP_Artikel_titel" aria-label="Permalink for Section 5.6.1.1.1"></a></div>
+                     <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th>Naam</th><td>titel</td></tr><tr><th>Formaat</th><td>CHARACTERSTRING</td></tr><tr><th>Patroon</th><td>
+                              De verzameling van waarden die gegevens van dit attribuutsoort kunnen hebben, dat wil zeggen het waardenbereik, uitgedrukt in een specifieke structuur.
+                           </td></tr><tr><th>Kardinaliteit</th><td>1</td></tr><tr><th>Toelichting</th><td>
+                              Een inhoudelijke toelichting op de toepassing van het informatie-element.
+                           </td></tr><tr><th>Indicatie classificerend</th><td>Nee</td></tr><tr><th>Mogelijk geen waarde</th><td>Nee</td></tr><tr><th>Indicatie identificerend</th><td>Nee</td></tr></tbody></table>
+                  </section>
+                  <section id="detail_attribute_CIMHLP_Artikel_type"><div class="header-wrapper"><h6 id="x5-6-1-1-2-attribuutsoort-details-artikel-type"><bdi class="secno">5.6.1.1.2 </bdi>Attribuutsoort details  <a href="#global_class_CIMHLP_Artikel">Artikel</a> type</h6><a class="self-link" href="#detail_attribute_CIMHLP_Artikel_type" aria-label="Permalink for Section 5.6.1.1.2"></a></div>
+                     <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th>Naam</th><td>type</td></tr><tr><th>Formaat</th><td>
+                              <a class="link" href="#detail_class_CIMHLP_Artikeltype">Artikeltype</a>
+                           </td></tr><tr><th>Patroon</th><td>
+                              De verzameling van waarden die gegevens van dit attribuutsoort kunnen hebben, dat wil zeggen het waardenbereik, uitgedrukt in een specifieke structuur.
+                           </td></tr><tr><th>Kardinaliteit</th><td>1</td></tr><tr><th>Toelichting</th><td>
+                              Een inhoudelijke toelichting op de toepassing van het informatie-element.
+                           </td></tr><tr><th>Indicatie classificerend</th><td>Nee</td></tr><tr><th>Mogelijk geen waarde</th><td>Nee</td></tr><tr><th>Indicatie identificerend</th><td>Nee</td></tr></tbody></table>
+                  </section>
+                  <section id="detail_association_CIMHLP_Artikel_bestaatuit"><div class="header-wrapper"><h6 id="x5-6-1-1-3-relatiesoort-details-artikel-bestaat-uit"><bdi class="secno">5.6.1.1.3 </bdi>Relatiesoort details  <a href="#global_class_CIMHLP_Artikel">Artikel</a> bestaat uit</h6><a class="self-link" href="#detail_association_CIMHLP_Artikel_bestaatuit" aria-label="Permalink for Section 5.6.1.1.3"></a></div>
+                     
+                     <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th>Naam</th><td>bestaat uit</td></tr><tr><th>Gerelateerd objecttype</th><td>
+                              <a class="link" href="#global_class_CIMHLP_Artikelcomponent">Artikelcomponent</a>
+                           </td></tr><tr><th>Kardinaliteit</th><td>1 .. *</td></tr></tbody></table>
+                  </section>
+               </section>
+               <section id="detail_class_CIMHLP_Onderwerp"><div class="header-wrapper"><h5 id="x5-6-1-2-onderwerp"><bdi class="secno">5.6.1.2 </bdi>   Onderwerp</h5><a class="self-link" href="#detail_class_CIMHLP_Onderwerp" aria-label="Permalink for Section 5.6.1.2"></a></div>
+                  <section id="detail_attribute_CIMHLP_Onderwerp_naam"><div class="header-wrapper"><h6 id="x5-6-1-2-1-attribuutsoort-details-onderwerp-naam"><bdi class="secno">5.6.1.2.1 </bdi>Attribuutsoort details  <a href="#global_class_CIMHLP_Onderwerp">Onderwerp</a> naam</h6><a class="self-link" href="#detail_attribute_CIMHLP_Onderwerp_naam" aria-label="Permalink for Section 5.6.1.2.1"></a></div>
+                     <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th>Naam</th><td>naam</td></tr><tr><th>Formaat</th><td>CHARACTERSTRING</td></tr><tr><th>Patroon</th><td>
+                              De verzameling van waarden die gegevens van dit attribuutsoort kunnen hebben, dat wil zeggen het waardenbereik, uitgedrukt in een specifieke structuur.
+                           </td></tr><tr><th>Kardinaliteit</th><td>1</td></tr><tr><th>Toelichting</th><td>
+                              Een inhoudelijke toelichting op de toepassing van het informatie-element.
+                           </td></tr><tr><th>Indicatie classificerend</th><td>Nee</td></tr><tr><th>Mogelijk geen waarde</th><td>Nee</td></tr><tr><th>Indicatie identificerend</th><td>Nee</td></tr></tbody></table>
+                  </section>
+                  <section id="detail_association_CIMHLP_Onderwerp_groepeert"><div class="header-wrapper"><h6 id="x5-6-1-2-2-relatiesoort-details-onderwerp-groepeert"><bdi class="secno">5.6.1.2.2 </bdi>Relatiesoort details  <a href="#global_class_CIMHLP_Onderwerp">Onderwerp</a> groepeert</h6><a class="self-link" href="#detail_association_CIMHLP_Onderwerp_groepeert" aria-label="Permalink for Section 5.6.1.2.2"></a></div>
+                     
+                     <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th>Naam</th><td>groepeert</td></tr><tr><th>Gerelateerd objecttype</th><td>
+                              <a class="link" href="#global_class_CIMHLP_Artikel">Artikel</a>
+                           </td></tr><tr><th>Kardinaliteit</th><td>1 .. *</td></tr></tbody></table>
+                  </section>
+                  <section id="detail_association_CIMHLP_Onderwerp_valtonder"><div class="header-wrapper"><h6 id="x5-6-1-2-3-relatiesoort-details-onderwerp-valt-onder"><bdi class="secno">5.6.1.2.3 </bdi>Relatiesoort details  <a href="#global_class_CIMHLP_Onderwerp">Onderwerp</a> valt onder</h6><a class="self-link" href="#detail_association_CIMHLP_Onderwerp_valtonder" aria-label="Permalink for Section 5.6.1.2.3"></a></div>
+                     
+                     <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th>Naam</th><td>valt onder</td></tr><tr><th>Gerelateerd objecttype</th><td>
+                              <a class="link" href="#global_class_CIMHLP_Onderwerp">Onderwerp</a>
+                           </td></tr><tr><th>Kardinaliteit</th><td>0 .. 1</td></tr></tbody></table>
+                  </section>
+               </section>
+               
+               
+               
+               
+               
+               
+               
+               <section id="detail_class_CIMHLP_Artikelcomponent"><div class="header-wrapper"><h5 id="x5-6-1-3-artikelcomponent"><bdi class="secno">5.6.1.3 </bdi>   Artikelcomponent</h5><a class="self-link" href="#detail_class_CIMHLP_Artikelcomponent" aria-label="Permalink for Section 5.6.1.3"></a></div>
+                  <section id="detail_attribute_CIMHLP_Artikelcomponent_identificatie"><div class="header-wrapper"><h6 id="x5-6-1-3-1-attribuutsoort-details-artikelcomponent-identificatie"><bdi class="secno">5.6.1.3.1 </bdi>Attribuutsoort details  <a href="#global_class_CIMHLP_Artikelcomponent">Artikelcomponent</a> identificatie</h6><a class="self-link" href="#detail_attribute_CIMHLP_Artikelcomponent_identificatie" aria-label="Permalink for Section 5.6.1.3.1"></a></div>
+                     <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th>Naam</th><td>identificatie</td></tr><tr><th>Formaat</th><td>URI</td></tr><tr><th>Patroon</th><td>
+                              De verzameling van waarden die gegevens van dit attribuutsoort kunnen hebben, dat wil zeggen het waardenbereik, uitgedrukt in een specifieke structuur.
+                           </td></tr><tr><th>Kardinaliteit</th><td>1</td></tr><tr><th>Toelichting</th><td>
+                              Een inhoudelijke toelichting op de toepassing van het informatie-element.
+                           </td></tr><tr><th>Indicatie classificerend</th><td>Nee</td></tr><tr><th>Mogelijk geen waarde</th><td>Nee</td></tr><tr><th>Indicatie identificerend</th><td>Ja</td></tr></tbody></table>
+                  </section>
+                  <section id="detail_association_CIMHLP_Artikelcomponent_opgenomenin"><div class="header-wrapper"><h6 id="x5-6-1-3-2-relatiesoort-details-artikelcomponent-opgenomen-in"><bdi class="secno">5.6.1.3.2 </bdi>Relatiesoort details  <a href="#global_class_CIMHLP_Artikelcomponent">Artikelcomponent</a> opgenomen in</h6><a class="self-link" href="#detail_association_CIMHLP_Artikelcomponent_opgenomenin" aria-label="Permalink for Section 5.6.1.3.2"></a></div>
+                     
+                     <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th>Naam</th><td>opgenomen in</td></tr><tr><th>Gerelateerd objecttype</th><td>
+                              <a class="link" href="#global_class_CIMHLP_Artikelcomponent">Artikelcomponent</a>
+                           </td></tr><tr><th>Kardinaliteit</th><td>1</td></tr></tbody></table>
+                  </section>
+               </section>
+               
+               
+               <section id="detail_class_CIMHLP_Helpitem"><div class="header-wrapper"><h5 id="x5-6-1-4-helpitem"><bdi class="secno">5.6.1.4 </bdi>   Helpitem</h5><a class="self-link" href="#detail_class_CIMHLP_Helpitem" aria-label="Permalink for Section 5.6.1.4"></a></div>
+                  <section id="detail_attribute_CIMHLP_Helpitem_identificatie"><div class="header-wrapper"><h6 id="x5-6-1-4-1-attribuutsoort-details-helpitem-identificatie"><bdi class="secno">5.6.1.4.1 </bdi>Attribuutsoort details  <a href="#global_class_CIMHLP_Helpitem">Helpitem</a> identificatie</h6><a class="self-link" href="#detail_attribute_CIMHLP_Helpitem_identificatie" aria-label="Permalink for Section 5.6.1.4.1"></a></div>
+                     <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th>Naam</th><td>identificatie</td></tr><tr><th>Formaat</th><td>URI</td></tr><tr><th>Patroon</th><td>
+                              De verzameling van waarden die gegevens van dit attribuutsoort kunnen hebben, dat wil zeggen het waardenbereik, uitgedrukt in een specifieke structuur.
+                           </td></tr><tr><th>Kardinaliteit</th><td>1</td></tr><tr><th>Toelichting</th><td>
+                              Een inhoudelijke toelichting op de toepassing van het informatie-element.
+                           </td></tr><tr><th>Indicatie classificerend</th><td>Nee</td></tr><tr><th>Mogelijk geen waarde</th><td>Nee</td></tr><tr><th>Indicatie identificerend</th><td>Ja</td></tr></tbody></table>
+                  </section>
+                  <section id="detail_attribute_CIMHLP_Helpitem_tags"><div class="header-wrapper"><h6 id="x5-6-1-4-2-attribuutsoort-details-helpitem-tags"><bdi class="secno">5.6.1.4.2 </bdi>Attribuutsoort details  <a href="#global_class_CIMHLP_Helpitem">Helpitem</a> tags</h6><a class="self-link" href="#detail_attribute_CIMHLP_Helpitem_tags" aria-label="Permalink for Section 5.6.1.4.2"></a></div>
+                     <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th>Naam</th><td>tags</td></tr><tr><th>Formaat</th><td>
+                              <a class="link" href="#detail_class_CIMHLP_Contexttag">Contexttag</a>
+                           </td></tr><tr><th>Patroon</th><td>
+                              De verzameling van waarden die gegevens van dit attribuutsoort kunnen hebben, dat wil zeggen het waardenbereik, uitgedrukt in een specifieke structuur.
+                           </td></tr><tr><th>Kardinaliteit</th><td>0 .. *</td></tr><tr><th>Toelichting</th><td>
+                              Een inhoudelijke toelichting op de toepassing van het informatie-element.
+                           </td></tr><tr><th>Indicatie classificerend</th><td>Nee</td></tr><tr><th>Mogelijk geen waarde</th><td>Nee</td></tr><tr><th>Indicatie identificerend</th><td>Nee</td></tr></tbody></table>
+                  </section>
+               </section>
+               <section id="detail_class_CIMHLP_Verwijzing"><div class="header-wrapper"><h5 id="x5-6-1-5-verwijzing"><bdi class="secno">5.6.1.5 </bdi>   Verwijzing</h5><a class="self-link" href="#detail_class_CIMHLP_Verwijzing" aria-label="Permalink for Section 5.6.1.5"></a></div>
+                  <section id="detail_association_CIMHLP_Verwijzing_verwijstnaar"><div class="header-wrapper"><h6 id="x5-6-1-5-1-relatiesoort-details-verwijzing-verwijst-naar"><bdi class="secno">5.6.1.5.1 </bdi>Relatiesoort details  <a href="#global_class_CIMHLP_Verwijzing">Verwijzing</a> verwijst naar</h6><a class="self-link" href="#detail_association_CIMHLP_Verwijzing_verwijstnaar" aria-label="Permalink for Section 5.6.1.5.1"></a></div>
+                     
+                     <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th>Naam</th><td>verwijst naar</td></tr><tr><th>Gerelateerd objecttype</th><td>
+                              
+                                 Keuze uit
+                                 <a class="link" href="#global_class_CIMHLP_Anker">Anker</a>, <a class="link" href="#global_class_CIMHLP_Helpitem">Helpitem</a>
+                              
+                           </td></tr><tr><th>Kardinaliteit</th><td>1</td></tr></tbody></table>
+                  </section>
+               </section>
+               
+               
+               
+               
+               
+            </section>
+            
+            
+            <section id="keuze"><div class="header-wrapper"><h4 id="x5-6-2-keuze"><bdi class="secno">5.6.2 </bdi>Keuze  </h4><a class="self-link" href="#keuze" aria-label="Permalink for Section 5.6.2"></a></div>
+               <section id="detail_class_CIMHLP_VerwijzingKeuze"><div class="header-wrapper"><h5 id="x5-6-2-1-keuze-verwijzing-keuze"><bdi class="secno">5.6.2.1 </bdi>Keuze   Verwijzing­Keuze</h5><a class="self-link" href="#detail_class_CIMHLP_VerwijzingKeuze" aria-label="Permalink for Section 5.6.2.1"></a></div>
+                  <section id="detail_association_CIMHLP_VerwijzingKeuze_verwijstNaar"><div class="header-wrapper"><h6 id="x5-6-2-1-1-relatiesoort-details-verwijzing-keuze-verwijst-naar"><bdi class="secno">5.6.2.1.1 </bdi>Relatiesoort details  <a href="#global_class_CIMHLP_VerwijzingKeuze">Verwijzing­Keuze</a> verwijst­Naar</h6><a class="self-link" href="#detail_association_CIMHLP_VerwijzingKeuze_verwijstNaar" aria-label="Permalink for Section 5.6.2.1.1"></a></div>
+                     
+                     <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th>Naam</th><td>verwijst­Naar</td></tr><tr><th>Gerelateerd objecttype</th><td>
+                              <a class="link" href="#global_class_CIMHLP_Anker">Anker</a>
+                           </td></tr><tr><th>Kardinaliteit</th><td>1</td></tr></tbody></table>
+                  </section>
+                  <section id="detail_association_CIMHLP_VerwijzingKeuze_verwisjtNaar"><div class="header-wrapper"><h6 id="x5-6-2-1-2-relatiesoort-details-verwijzing-keuze-verwisjt-naar"><bdi class="secno">5.6.2.1.2 </bdi>Relatiesoort details  <a href="#global_class_CIMHLP_VerwijzingKeuze">Verwijzing­Keuze</a> verwisjt­Naar</h6><a class="self-link" href="#detail_association_CIMHLP_VerwijzingKeuze_verwisjtNaar" aria-label="Permalink for Section 5.6.2.1.2"></a></div>
+                     
+                     <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th>Naam</th><td>verwisjt­Naar</td></tr><tr><th>Gerelateerd objecttype</th><td>
+                              <a class="link" href="#global_class_CIMHLP_Helpitem">Helpitem</a>
+                           </td></tr><tr><th>Kardinaliteit</th><td>1</td></tr></tbody></table>
+                  </section>
                </section>
             </section>
-         
-         
-         
-         
-         
-         </section>
-      
-      
-      
-      <section id="keuze">
-         <div class="header-wrapper"><h4 id="x5-7-2-keuze"><bdi class="secno">5.7.2 </bdi>Keuze  </h4><a class="self-link" href="#keuze" aria-label="Permalink for Section 5.7.2"></a></div>
-         
-         <section id="detail_class_CIMHLP_VerwijzingKeuze">
-            <div class="header-wrapper"><h5 id="x5-7-2-1-keuze-verwijzing-keuze"><bdi class="secno">5.7.2.1 </bdi>Keuze   Verwijzing­Keuze</h5><a class="self-link" href="#detail_class_CIMHLP_VerwijzingKeuze" aria-label="Permalink for Section 5.7.2.1"></a></div>
             
-            <section id="detail_association_CIMHLP_VerwijzingKeuze_verwijstNaar">
-               <div class="header-wrapper"><h6 id="x5-7-2-1-1-relatiesoort-details-verwijzing-keuze-verwijst-naar"><bdi class="secno">5.7.2.1.1 </bdi>Relatiesoort details  <a href="#global_class_CIMHLP_VerwijzingKeuze">Verwijzing­Keuze</a> verwijst­Naar</h6><a class="self-link" href="#detail_association_CIMHLP_VerwijzingKeuze_verwijstNaar" aria-label="Permalink for Section 5.7.2.1.1"></a></div>
-               
-               
-               <table style="width: 100%;">
-                  <colgroup style="width: 30%;"></colgroup>
-                  <colgroup style="width: 70%;"></colgroup>
-                  <tbody>
-                     <tr>
-                        <th>Naam</th>
-                        <td>verwijst­Naar</td>
-                     </tr>
-                     <tr>
-                        <th>Gerelateerd objecttype</th>
-                        <td>
-                           <a class="link" href="#global_class_CIMHLP_Anker">Anker</a>
-                           </td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie kardinaliteit</th>
-                        <td>1</td>
-                     </tr>
-                  </tbody>
-               </table>
-               </section>
             
-            <section id="detail_association_CIMHLP_VerwijzingKeuze_verwisjtNaar">
-               <div class="header-wrapper"><h6 id="x5-7-2-1-2-relatiesoort-details-verwijzing-keuze-verwisjt-naar"><bdi class="secno">5.7.2.1.2 </bdi>Relatiesoort details  <a href="#global_class_CIMHLP_VerwijzingKeuze">Verwijzing­Keuze</a> verwisjt­Naar</h6><a class="self-link" href="#detail_association_CIMHLP_VerwijzingKeuze_verwisjtNaar" aria-label="Permalink for Section 5.7.2.1.2"></a></div>
-               
-               
-               <table style="width: 100%;">
-                  <colgroup style="width: 30%;"></colgroup>
-                  <colgroup style="width: 70%;"></colgroup>
-                  <tbody>
-                     <tr>
-                        <th>Naam</th>
-                        <td>verwisjt­Naar</td>
-                     </tr>
-                     <tr>
-                        <th>Gerelateerd objecttype</th>
-                        <td>
-                           <a class="link" href="#global_class_CIMHLP_Helpitem">Helpitem</a>
-                           </td>
-                     </tr>
-                     <tr>
-                        <th>Indicatie kardinaliteit</th>
-                        <td>1</td>
-                     </tr>
-                  </tbody>
-               </table>
-               </section>
-            </section>
-         </section>
-      
-      
-      </section>
-</section>
-<section id="lis" class="normative">
-   <div class="header-wrapper"><h2 id="x6-inhoud-van-waardenlijsten"><bdi class="secno">6. </bdi>Inhoud van waardenlijsten</h2><a class="self-link" href="#lis" aria-label="Permalink for Section 6."></a></div>
-   
-   <section id="detail_class_CIMHLP_Contexttag">
-      <div class="header-wrapper"><h3 id="x6-1-referentielijst-contexttag"><bdi class="secno">6.1 </bdi>Referentielijst  Contexttag</h3><a class="self-link" href="#detail_class_CIMHLP_Contexttag" aria-label="Permalink for Section 6.1"></a></div>
-      
-      <table style="width: 100%;" class="list">
-         <colgroup></colgroup>
-         <tbody>
-            <tr>
-               <td>
-                  
-                  
-                  
-                  <ol></ol>
-                  
-                  </td>
-            </tr>
-         </tbody>
-      </table>
-      
-      <table style="width: 100%;">
-         <tbody></tbody>
-      </table>
-      </section>
-   <section id="detail_class_CIMHLP_Artikeltype">
-      <div class="header-wrapper"><h3 id="x6-2-enumeratie-details-artikeltype"><bdi class="secno">6.2 </bdi>Enumeratie details  Artikeltype</h3><a class="self-link" href="#detail_class_CIMHLP_Artikeltype" aria-label="Permalink for Section 6.2"></a></div>
-      
-      <table style="width: 100%;" class="list">
-         <colgroup></colgroup>
-         <tbody>
-            <tr>
-               <td></td>
-            </tr>
-         </tbody>
-      </table>
-      
-      <table style="width: 100%;" class="list">
-         <colgroup style="width: 40%;"></colgroup>
-         <colgroup style="width: 60%;"></colgroup>
-         <tbody>
-            <tr>
-               <th>Waarde</th>
-               <th>Omschrijving</th>
-            </tr>
-            <tr>
-               <th>contact</th>
-               <td>
-                  
-                  <p>Een artikel gericht op contactpersonen en verstrekken van contactinformatie.</p>
-                  </td>
-            </tr>
-            <tr>
-               <th>e-learning</th>
-               <td>
-                  
-                  <p>Een artikel met instructies of een training d.m.v. e-learning.</p>
-                  </td>
-            </tr>
-            <tr>
-               <th>faq</th>
-               <td>
-                  
-                  <p>Een artikel met een overzicht van veel gestelde vragen en antwoorden.</p>
-                  </td>
-            </tr>
-            <tr>
-               <th>item</th>
-               <td>
-                  
-                  <p>Een artikel over 1 specifiek item, zoals het doen van een melding.</p>
-                  </td>
-            </tr>
-            <tr>
-               <th>qa</th>
-               <td>
-                  
-                  <p>Een artikel met 1 vraag en meerdere mogelijke antwoorden.</p>
-                  </td>
-            </tr>
-            <tr>
-               <th>verzamelijst</th>
-               <td>
-                  
-                  <p>Een artikel met een lijst van relevante en/of gerelateerde artikelen.</p>
-                  </td>
-            </tr>
-            <tr>
-               <th>webinar</th>
-               <td>
-                  
-                  <p>Een artikel dat toegang geeft tot een (al dan niet eerder opgenomen) webinar</p>
-                  </td>
-            </tr>
-            <tr>
-               <th>wizard</th>
-               <td>
-                  
-                  <p>Een artikel dat op basis van een vaste volgorde (stappenplan) uitleg geeft bij elke
-                     stap.</p>
-                  </td>
-            </tr>
-         </tbody>
-      </table>
-      </section>
-</section>
-
+         </section></section><section id="lis" class="normative"><div class="header-wrapper"><h2 id="x6-inhoud-van-waardelijsten"><bdi class="secno">6. </bdi>Inhoud van waardelijsten</h2><a class="self-link" href="#lis" aria-label="Permalink for Section 6."></a></div><section id="detail_class_CIMHLP_Contexttag"><div class="header-wrapper"><h3 id="x6-1-referentielijst-contexttag"><bdi class="secno">6.1 </bdi>Referentielijst  Contexttag</h3><a class="self-link" href="#detail_class_CIMHLP_Contexttag" aria-label="Permalink for Section 6.1"></a></div>
+            <table style="width: 100%;" class="list"><colgroup></colgroup><tbody><tr><td>
+                     
+                     
+                        <ol></ol>
+                     
+                  </td></tr></tbody></table>
+            <table style="width: 100%;"><tbody></tbody></table>
+         </section><section id="detail_class_CIMHLP_Artikeltype"><div class="header-wrapper"><h3 id="x6-2-enumeratie-details-artikeltype"><bdi class="secno">6.2 </bdi>Enumeratie details  Artikeltype</h3><a class="self-link" href="#detail_class_CIMHLP_Artikeltype" aria-label="Permalink for Section 6.2"></a></div>
+            <table style="width: 100%;" class="list"><colgroup></colgroup><tbody><tr><td></td></tr></tbody></table>
+            <table style="width: 100%;" class="list"><colgroup style="width: 40%;"></colgroup><colgroup style="width: 60%;"></colgroup><tbody><tr><th>Waarde</th><th>Omschrijving</th></tr><tr><th>contact</th><td>
+                     <p>Een artikel gericht op contactpersonen en verstrekken van contactinformatie.</p>
+                  </td></tr><tr><th>e-learning</th><td>
+                     <p>Een artikel met instructies of een training d.m.v. e-learning.</p>
+                  </td></tr><tr><th>faq</th><td>
+                     <p>Een artikel met een overzicht van veel gestelde vragen en antwoorden.</p>
+                  </td></tr><tr><th>item</th><td>
+                     <p>Een artikel over 1 specifiek item, zoals het doen van een melding.</p>
+                  </td></tr><tr><th>qa</th><td>
+                     <p>Een artikel met 1 vraag en meerdere mogelijke antwoorden.</p>
+                  </td></tr><tr><th>verzamelijst</th><td>
+                     <p>Een artikel met een lijst van relevante en/of gerelateerde artikelen.</p>
+                  </td></tr><tr><th>webinar</th><td>
+                     <p>Een artikel dat toegang geeft tot een (al dan niet eerder opgenomen) webinar</p>
+                  </td></tr><tr><th>wizard</th><td>
+                     <p>Een artikel dat op basis van een vaste volgorde (stappenplan) uitleg geeft bij elke stap.</p>
+                  </td></tr></tbody></table>
+         </section></section>
 
   <section id="conformance"><div class="header-wrapper"><h2 id="x7-conformiteit"><bdi class="secno">7. </bdi>Conformiteit</h2><a class="self-link" href="#conformance" aria-label="Permalink for Section 7."></a></div><p>Naast onderdelen die als niet normatief gemarkeerd zijn, zijn ook alle diagrammen, voorbeelden, en noten in dit document niet normatief. Verder is alles in dit document normatief.</p></section>
   <section id="tof"><div class="header-wrapper"><h2 id="x8-lijst-met-figuren"><bdi class="secno">8. </bdi>Lijst met figuren</h2><a class="self-link" href="#tof" aria-label="Permalink for Section 8."></a></div><ul class="tof">
         <li class="tofline">
     <a class="tocxref" href="#Figure-CIM-Overzicht"><span class="self-link">Figuur <bdi class="figno">1</bdi></span> <span class="fig-title">Overzicht van alle Conceptuele Informatiemodellen in het DSO</span></a>
   </li><li class="tofline">
-    <a class="tocxref" href="#fig-cim-hlp"><span class="self-link">Figuur <bdi class="figno">2</bdi></span> <span class="fig-title">CIM-HLP</span></a>
+    <a class="tocxref" href="#fig-diagram-cim-hlp"><span class="self-link">Figuur <bdi class="figno">2</bdi></span> <span class="fig-title"> ‒ Diagram: CIM-HLP</span></a>
   </li><li class="tofline">
-    <a class="tocxref" href="#fig-cim-hlp-artikelcomponent-specialisaties"><span class="self-link">Figuur <bdi class="figno">3</bdi></span> <span class="fig-title">CIM-HLP Artikelcomponent specialisaties</span></a>
+    <a class="tocxref" href="#fig-diagram-cim-hlp-artikelcomponent-specialisaties"><span class="self-link">Figuur <bdi class="figno">3</bdi></span> <span class="fig-title"> ‒ Diagram: CIM-HLP Artikelcomponent specialisaties</span></a>
   </li>
       </ul></section>
   <section id="index" class="appendix"><div class="header-wrapper"><h2 id="a-index"><bdi class="secno">A. </bdi>Index</h2><a class="self-link" href="#index" aria-label="Permalink for Appendix A."></a></div><section id="index-defined-here">
@@ -2794,4 +1284,4 @@ function hidePanel(panel) {
   panel.hidden = true;
   panel.classList.remove("docked");
 }
-})()</script><div class="sidelabel">Geonovum Informatiemodel - Werkversie</div><script src="https://www.w3.org/scripts/TR/2021/fixup.js"></script></body></html>
+})()</script><div class="sidelabel">Geonovum Informatiemodel - Werkversie</div><script src="https://gitdocumentatie.logius.nl/publicatie/respec/fixup.js"></script></body></html>
